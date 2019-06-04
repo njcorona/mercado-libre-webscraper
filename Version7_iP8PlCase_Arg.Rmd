@@ -1,5 +1,5 @@
 ---
-title: "Version7_iP8PlCase_Arg"
+title: "iP8PlCase_Arg"
 author: "NicolasCorona"
 date: "5/27/2019"
 output: html_document
@@ -7,7 +7,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 # This code loads in the libraries of code I am using when I write this code.  For example, rvest and httr are the two libraries I use to identify parts of a website and scrape data from the website. 
-# Test 2
 knitr::opts_chunk$set(echo = TRUE)
 suppressWarnings(suppressMessages(library(tidyverse)))
 suppressWarnings(suppressMessages(library(httr)))
