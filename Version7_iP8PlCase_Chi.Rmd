@@ -1,5 +1,5 @@
 ---
-title: "Version7_iP8PlCase_Chi"
+title: "iP8PlCase_Chi"
 author: "NicolasCorona"
 date: "6/2/2019"
 output: html_document
