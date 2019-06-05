@@ -131,7 +131,7 @@ scrapeNodes <- function(test, search_position, name) {
   
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
 
-  num_installments_alt <- get_html_text(read_html, ".highlight-info strong")
+  num_installments <- get_html_text(read_html, ".highlight-info strong")
   
   arrival_time <- get_html_text(read_html, ".black")
   arrival_time <- turn_to_na(arrival_time)
@@ -190,7 +190,7 @@ scrapeNodes <- function(test, search_position, name) {
   orig_price <- turn_to_na(orig_price)
   num_sold <- turn_to_na(num_sold)
   in_stock <- turn_to_na(in_stock)
-  num_installments_alt <- turn_to_na(num_installments_alt)
+  num_installments <- turn_to_na(num_installments)
   shipping <- turn_to_na(shipping)
   free_return <- turn_to_na(free_return)
   free_return_info <- turn_to_na(free_return_info)
@@ -200,7 +200,7 @@ scrapeNodes <- function(test, search_position, name) {
   name <- turn_to_na(name)
   item_id <- turn_to_na(item_id)
 
-  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments_alt, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
+  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
 ```
