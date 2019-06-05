@@ -1,5 +1,5 @@
 ---
-title: "Version7_iP8PlCase_Per"
+title: "iP8PlCase_Per"
 author: "NicolasCorona"
 date: "5/27/2019"
 output: html_document
@@ -16,7 +16,7 @@ suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
 ```
 
-### Links for iPhone8+ cases, Argentina, including the first 50
+### Links for iPhone8+ cases, Peru, including the first 50
 
 ```{r scrape_links}
 links <- data.frame()
@@ -210,7 +210,7 @@ scrapeNodes <- function(test, search_position, name) {
   name <- turn_to_na(name)
   item_id <- turn_to_na(item_id)
 
-  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments_alt, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, test, five_star, four_star, three_star, two_star, one_star, item_id)
+  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments_alt, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
 ```
@@ -315,6 +315,17 @@ df[, list_of_characteristics] <- NA
 for (i in 1:length(links$curr_item.1.length.curr_url..)) {
   df <- populateCharacteristics(df, i)
 }
+
+# Remove sparsely populated columns (less than 10%).
+df2 <- apply(df, 2, function(x) { 
+      if (length(which(is.na(x) == FALSE)) < 0.1 * length(x)) {
+        FALSE 
+      } else {
+        TRUE
+      } 
+  })
+df2[1:21] <- TRUE
+df <- df[, which(df2 == TRUE)]
 
 df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
@@ -439,11 +450,6 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
-
-# Remove sparsely populated columns (less than 10%).
-df2 <- apply(df, 2, function(x) { if (length(which(is.na(x) == FALSE)) < 0.1 * length(x)) { FALSE } else { TRUE } })
-df <- df[, which(df2 == TRUE)]
-
 
 write_csv(df, "7_iPh8PlCase_Prod_Clean_Per.csv")
 write_csv(seller_df, "7_iPh8PlCase_Sell_Clean_Per.csv")
