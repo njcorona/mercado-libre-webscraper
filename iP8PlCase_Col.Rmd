@@ -325,7 +325,7 @@ df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
 backup_df <- df
 
-write_csv(df, "7_iPh8PlCase_Prod_Raw_Col.csv")
+write_csv(df, "iPh8PlCase_Prod_Raw_Col.csv")
 ```
 
 ### Collect seller info.
@@ -382,7 +382,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, "7_iPh8PlCase_Sell_Raw_Col.csv")
+write_csv(seller_df, "iPh8PlCase_Sell_Raw_Col.csv")
 ```
 
 ### Cleaning the data.
@@ -407,9 +407,16 @@ seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, funct
 timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
 
+df$num_installments <- sapply(df$num_installments, function(x) { return((gsub("[\t\n$]", "", x) %>% str_extract_all("[0-9]* cuotas"))[[1]][1]) })
+
+df$amt_installments <- sapply(df$num_installments, function(x) { return((gsub("[\t\n$]", "", x) %>% strsplit(" "))[[1]][4]) })
+
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
+   if (t == "Nuevo") {
+     return(0)
+   }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
 df$num_sold <- sapply(df$num_sold, anon)
@@ -435,8 +442,8 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
-write_csv(df, "7_iPh8PlCase_Prod_Clean_Col.csv")
-write_csv(seller_df, "7_iPh8PlCase_Sell_Clean_Col.csv")
+write_csv(df, "iPh8PlCase_Prod_Clean_Col.csv")
+write_csv(seller_df, "iPh8PlCase_Sell_Clean_Col.csv")
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -452,7 +459,12 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-write_csv(data_legend, "7_iPh8PlCase_Legend_Col.csv")
+write_csv(data_legend, "iPh8PlCase_Legend_Col.csv")
 ```
 
+### Quick reset for convenience
+```{r}
+df <- backup_df
+seller_df <- backup_seller_df
+```
 
