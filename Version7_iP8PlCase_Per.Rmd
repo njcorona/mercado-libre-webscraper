@@ -426,6 +426,9 @@ seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, funct
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
+   if (t == "Nuevo") {
+     return(0)
+   }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
 df$num_sold <- sapply(df$num_sold, anon)
