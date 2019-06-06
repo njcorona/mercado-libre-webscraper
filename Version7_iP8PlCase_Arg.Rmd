@@ -253,7 +253,7 @@ for (i in seq) {
        test19 <- links$curr_url.1.length.curr_url..[i + 19]
 
        # "future" means that the computer will go on to complete the next request before this one is finished, allowing me to make multiple requests to the MercadoLibre server at the same time.  This saves a lot of time!
-       future0 <- future ({ scrapeNodes(test0, links$index[i + 0], links$curr_item.1.length.curr_url..[i + 0]) }) %plan% multiprocess
+        future0 <- future ({ scrapeNodes(test0, links$index[i + 0], links$curr_item.1.length.curr_url..[i + 0]) }) %plan% multiprocess
        future1 <- future ({ scrapeNodes(test1, links$index[i + 1], links$curr_item.1.length.curr_url..[i + 1]) }) %plan% multiprocess
        future2 <- future ({ scrapeNodes(test2, links$index[i + 2], links$curr_item.1.length.curr_url..[i + 2]) }) %plan% multiprocess
        future3 <- future ({ scrapeNodes(test3, links$index[i + 3], links$curr_item.1.length.curr_url..[i + 3]) }) %plan% multiprocess
@@ -329,6 +329,7 @@ df <- df[, which(df2 == TRUE)]
 
 df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
+backup_df <- df
 
 write_csv(df, "7_iPh8PlCase_Prod_Raw_Arg.csv")
 ```
@@ -415,8 +416,10 @@ seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, funct
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
+   if (!is.na(t)) {
    if (t == "Nuevo") {
      return(0)
+   }
    }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
