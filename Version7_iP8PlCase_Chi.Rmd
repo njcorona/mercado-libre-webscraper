@@ -161,6 +161,13 @@ scrapeNodes <- function(test, search_position, name) {
 
   # I use this seller_link in the future to extract the seller information associated with this product.
   seller_link <- get_html_attr_href(read_html, ".card-block-link")
+  
+  if (length(seller_link) == 0) {
+    seller_link <- get_html_attr_href(read_html, ".vip-section-seller-info .ui-view-more__link")
+    seller_link <- paste("https://articulo.mercadolibre.com.pe", seller_link, sep = "")
+    seller_link <- get_html_attr_href(read_html(as.character(seller_link)), ".feedback-profile-link a")
+  }
+  
   item_id <- get_html_text(read_html, ".item-info__id-number")
   
   
@@ -334,7 +341,7 @@ df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
 backup_df <- df
 
-write_csv(df, "7_iPh8PlCase_Prod_Raw_Chi.csv")
+write_csv(df, "6_6_iPh8PlCase_Prod_Raw_Chi.csv")
 ```
 
 ### Collect seller info.
@@ -342,6 +349,7 @@ write_csv(df, "7_iPh8PlCase_Prod_Raw_Chi.csv")
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
+list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 
@@ -391,7 +399,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, "7_iPh8PlCase_Sell_Raw_Chi.csv")
+write_csv(seller_df, "6_6_iPh8PlCase_Sell_Raw_Chi.csv")
 ```
 
 ### Cleaning the data.
@@ -419,11 +427,11 @@ seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, funct
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (!is.na(t)) {
+   #if (!is.na(t)) {
    if (t == "Nuevo") {
      return(0)
    }
-   }
+   #}
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
 df$num_sold <- sapply(df$num_sold, anon)
@@ -449,8 +457,8 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
-write_csv(df, "7_iPh8PlCase_Prod_Clean_Chi.csv")
-write_csv(seller_df, "7_iPh8PlCase_Sell_Clean_Chi.csv")
+write_csv(df, "6_6_iPh8PlCase_Prod_Clean_Chi.csv")
+write_csv(seller_df, "6_6_iPh8PlCase_Sell_Clean_Chi.csv")
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -466,6 +474,6 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-write_csv(data_legend, "7_iPh8PlCase_Legend_Chi.csv")
+write_csv(data_legend, "6_6_iPh8PlCase_Legend_Chi.csv")
 ```
 
