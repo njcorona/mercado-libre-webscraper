@@ -22,7 +22,7 @@ suppressWarnings(suppressMessages(library(future)))
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://listado.mercadolibre.com.ar/iphone8-%C3%BE-funda_ItemTypeID_N"
+url <- "https://celulares.mercadolibre.com.mx/accesorios/fundas/iphone8-plus-funda_ItemTypeID_N"
 
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
@@ -55,11 +55,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://listado.mercadolibre.com.ar/iphone8-%C3%BE-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.mx/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.ar/iphone8-%C3%BE-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.mx/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -142,6 +142,14 @@ scrapeNodes <- function(test, search_position, name) {
   }
 
   num_installments <- get_html_text(read_html, ".highlight-info strong")
+  
+  if (length(num_installments) == 0) {
+    num_installments <- get_html_text(read_html, ".payment-installments")
+  }
+  
+  if (length(num_installments) == 0) {
+    num_installments <- get_html_text(read_html, ".free-installments")
+  }
   
   arrival_time <- get_html_text(read_html, ".black")
   arrival_time <- turn_to_na(arrival_time)
@@ -231,9 +239,9 @@ df <- NULL
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
-seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-#seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
-max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
+#seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
+seq <- seq(1, 201, 20) # REMOVE TO COMPLETE
+#max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
 for (i in seq) {
@@ -303,10 +311,10 @@ for (i in seq) {
        list_of_dfs[[i + 19]] <- value(future19)
 }
   
-for (i in max:length(links$curr_item.1.length.curr_url..)) {
-   test <- links$curr_url.1.length.curr_url..[i]
-   list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], links$curr_item.1.length.curr_url..[i])
-}  # PUT BACK IN TO COMPLETE
+#for (i in max:length(links$curr_item.1.length.curr_url..)) {
+#   test <- links$curr_url.1.length.curr_url..[i]
+#   list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], links$curr_item.1.length.curr_url..[i])
+#}  # PUT BACK IN TO COMPLETE
 
 # This takes all of our individual rows and combines them into one large dataframe.
 df <- bind_rows(list_of_dfs)
@@ -338,7 +346,7 @@ df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
 backup_df <- df
 
-write_csv(df, "6_6_iPh8PlCase_Raw_Mex_Prod.csv")
+write_csv(df, "6_8_iPh8PlCase_Raw_Mex_Prod.csv")
 ```
 
 ### Collect seller info.
@@ -346,7 +354,8 @@ write_csv(df, "6_6_iPh8PlCase_Raw_Mex_Prod.csv")
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
+# list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
+# list_of_seller_links <- setdiff(list_of_seller_links, c("https://perfil.mercadolibre.com.mx/IBUMPER+VERACRUZ", "https://perfil.mercadolibre.com.mx/BENNY2711"))
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 
@@ -354,7 +363,18 @@ seller_df <- NULL
 for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
+  invalid <- tryCatch(read_html(as.character(link)), error = function(e) {
+    print(link)
+    return(NULL)
+  })
+  if (is.null(invalid)) { next }
   read_html <- read_html(as.character(link))
+  if (length(get_html_text(read_html, ".ui-empty-state__title")) > 0) {
+    if (get_html_text(read_html, ".ui-empty-state__title") == "¡Ups! hubo un error") { 
+      print("break")
+      break
+    }
+  }
   seller_name <- get_html_text(read_html, "#store-info__name")
   time_operating <- get_html_text(read_html, ".experience span span")
   units_of_time_operating <- get_html_text(read_html, ".experience > span")
@@ -396,7 +416,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, "6_6_iPh8PlCase_Raw_Mex_Sell.csv")
+write_csv(seller_df, "6_7_iPh8PlCase_Raw_Mex_Sell.csv")
 ```
 
 ### Cleaning the data.
