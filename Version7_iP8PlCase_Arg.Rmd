@@ -338,7 +338,7 @@ df$`list(char_categories)` <- NULL
 df$`list(char_values)` <- NULL
 backup_df <- df
 
-write_csv(df, "6_6_iPh8PlCase_Prod_Raw_Arg.csv")
+write_csv(df, "6_6_iPh8PlCase_Raw_Arg_Prod.csv")
 ```
 
 ### Collect seller info.
@@ -396,7 +396,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, "6_6_iPh8PlCase_Sell_Raw_Arg.csv")
+write_csv(seller_df, "6_6_iPh8PlCase_Raw_Arg_Sell.csv")
 ```
 
 ### Cleaning the data.
@@ -454,8 +454,8 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
-write_csv(df, "6_6_iPh8PlCase_Prod_Clean_Arg.csv")
-write_csv(seller_df, "6_6_iPh8PlCase_Sell_Clean_Arg.csv")
+write_csv(df, "6_6_iPh8PlCase_Clean_Arg_Prod.csv")
+write_csv(seller_df, "6_6_iPh8PlCase_Clean_Arg_Sell.csv")
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
