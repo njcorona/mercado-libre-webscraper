@@ -146,6 +146,9 @@ scrapeNodes <- function(test, search_position, name) {
     num_installments <- get_html_text(read_html, ".free-installments")
   }
   
+  # Usually NA for Colombia.
+  amt_installments <- get_html_text(read_html, "strong sup")
+  
   arrival_time <- get_html_text(read_html, ".black")
   arrival_time <- turn_to_na(arrival_time)
   
@@ -212,8 +215,9 @@ scrapeNodes <- function(test, search_position, name) {
   seller_link <- turn_to_na(seller_link)
   name <- turn_to_na(name)
   item_id <- turn_to_na(item_id)
+  amt_installments <- turn_to_na(amt_installments)
 
-  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
+  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
 ```
