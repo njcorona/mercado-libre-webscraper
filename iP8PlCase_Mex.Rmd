@@ -337,6 +337,9 @@ for (i in 1:length(links$curr_item.1.length.curr_url..)) {
   df <- populateCharacteristics(df, i)
 }
 
+df$`list(char_categories)` <- NULL
+df$`list(char_values)` <- NULL
+
 # Remove sparsely populated columns (less than 10%).
 df2 <- apply(df, 2, function(x) { 
       if (length(which(is.na(x) == FALSE)) < 0.1 * length(x)) {
@@ -348,8 +351,6 @@ df2 <- apply(df, 2, function(x) {
 df2[1:21] <- TRUE
 df <- df[, which(df2 == TRUE)]
 
-df$`list(char_categories)` <- NULL
-df$`list(char_values)` <- NULL
 backup_df <- df
 
 write_csv(df, "6_12_iPh8PlCase_Raw_Mex_Prod.csv")

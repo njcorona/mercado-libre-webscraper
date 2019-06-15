@@ -235,9 +235,9 @@ df <- NULL
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
-seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-#seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
-max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
+# seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
+seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
+# max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
 for (i in seq) {
@@ -307,10 +307,10 @@ for (i in seq) {
        list_of_dfs[[i + 19]] <- value(future19)
 }
   
-for (i in max:length(links$curr_item.1.length.curr_url..)) {
-   test <- links$curr_url.1.length.curr_url..[i]
-   list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], links$curr_item.1.length.curr_url..[i])
-}  # PUT BACK IN TO COMPLETE
+#for (i in max:length(links$curr_item.1.length.curr_url..)) {
+#   test <- links$curr_url.1.length.curr_url..[i]
+#   list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], #links$curr_item.1.length.curr_url..[i])
+#}  # PUT BACK IN TO COMPLETE
 
 # This takes all of our individual rows and combines them into one large dataframe.
 df <- bind_rows(list_of_dfs)
@@ -327,6 +327,9 @@ for (i in 1:length(links$curr_item.1.length.curr_url..)) {
   df <- populateCharacteristics(df, i)
 }
 
+df$`list(char_categories)` <- NULL
+df$`list(char_values)` <- NULL
+
 # Remove sparsely populated columns (less than 10%).
 df2 <- apply(df, 2, function(x) { 
       if (length(which(is.na(x) == FALSE)) < 0.1 * length(x)) {
@@ -338,8 +341,6 @@ df2 <- apply(df, 2, function(x) {
 df2[1:21] <- TRUE
 df <- df[, which(df2 == TRUE)]
 
-df$`list(char_categories)` <- NULL
-df$`list(char_values)` <- NULL
 backup_df <- df
 
 write_csv(df, "6_12_iPh8PlCase_Raw_Arg_Prod.csv")
@@ -458,6 +459,71 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
+# HERE
+df$review_avg <- as.numeric(df$review_avg)
+sapply(df, 1, function(x) {
+  if (is.na(df$num_reviews[x])) { return(x) }
+  if (df$num_reviews[x] != 1 && df$num_reviews[x] != 2) { return(x) }
+  if (df$num_reviews[x] == 1) {
+    df$one_star[x] <- 0
+    df$two_star[x] <- 0
+    df$three_star[x] <- 0
+    df$four_star[x] <- 0
+    df$five_star[x] <- 0
+    if (df$review_avg[x] == 1) {
+       df$one_star[x] <- 1
+    } else if (df$review_avg[x] == 2) {
+      df$two_star[x] <- 1
+    } else if (df$review_avg[x] == 3) {
+      df$three_star[x] <- 1
+    } else if (df$review_avg[x] == 4) {
+      df$four_star[x] <- 1
+    } else if (df$review_avg[x] == 5) {
+      df$five_star[x] <- 1
+    } else {
+      print(paste("odd ", x, sep = "- at index x = "))
+    }
+    return(x)
+  } else if (df$num_reviews[x] == 2) {
+    df$one_star[x] <- 0
+    df$two_star[x] <- 0
+    df$three_star[x] <- 0
+    df$four_star[x] <- 0
+    df$five_star[x] <- 0
+    print(x)
+    print( df$five_star[x])
+    if (df$review_avg[x] == 1) {
+       df$one_star[x] <- 2
+    } else if (df$review_avg[x] == 1.5) {
+      df$one_star[x] <- 1
+      df$two_star[x] <- 1
+    } else if (df$review_avg[x] == 2) {
+      df$two_star[x] <- 2
+    } else if (df$review_avg[x] == 2.5) {
+      df$two_star[x] <- 1
+      df$three_star[x] <- 1
+    } else if (df$review_avg[x] == 3) {
+      df$three_star[x] <- 2
+    } else if (df$review_avg[x] == 3.5) {
+      df$three_star[x] <- 1
+      df$four_star[x] <- 1
+    } else if (df$review_avg[x] == 4) {
+      df$four_star[x] <- 2
+    } else if (df$review_avg[x] == 4.5) {
+      df$four_star[x] <- 1
+      df$five_star[x] <- 1
+    } else if (df$review_avg[x] == 5) {
+      df$five_star[x] <- 2
+    } else {
+      print(paste("odd ", x, sep = "- at index x = "))
+    }
+    return(x)
+  } else {
+    print("check cleaning:  Error ZZ567")
+    return(x)
+  }
+})
+
 write_csv(df, "6_12_iPh8PlCase_Clean_Arg_Prod.csv")
 write_csv(seller_df, "6_12_iPh8PlCase_Clean_Arg_Sell.csv")
 
@@ -472,7 +538,15 @@ list <- lapply(list, function(x) {
     return (x)
   }
   return (x)
+  
 })
+
+
+
+df$search_position <- sapply(df$search_position, function(x) {
+ 
+})
+
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
 write_csv(data_legend, "6_12_iPh8PlCase_Legend_Arg.csv")
