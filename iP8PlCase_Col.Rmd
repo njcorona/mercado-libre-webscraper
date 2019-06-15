@@ -457,6 +457,47 @@ df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { 
 free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
 df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
+df$review_avg <- as.numeric(df$review_avg)
+df$num_reviews <- as.numeric(df$num_reviews)
+
+# x[17] is the five_star
+# x[18] is the four_star
+# x[19] is the three_star
+# x[20] is the two_star
+# x[21] is the one_star
+
+# First, set all star values to zero if num_reviews == 1 or == 2.
+df[which(df$num_reviews == 1 | df$num_reviews == 2), c(17:21)] <- 0
+
+# Then, adjust individually as necessary.
+df[which(df$num_reviews == 1 & df$review_avg == 1), 21] <- 1
+df[which(df$num_reviews == 1 & df$review_avg == 2), 20] <- 1
+df[which(df$num_reviews == 1 & df$review_avg == 3), 19] <- 1
+df[which(df$num_reviews == 1 & df$review_avg == 4), 18] <- 1
+df[which(df$num_reviews == 1 & df$review_avg == 5), 17] <- 1
+
+df[which(df$num_reviews == 2 & df$review_avg == 1), 21] <- 2
+
+df[which(df$num_reviews == 2 & df$review_avg == 1.5), 21] <- 1
+df[which(df$num_reviews == 2 & df$review_avg == 1.5), 20] <- 1
+
+df[which(df$num_reviews == 2 & df$review_avg == 2), 20] <- 2
+
+df[which(df$num_reviews == 2 & df$review_avg == 2.5), 20] <- 1
+df[which(df$num_reviews == 2 & df$review_avg == 2.5), 19] <- 1
+
+df[which(df$num_reviews == 2 & df$review_avg == 3), 19] <- 2
+
+df[which(df$num_reviews == 2 & df$review_avg == 3.5), 19] <- 1
+df[which(df$num_reviews == 2 & df$review_avg == 3.5), 18] <- 1
+
+df[which(df$num_reviews == 2 & df$review_avg == 4), 18] <- 2
+
+df[which(df$num_reviews == 2 & df$review_avg == 4.5), 18] <- 1
+df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
+
+df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
+
 write_csv(df, "6_12_iPh8PlCase_Clean_Col_Prod.csv")
 write_csv(seller_df, "6_12_iPh8PlCase_Clean_Col_Sell.csv")
 
