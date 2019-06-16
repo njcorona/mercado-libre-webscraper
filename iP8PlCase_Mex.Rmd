@@ -246,7 +246,7 @@ df <- NULL
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
 seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-# seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
+#seq <- seq(1, 601, 20) # REMOVE TO COMPLETE
 max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
@@ -441,12 +441,21 @@ seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, f
 units_of_time_operating_values <- seller_df$units_of_time_operating[!duplicated(seller_df$units_of_time_operating)]
 seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { return ( if (is.na(x)) { which(is.na(units_of_time_operating_values)) } else { which(x == units_of_time_operating_values) }) })
 
-
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
 seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][6] })
 seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
+
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+}
+
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$timeframe_of_amt_sold <- "meses"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$units_timeframe_of_amt_sold <- 1
+}
 
 timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
