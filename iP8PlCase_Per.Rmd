@@ -19,6 +19,7 @@ suppressWarnings(suppressMessages(library(future)))
 ### Links for iPhone8+ cases, Peru, including the first 50
 
 ```{r scrape_links}
+date <- "6_18_"
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
@@ -345,7 +346,7 @@ df <- df[, which(df2 == TRUE)]
 
 backup_df <- df
 
-write_csv(df, "6_12_iPh8PlCase_Raw_Per_Prod.csv")
+write_csv(df, date %>% paste("iPh8PlCase_Prod_Per_Raw.csv", sep = ""))
 ```
 
 ### Collect seller info.
@@ -412,7 +413,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, "6_12_iPh8PlCase_Raw_Per_Sell.csv")
+write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per_Raw.csv", sep = ""))
 ```
 
 ### Cleaning the data.
@@ -519,8 +520,8 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
-write_csv(df, "6_12_iPh8PlCase_Clean_Per_Prod.csv")
-write_csv(seller_df, "6_12_iPh8PlCase_Clean_Per_Sell.csv")
+write_csv(df, date %>% paste("iPh8PlCase_Prod_Per.csv", sep = ""))
+write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)

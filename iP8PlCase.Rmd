@@ -16,7 +16,7 @@ suppressWarnings(suppressMessages(library(future)))
 ```
 
 ```{r}
-date <- "6_16_"
+date <- "6_18_"
 arg_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Bra.csv", sep = ""), col_names = TRUE)
 chi_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Chi.csv", sep = ""), col_names = TRUE)
@@ -32,47 +32,133 @@ chi_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Chi.csv", sep = ""), col_names
 # per_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""), col_names = TRUE)
 # uru_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_p$country <- "ARG"
-bra_p$country <- "BRA"
-chi_p$country <- "CHI"
-# col_p$country <- "COL"
-# mex_p$country <- "MEX"
-# per_p$country <- "PER"
-# uru_p$country <- "URU"
-arg_s$country <- "ARG"
-bra_s$country <- "BRA"
-chi_s$country <- "CHI"
-# col_s$country <- "COL"
-# mex_s$country <- "MEX"
-# per_s$country <- "PER"
-# uru_s$country <- "URU"
+arg_p <- cbind(country = "ARG", arg_p)
+bra_p <- cbind(country = "BRA", bra_p)
+chi_p <- cbind(country = "CHI", chi_p)
+# col_p <- cbind(country = "COL", col_p)
+# mex_p <- cbind(country = "MEX", mex_p)
+# per_p <- cbind(country = "PER", per_p)
+# uru_p <- cbind(country = "URU", uru_p)
+arg_s <- cbind(country = "ARG", arg_s)
+bra_s <- cbind(country = "BRA", bra_s)
+chi_s <- cbind(country = "CHI", chi_s)
+# col_s <- cbind(country = "COL", col_s)
+# mex_s <- cbind(country = "MEX", mex_s)
+# per_s <- cbind(country = "PER", per_s)
+# uru_s <- cbind(country = "URU", uru_s)
+
+# Backp - delete if above works.
+# arg_p$country <- "ARG" 
+# bra_p$country <- "BRA"
+# chi_p$country <- "CHI"
+# # col_p$country <- "COL"
+# # mex_p$country <- "MEX"
+# # per_p$country <- "PER"
+# # uru_p$country <- "URU"
+# arg_s$country <- "ARG"
+# bra_s$country <- "BRA"
+# chi_s$country <- "CHI"
+# # col_s$country <- "COL"
+# # mex_s$country <- "MEX"
+# # per_s$country <- "PER"
+# # uru_s$country <- "URU"
+
+arg_p$country <- as.character(arg_p$country)
+bra_p$country <- as.character(bra_p$country)
+chi_p$country <- as.character(chi_p$country)
+arg_s$country <- as.character(arg_s$country)
+bra_s$country <- as.character(bra_s$country)
+chi_s$country <- as.character(chi_s$country)
+
+arg_p$num_installments <- as.character(arg_p$num_installments)
+bra_p$num_installments <- as.character(bra_p$num_installments)
+chi_p$num_installments <- as.character(chi_p$num_installments)
 
 prod <- bind_rows(arg_p, bra_p, chi_p)#, col_p, mex_p, per_p, uru_p)
 sell <- bind_rows(arg_s, bra_s, chi_s)#, col_s, mex_s, per_s, uru_s)
 
+# Names are reversed.  Here they are unreversed.
+stored_units_timeframe_of_amt_sold <- sell$units_timeframe_of_amt_sold
+sell$units_timeframe_of_amt_sold <- sell$timeframe_of_amt_sold
+sell$timeframe_of_amt_sold <- stored_units_timeframe_of_amt_sold
+
+# Combining plural/singuler/Spanish/Portuguese words.
+sell$units_of_time_operating[which(sell$units_of_time_operating == "ano")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "anos")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "año")] <- "años"
+
+sell$units_of_time_operating[which(sell$units_of_time_operating == "mês")] <- "meses"
+
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
+
+prod$arrival_time[which(prod$arrival_time == "Envio")] <- "Envío"
+prod$arrival_time[which(prod$arrival_time == "Envio para todo o país")] <- "Envío a todo el país"
+
+prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
+
+prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devolución gratis"
+
+prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
+
+# Converting to integers.
 units_of_time_operating_values <- sell$units_of_time_operating[!duplicated(sell$units_of_time_operating)]
-sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { which(is.na(units_of_time_operating_values)) } else { which(x == units_of_time_operating_values) }) })
-# Here
-timeframe_of_amt_sold_values <- sell$timeframe_of_amt_sold[!duplicated(sell$timeframe_of_amt_sold)]
-sell$timeframe_of_amt_sold <- sapply(sell$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
+units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of_time_operating_values)]
+
+sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
+
+# units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
+# units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
+
+sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
 arrival_time_values <- prod$arrival_time[!duplicated(prod$arrival_time)]
-prod$arrival_time <- sapply(prod$arrival_time, function(x) { return ( if (is.na(x)) { which(is.na(arrival_time_values)) } else { which(x == arrival_time_values) }) })
+arrival_time_values <- arrival_time_values[!is.na(arrival_time_values)]
+
+prod$arrival_time <- sapply(prod$arrival_time, function(x) { return ( if (is.na(x)) { NA } else { which(x == arrival_time_values) }) })
 
 shipping_values <- prod$shipping[!duplicated(prod$shipping)]
-prod$shipping <- sapply(prod$shipping, function(x) { return ( if (is.na(x)) { which(is.na(shipping_values)) } else { which(x == shipping_values) }) })
+shipping_values <- shipping_values[!is.na(shipping_values)]
+
+prod$shipping <- sapply(prod$shipping, function(x) { return ( if (is.na(x)) { NA } else { which(x == shipping_values) }) })
 
 free_return_values <- prod$free_return[!duplicated(prod$free_return)]
-prod$free_return <- sapply(prod$free_return, function(x) { return ( if (is.na(x)) { which(is.na(free_return_values)) } else { which(x == free_return_values) }) })
+free_return_values <- free_return_values[!is.na(free_return_values)]
+
+prod$free_return <- sapply(prod$free_return, function(x) { return ( if (is.na(x)) { NA } else { which(x == free_return_values) }) })
 
 free_return_info_values <- prod$free_return_info[!duplicated(prod$free_return_info)]
-prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
+free_return_info_values <- free_return_info_values[!is.na(free_return_info_values)]
 
+prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if (is.na(x)) { NA } else { which(x == free_return_info_values) }) })
+
+# Combining characteristics with different names.
+prod$`Marca de la Funda`[which(prod$country == "BRA")] <- prod$`Marca da Capa`[which(prod$country == "BRA")]
+prod$`Marca de la Funda`[which(prod$country == "CHI")] <- prod$Marca[which(prod$country == "CHI")]
+
+prod$`Marca del Celular`[which(prod$country == "BRA")] <- prod$`Marca de Celular`[which(prod$country == "BRA")]
+
+prod$`Modelo del Celular`[which(prod$country == "BRA")] <- prod$`Modelo de Celular`[which(prod$country == "BRA")]
+prod$`Modelo del Celular`[which(prod$country == "CHI")] <- prod$`Modelo`[which(prod$country == "CHI")]
+
+prod$`Modelo de la Funda`[which(prod$country == "BRA")] <- prod$`Modelo da Capa`[which(prod$country == "BRA")]
+
+prod$`Tipo de funda`[which(prod$country == "BRA")] <- prod$`Tipo de capa`[which(prod$country == "BRA")]
+
+prod$`Marca da Capa` <- NULL
+prod$Marca <- NULL
+prod$`Marca de Celular` <- NULL
+prod$`Modelo de Celular` <- NULL
+prod$`Modelo` <- NULL
+prod$`Modelo da Capa` <- NULL
+prod$`Tipo de capa` <- NULL
+
+
+date <- "6_18_"
 write_csv(prod, date %>% paste("iPh8PlCase_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("iPh8PlCase_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
-list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
+list <- list(units_of_time_operating_values, units_timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
 max <- max( sapply(list, function(x) { length(x) }) )
 list <- lapply(list, function(x) {
   if (length(x) < max) {
@@ -85,7 +171,7 @@ list <- lapply(list, function(x) {
   
 })
 
-data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
+data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
 write_csv(data_legend, date %>% paste("iPh8PlCase_Legend.csv", sep = ""))
 
 ```
