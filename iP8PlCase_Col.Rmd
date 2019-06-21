@@ -133,11 +133,14 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
-      in_stock <- "1"
+    
+    if (length(in_stock) != 0) { # == may happen if item is put on "Publicacion pausada" status.
+      if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
+        in_stock <- "1"
+      }
     }
   }
 
@@ -348,7 +351,7 @@ write_csv(df, date %>% paste("iPh8PlCase_Prod_Col_Raw.csv", sep = ""))
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-list_of_seller_links <- list_of_seller_links[which(list_of_seller_links != "https://perfil.mercadolibre.com.co/PHONETIFYTIENDAONLINE")]
+# list_of_seller_links <- list_of_seller_links[which(list_of_seller_links != "https://perfil.mercadolibre.com.co/PHONETIFYTIENDAONLINE")]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 
@@ -403,15 +406,17 @@ write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Col_Raw.csv", sep = ""))
 
 ### Cleaning the data.
 ```{r}
+df <- backup_df
+seller_df <- backup_seller_df
+
 # Extracts number from "(### disponibles)"
 df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
-
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
 seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { strsplit(x, " ")[[1]][2] })
-units_of_time_operating_values <- seller_df$units_of_time_operating[!duplicated(seller_df$units_of_time_operating)]
-seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { return ( if (is.na(x)) { which(is.na(units_of_time_operating_values)) } else { which(x == units_of_time_operating_values) }) })
+# units_of_time_operating_values <- seller_df$units_of_time_operating[!duplicated(seller_df$units_of_time_operating)]
+# seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { return ( if (is.na(x)) { which(is.na(units_of_time_operating_values)) } else { which(x == units_of_time_operating_values) }) })
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
@@ -429,8 +434,8 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0)
     seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$units_timeframe_of_amt_sold <- 1
 }
 
-timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
-seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
+# timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
+# seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
 
 df$num_installments <- sapply(df$num_installments, function(x) { return((gsub("[\t\n$]", "", x) %>% str_extract_all("[0-9]* cuotas"))[[1]][1]) })
 
@@ -455,17 +460,17 @@ seller_df$num_pos_reviews <- sapply(seller_df$num_pos_reviews, function(x) { as.
 seller_df$num_neutral_reviews <- sapply(seller_df$num_neutral_reviews, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 
 # Converts string fields to integer identifiers.  For example, all products with "llega manana" are assigned a 1 instead of "llega manana".
-arrival_time_values <- df$arrival_time[!duplicated(df$arrival_time)]
-df$arrival_time <- sapply(df$arrival_time, function(x) { return ( if (is.na(x)) { which(is.na(arrival_time_values)) } else { which(x == arrival_time_values) }) })
-
-shipping_values <- df$shipping[!duplicated(df$shipping)]
-df$shipping <- sapply(df$shipping, function(x) { return ( if (is.na(x)) { which(is.na(shipping_values)) } else { which(x == shipping_values) }) })
-
-free_return_values <- df$free_return[!duplicated(df$free_return)]
-df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { which(is.na(free_return_values)) } else { which(x == free_return_values) }) })
-
-free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
-df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
+# arrival_time_values <- df$arrival_time[!duplicated(df$arrival_time)]
+# df$arrival_time <- sapply(df$arrival_time, function(x) { return ( if (is.na(x)) { which(is.na(arrival_time_values)) } else { which(x == arrival_time_values) }) })
+# 
+# shipping_values <- df$shipping[!duplicated(df$shipping)]
+# df$shipping <- sapply(df$shipping, function(x) { return ( if (is.na(x)) { which(is.na(shipping_values)) } else { which(x == shipping_values) }) })
+# 
+# free_return_values <- df$free_return[!duplicated(df$free_return)]
+# df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { which(is.na(free_return_values)) } else { which(x == free_return_values) }) })
+# 
+# free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
+# df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
 df$review_avg <- as.numeric(df$review_avg)
 df$num_reviews <- as.numeric(df$num_reviews)
@@ -511,21 +516,21 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 write_csv(df, date %>% paste("iPh8PlCase_Prod_Col.csv", sep = ""))
 write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Col.csv", sep = ""))
 
-# I may want to remove this particular bit of cleaning until I bring all of the countries together.
-list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
-max <- max( sapply(list, function(x) { length(x) }) )
-list <- lapply(list, function(x) {
-  if (length(x) < max) {
-    orig_l <- length(x)
-    x <- rep(x, length.out = max)
-    x[c((orig_l + 1):max)] <- "" # As opposed to " ".
-    return (x)
-  }
-  return (x)
-})
-
-data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-write_csv(data_legend, "6_16_iPh8PlCase_Legend_Col.csv")
+# # I may want to remove this particular bit of cleaning until I bring all of the countries together.
+# list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
+# max <- max( sapply(list, function(x) { length(x) }) )
+# list <- lapply(list, function(x) {
+#   if (length(x) < max) {
+#     orig_l <- length(x)
+#     x <- rep(x, length.out = max)
+#     x[c((orig_l + 1):max)] <- "" # As opposed to " ".
+#     return (x)
+#   }
+#   return (x)
+# })
+# 
+# data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
+# write_csv(data_legend, "6_16_iPh8PlCase_Legend_Col.csv")
 ```
 
 ### Quick reset for convenience

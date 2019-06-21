@@ -236,9 +236,9 @@ df <- NULL
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
-#seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-seq <- seq(1, 201, 20) # REMOVE TO COMPLETE
-#max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
+seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
+# seq <- seq(1, 201, 20) # REMOVE TO COMPLETE
+max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
 for (i in seq) {
@@ -308,10 +308,10 @@ for (i in seq) {
        list_of_dfs[[i + 19]] <- value(future19)
 }
   
-# for (i in max:length(links$curr_item.1.length.curr_url..)) {
-#    test <- links$curr_url.1.length.curr_url..[i]
-#    list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], links$curr_item.1.length.curr_url..[i])
-# }  # PUT BACK IN TO COMPLETE
+for (i in max:length(links$curr_item.1.length.curr_url..)) {
+   test <- links$curr_url.1.length.curr_url..[i]
+   list_of_dfs[[i]] <- scrapeNodes(test, links$index[i], links$curr_item.1.length.curr_url..[i])
+}  # PUT BACK IN TO COMPLETE
 
 # This takes all of our individual rows and combines them into one large dataframe.
 df <- bind_rows(list_of_dfs)
@@ -513,6 +513,8 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 18] <- 1
 df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
+
+df$amt_installments <- NA  # The scraper for these is dragging up other nodes that do not signify the amount paid per installment.
 
 write_csv(df, date %>% paste("iPh8PlCase_Prod_Arg.csv", sep = ""))
 write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Arg.csv", sep = ""))
