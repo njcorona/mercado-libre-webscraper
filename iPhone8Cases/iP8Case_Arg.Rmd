@@ -1,5 +1,5 @@
 ---
-title: "iP8PlCase_Arg"
+title: "iP8Case_Arg"
 author: "NicolasCorona"
 date: "5/27/2019"
 output: html_document
@@ -16,14 +16,14 @@ suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
 ```
 
-### Links for iPhone8+ cases, Argentina, including the first 50
+### Links for iPhone8 cases, Argentina, including the first 50
 
 ```{r scrape_links}
-date <- "6_18_"
+date <- "6_22_"
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone8-plus-funda_ItemTypeID_N"
+url <- "https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_ItemTypeID_N"
 
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
@@ -56,11 +56,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -344,7 +344,7 @@ df <- df[, which(df2 == TRUE)]
 
 backup_df <- df
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Arg_Raw.csv", sep = ""))
+write_csv(df, date %>% paste("iPh8Case_Prod_Arg_Raw.csv", sep = ""))
 ```
 
 ### Collect seller info.
@@ -402,7 +402,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Arg_Raw.csv", sep = ""))
+write_csv(seller_df, date %>% paste("iPh8Case_Sell_Arg_Raw.csv", sep = ""))
 ```
 
 ### Cleaning the data.
@@ -516,8 +516,8 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
 df$amt_installments <- NA  # The scraper for these is dragging up other nodes that do not signify the amount paid per installment.
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Arg.csv", sep = ""))
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Arg.csv", sep = ""))
+write_csv(df, date %>% paste("iPh8Case_Prod_Arg.csv", sep = ""))
+write_csv(seller_df, date %>% paste("iPh8Case_Sell_Arg.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 #list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -534,6 +534,6 @@ write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Arg.csv", sep = ""))
 #})
 
 #data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-#write_csv(data_legend, "6_16_iPh8PlCase_Legend_Arg.csv")
+#write_csv(data_legend, "6_16_iPh8Case_Legend_Arg.csv")
 ```
 
