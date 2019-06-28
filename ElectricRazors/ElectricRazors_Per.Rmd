@@ -418,6 +418,9 @@ write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Per_Raw.csv", sep = "")
 
 ### Cleaning the data.
 ```{r}
+df <- backup_df
+seller_df <- backup_seller_df
+
 # Extracts number from "(### disponibles)"
 df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 
@@ -451,8 +454,10 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0)
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (t == "Nuevo") {
-     return(0)
+   if (!is.na(t)) {
+     if (t == "Nuevo") {
+       return(0)
+     }
    }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
