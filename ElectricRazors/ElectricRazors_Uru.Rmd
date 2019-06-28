@@ -32,7 +32,7 @@ url <- "https://listado.mercadolibre.com.uy/rasuradora-electrica_ItemTypeID_N_No
 
 num_products_to_scrape <- read_html(url) %>% html_nodes(".quantity-results") %>% html_text() # Gets node value of the quantity of search results.
 num_products_to_scrape <- as.numeric(paste(str_extract_all(num_products_to_scrape, "[0-9]+")[[1]], collapse = '')) # Extracts integer.
-num_products_to_scrape <- if (num_products_to_scrape >= 1151) { 22 } else { min(floor(num_products_to_scrape / 50) * 50 + 1, 22) } # Sets to correct value.  We assume there will be greater than 50 search results.  If there are greater than 2000sx search results, this is set to 2001.  Otherwise, it's set to the greatest possible number of links we can scrape given the number of search results provided.
+num_products_to_scrape <- if (num_products_to_scrape >= 1151) { 22 } else { min(floor(num_products_to_scrape / 50), 22) } # Sets to correct value.  We assume there will be greater than 50 search results.  If there are greater than 2000sx search results, this is set to 2001.  Otherwise, it's set to the greatest possible number of links we can scrape given the number of search results provided.
 
 curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
