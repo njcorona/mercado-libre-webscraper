@@ -366,6 +366,9 @@ for (i in 1:length(list_of_seller_links)) {
   link <- list_of_seller_links[i]
   read_html <- read_html(as.character(link))
   seller_name <- get_html_text(read_html, "#store-info__name")
+  if (length(seller_name) == 0) {
+    seller_name <- get_html_text(read_html, "#brand")
+  }
   time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description .data-level__number")
   units_of_time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description > span")
   

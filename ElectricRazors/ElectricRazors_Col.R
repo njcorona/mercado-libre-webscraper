@@ -1,11 +1,11 @@
----
-title: "iP8PlCase_Per"
-author: "NicolasCorona"
-date: "5/27/2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
+#' ---
+#' title: "ElectricRazors_Col"
+#' author: "NicolasCorona"
+#' date: "6/4/2019"
+#' output: html_document
+#' ---
+#' 
+## ----setup, include=FALSE------------------------------------------------
 # This code loads in the libraries of code I am using when I write this code.  For example, rvest and httr are the two libraries I use to identify parts of a website and scrape data from the website.  
 knitr::opts_chunk$set(echo = TRUE)
 suppressWarnings(suppressMessages(library(tidyverse)))
@@ -14,16 +14,16 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-```
 
-### Links for iPhone8+ cases, Peru, including the first 50
-
-```{r scrape_links}
-date <- "6_18_"
+#' 
+#' ### Links for electric razors, Colombia, including the first 50
+#' 
+## ----scrape_links--------------------------------------------------------
+date <- "6_23_"
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://listado.mercadolibre.com.pe/iphone8-plus-funda_ItemTypeID_N"
+url <- "https://listado.mercadolibre.com.co/salud-belleza/rasuradora-electrica_ItemTypeID_N"
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
 # html_text() takes in a part of an html code and returns any text data (words) associated with it. 
@@ -55,11 +55,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://listado.mercadolibre.com.pe/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.co/salud-belleza/rasuradora-electrica_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.pe/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.co/salud-belleza/rasuradora-electrica_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -78,9 +78,9 @@ for (i in 1:num_products_to_scrape) {
   links <- rbind(links, df)
   counter <- counter + length(curr_url)
 }
-```
 
-```{r}
+#' 
+## ------------------------------------------------------------------------
 # This function takes in a part of a website and returns the text at that location.
 get_html_text <- function(read_html, node_html) {
   read_html %>% html_nodes(node_html) %>% html_text()
@@ -133,20 +133,24 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
-      in_stock <- "1"
+    
+    if (length(in_stock) != 0) { # == may happen if item is put on "Publicacion pausada" status.
+      if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
+        in_stock <- "1"
+      }
     }
   }
 
-  num_installments <- get_html_text(read_html, ".highlight-info strong")
+  num_installments <- get_html_text(read_html, ".payment-installments")
+  
   if (length(num_installments) == 0) {
-    num_installments <- get_html_text(read_html, ".message-no-interest")
+    num_installments <- get_html_text(read_html, ".free-installments")
   }
   
-  # Usually NA for Peru
+  # Usually NA for Colombia.
   amt_installments <- get_html_text(read_html, "strong sup")
   
   arrival_time <- get_html_text(read_html, ".black")
@@ -164,13 +168,6 @@ scrapeNodes <- function(test, search_position, name) {
 
   # I use this seller_link in the future to extract the seller information associated with this product.
   seller_link <- get_html_attr_href(read_html, ".card-block-link")
-  
-  if (length(seller_link) == 0) {
-    seller_link <- get_html_attr_href(read_html, ".vip-section-seller-info .ui-view-more__link")
-    seller_link <- paste("https://articulo.mercadolibre.com.pe", seller_link, sep = "")
-    seller_link <- get_html_attr_href(read_html(as.character(seller_link)), ".feedback-profile-link a")
-  }
-  
   item_id <- get_html_text(read_html, ".item-info__id-number")
   
   
@@ -227,12 +224,12 @@ scrapeNodes <- function(test, search_position, name) {
   df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
-```
 
-
-### For each of the links, scrape info.
-
-```{r scrape_from_links}
+#' 
+#' 
+#' ### For each of the links, scrape info.
+#' 
+## ----scrape_from_links---------------------------------------------------
 df <- NULL
 
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
@@ -346,15 +343,15 @@ df <- df[, which(df2 == TRUE)]
 
 backup_df <- df
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Per_Raw.csv", sep = ""))
-```
+write_csv(df, date %>% paste("ElectricRazors_Prod_Col_Raw.csv", sep = ""))
 
-### Collect seller info.
-```{r}
+#' 
+#' ### Collect seller info.
+## ------------------------------------------------------------------------
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
+# list_of_seller_links <- list_of_seller_links[which(list_of_seller_links != "https://perfil.mercadolibre.com.co/PHONETIFYTIENDAONLINE")]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 
@@ -362,23 +359,25 @@ seller_df <- NULL
 for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
+  invalid <- tryCatch(read_html(as.character(link)), error = function(e) {
+    print(link)
+    return(NULL)
+  })
+  if (is.null(invalid)) { next }
   read_html <- read_html(as.character(link))
+  if (length(get_html_text(read_html, ".ui-empty-state__title")) > 0) {
+    if (get_html_text(read_html, ".ui-empty-state__title") == "¡Ups! hubo un error") { 
+      print("break")
+      break
+    }
+  }
   seller_name <- get_html_text(read_html, "#store-info__name")
   if (length(seller_name) == 0) {
     seller_name <- get_html_text(read_html, "#brand")
   }
-  time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description .data-level__number")
-  units_of_time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description > span")
-  
-  if (length(time_operating) > 0) {
-      # If there are four descriptors, the time operating becomes the fourth descriptor.
-      if (time_operating[1] == "Vendedor destacado") {
-      time_operating <- get_html_text(read_html, ".data-level__description:nth-child(4) .data-level__number")
-      units_of_time_operating <- get_html_text(read_html, ".data-level__description:nth-child(4) > span")
-      }
-  }
-  
-  amt_sold <- get_html_text(read_html, ".data-level__description:nth-child(2) .data-level__number")
+  time_operating <- get_html_text(read_html, ".experience span span")
+  units_of_time_operating <- get_html_text(read_html, ".experience > span")
+  amt_sold <- get_html_text(read_html, ".seller-info__subtitle-sales span span:nth-child(1)")
   timeframe_of_amt_sold <- get_html_text(read_html, ".seller-info__subtitle-sales > span")
   leader_status <- get_html_text(read_html, ".leader-status__icon")
   top_descriptors <- get_html_text(read_html, "h2")
@@ -416,14 +415,16 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per_Raw.csv", sep = ""))
-```
+write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Col_Raw.csv", sep = ""))
 
-### Cleaning the data.
-```{r}
+#' 
+#' ### Cleaning the data.
+## ------------------------------------------------------------------------
+df <- backup_df
+seller_df <- backup_seller_df
+
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
-
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
@@ -431,12 +432,11 @@ seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, f
 # units_of_time_operating_values <- seller_df$units_of_time_operating[!duplicated(seller_df$units_of_time_operating)]
 # seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { return ( if (is.na(x)) { which(is.na(units_of_time_operating_values)) } else { which(x == units_of_time_operating_values) }) })
 
-
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
-seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { if (is.na(x)) { return(x) } else { strsplit(x, " ")[[1]][6] } })
-# seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { if (is.na(x)) { return(x) } else { strsplit(x, " ")[[1]][1] } })
-seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { if (is.na(x)) { return(x) } else { strsplit(x, " ")[[1]][7] } })
+seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][6] })
+seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
+seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
     seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
@@ -451,11 +451,17 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0)
 # timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
 # seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
 
+df$num_installments <- sapply(df$num_installments, function(x) { return((gsub("[\t\n$]", "", x) %>% str_extract_all("[0-9]* cuotas"))[[1]][1]) })
+
+df$amt_installments <- sapply(df$num_installments, function(x) { return((gsub("[\t\n$]", "", x) %>% strsplit(" "))[[1]][4]) })
+
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (t == "Nuevo") {
-     return(0)
+   if (!is.na(t)) {
+     if (t == "Nuevo") {
+       return(0)
+     }
    }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
@@ -523,23 +529,34 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Per.csv", sep = ""))
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""))
+# Identify numbers with two periods.
+df$curr_price <- sapply(df$curr_price, function(x) {
+  if (str_count(x, "[\\.]") == 2) {
+    return(str_replace(x, "[\\.]", ""))
+  } else {
+    return(x)
+  }
+})
 
-# # I may want to remove this particular bit of cleaning until I bring all of the countries together.
-# list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
-# max <- max( sapply(list, function(x) { length(x) }) )
-# list <- lapply(list, function(x) {
-#   if (length(x) < max) {
-#     orig_l <- length(x)
-#     x <- rep(x, length.out = max)
-#     x[c((orig_l + 1):max)] <- "" # As opposed to " ".
-#     return (x)
-#   }
-#   return (x)
-# })
-# 
-# data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-# write_csv(data_legend, "6_12_iPh8PlCase_Legend_Per.csv")
-```
+df$curr_price <- as.numeric(df$curr_price)
+
+df$orig_price <- sapply(df$orig_price, function(x) {
+  if (is.na(x)) { return(x) }
+  if (str_count(x, "[\\.]") == 2) {
+    return(str_replace(x, "[\\.]", ""))
+  } else {
+    return(x)
+  }
+})
+
+df$orig_price <- as.numeric(df$orig_price)
+
+write_csv(df, date %>% paste("ElectricRazors_Prod_Col.csv", sep = ""))
+write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Col.csv", sep = ""))
+
+#' 
+#' ### Quick reset for convenience
+## ------------------------------------------------------------------------
+df <- backup_df
+seller_df <- backup_seller_df
 

@@ -1,11 +1,11 @@
----
-title: "iP8PlCase_Per"
-author: "NicolasCorona"
-date: "5/27/2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
+#' ---
+#' title: "iP8PlCase_Per"
+#' author: "NicolasCorona"
+#' date: "5/27/2019"
+#' output: html_document
+#' ---
+#' 
+## ----setup, include=FALSE------------------------------------------------
 # This code loads in the libraries of code I am using when I write this code.  For example, rvest and httr are the two libraries I use to identify parts of a website and scrape data from the website.  
 knitr::opts_chunk$set(echo = TRUE)
 suppressWarnings(suppressMessages(library(tidyverse)))
@@ -14,11 +14,11 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-```
 
-### Links for iPhone8+ cases, Peru, including the first 50
-
-```{r scrape_links}
+#' 
+#' ### Links for iPhone8+ cases, Peru, including the first 50
+#' 
+## ----scrape_links--------------------------------------------------------
 date <- "6_18_"
 links <- data.frame()
 
@@ -78,9 +78,9 @@ for (i in 1:num_products_to_scrape) {
   links <- rbind(links, df)
   counter <- counter + length(curr_url)
 }
-```
 
-```{r}
+#' 
+## ------------------------------------------------------------------------
 # This function takes in a part of a website and returns the text at that location.
 get_html_text <- function(read_html, node_html) {
   read_html %>% html_nodes(node_html) %>% html_text()
@@ -227,12 +227,12 @@ scrapeNodes <- function(test, search_position, name) {
   df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
-```
 
-
-### For each of the links, scrape info.
-
-```{r scrape_from_links}
+#' 
+#' 
+#' ### For each of the links, scrape info.
+#' 
+## ----scrape_from_links---------------------------------------------------
 df <- NULL
 
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
@@ -347,10 +347,10 @@ df <- df[, which(df2 == TRUE)]
 backup_df <- df
 
 write_csv(df, date %>% paste("iPh8PlCase_Prod_Per_Raw.csv", sep = ""))
-```
 
-### Collect seller info.
-```{r}
+#' 
+#' ### Collect seller info.
+## ------------------------------------------------------------------------
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
@@ -364,9 +364,6 @@ for (i in 1:length(list_of_seller_links)) {
   link <- list_of_seller_links[i]
   read_html <- read_html(as.character(link))
   seller_name <- get_html_text(read_html, "#store-info__name")
-  if (length(seller_name) == 0) {
-    seller_name <- get_html_text(read_html, "#brand")
-  }
   time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description .data-level__number")
   units_of_time_operating <- get_html_text(read_html, ".data-level__description~ .data-level__description+ .data-level__description > span")
   
@@ -417,10 +414,10 @@ for (i in 1:length(list_of_seller_links)) {
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
 write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per_Raw.csv", sep = ""))
-```
 
-### Cleaning the data.
-```{r}
+#' 
+#' ### Cleaning the data.
+## ------------------------------------------------------------------------
 # Extracts number from "(### disponibles)"
 df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 
@@ -541,5 +538,5 @@ write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""))
 # 
 # data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
 # write_csv(data_legend, "6_12_iPh8PlCase_Legend_Per.csv")
-```
 
+#' 

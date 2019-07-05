@@ -1,11 +1,11 @@
----
-title: "iP8PlCase_Per"
-author: "NicolasCorona"
-date: "5/27/2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
+#' ---
+#' title: "ElectricRazors_Per"
+#' author: "NicolasCorona"
+#' date: "5/27/2019"
+#' output: html_document
+#' ---
+#' 
+## ----setup, include=FALSE------------------------------------------------
 # This code loads in the libraries of code I am using when I write this code.  For example, rvest and httr are the two libraries I use to identify parts of a website and scrape data from the website.  
 knitr::opts_chunk$set(echo = TRUE)
 suppressWarnings(suppressMessages(library(tidyverse)))
@@ -14,16 +14,16 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-```
 
-### Links for iPhone8+ cases, Peru, including the first 50
-
-```{r scrape_links}
-date <- "6_18_"
+#' 
+#' ### Links for electric razors, Peru, including the first 50
+#' 
+## ----scrape_links--------------------------------------------------------
+date <- "6_23_"
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://listado.mercadolibre.com.pe/iphone8-plus-funda_ItemTypeID_N"
+url <- "https://listado.mercadolibre.com.pe/afeitadora-electrica_ItemTypeID_N"
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
 # html_text() takes in a part of an html code and returns any text data (words) associated with it. 
@@ -55,11 +55,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://listado.mercadolibre.com.pe/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.pe/afeitadora-electrica_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.pe/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.pe/afeitadora-electrica_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -78,9 +78,9 @@ for (i in 1:num_products_to_scrape) {
   links <- rbind(links, df)
   counter <- counter + length(curr_url)
 }
-```
 
-```{r}
+#' 
+## ------------------------------------------------------------------------
 # This function takes in a part of a website and returns the text at that location.
 get_html_text <- function(read_html, node_html) {
   read_html %>% html_nodes(node_html) %>% html_text()
@@ -227,12 +227,12 @@ scrapeNodes <- function(test, search_position, name) {
   df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
-```
 
-
-### For each of the links, scrape info.
-
-```{r scrape_from_links}
+#' 
+#' 
+#' ### For each of the links, scrape info.
+#' 
+## ----scrape_from_links---------------------------------------------------
 df <- NULL
 
 # This loops over the first X links we've collected, one by one, and strips the desired information from them.
@@ -346,11 +346,11 @@ df <- df[, which(df2 == TRUE)]
 
 backup_df <- df
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Per_Raw.csv", sep = ""))
-```
+write_csv(df, date %>% paste("ElectricRazors_Prod_Per_Raw.csv", sep = ""))
 
-### Collect seller info.
-```{r}
+#' 
+#' ### Collect seller info.
+## ------------------------------------------------------------------------
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
@@ -416,11 +416,14 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per_Raw.csv", sep = ""))
-```
+write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Per_Raw.csv", sep = ""))
 
-### Cleaning the data.
-```{r}
+#' 
+#' ### Cleaning the data.
+## ------------------------------------------------------------------------
+df <- backup_df
+seller_df <- backup_seller_df
+
 # Extracts number from "(### disponibles)"
 df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 
@@ -454,8 +457,10 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0)
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (t == "Nuevo") {
-     return(0)
+   if (!is.na(t)) {
+     if (t == "Nuevo") {
+       return(0)
+     }
    }
    return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
@@ -523,8 +528,8 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
-write_csv(df, date %>% paste("iPh8PlCase_Prod_Per.csv", sep = ""))
-write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""))
+write_csv(df, date %>% paste("ElectricRazors_Prod_Per.csv", sep = ""))
+write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Per.csv", sep = ""))
 
 # # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 # list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -540,6 +545,6 @@ write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""))
 # })
 # 
 # data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-# write_csv(data_legend, "6_12_iPh8PlCase_Legend_Per.csv")
-```
+# write_csv(data_legend, "6_12_ElectricRazors_Legend_Per.csv")
 
+#' 

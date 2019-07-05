@@ -550,6 +550,10 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
+# If units are days, then the number of items sold in some timeframe is displayed in Spanish, so the unit is displayed differently than in Portuguese.
+seller_df$timeframe_of_amt_sold[which(seller_df$units_of_time_operating == "dias")] <- "dias"
+seller_df$units_timeframe_of_amt_sold[which(seller_df$units_of_time_operating == "dias")] <- seller_df$time_operating[which(seller_df$units_of_time_operating == "dias")]
+
 write_csv(df, date %>% paste("ElectricRazors_Prod_Bra.csv", sep = ""))
 write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Bra.csv", sep = ""))
 

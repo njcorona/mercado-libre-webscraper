@@ -1,11 +1,11 @@
----
-title: "ElectricRazors"
-author: "NicolasCorona"
-date: "6/16/2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
+#' ---
+#' title: "ElectricRazors"
+#' author: "NicolasCorona"
+#' date: "6/16/2019"
+#' output: html_document
+#' ---
+#' 
+## ----setup, include=FALSE------------------------------------------------
 knitr::opts_chunk$set(echo = TRUE)
 suppressWarnings(suppressMessages(library(tidyverse)))
 suppressWarnings(suppressMessages(library(httr)))
@@ -13,9 +13,9 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-```
 
-```{r}
+#' 
+## ------------------------------------------------------------------------
 date <- "6_23_"
 arg_p <- read_csv(date %>% paste("ElectricRazors_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("ElectricRazors_Prod_Bra.csv", sep = ""), col_names = TRUE)
@@ -176,5 +176,5 @@ list <- lapply(list, function(x) {
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
 write_csv(data_legend, date %>% paste("ElectricRazors_Legend.csv", sep = ""))
 
-```
 
+#' 
