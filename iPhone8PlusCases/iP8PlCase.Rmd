@@ -113,6 +113,14 @@ prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devoluci�
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
 
+# Set seller amount sold timeframe values for Peru and Uruguay.
+sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
+
+sell$units_timeframe_of_amt_sold[which(sell$country == "URU")] <- sell$units_of_time_operating[which(sell$country == "URU")]
+
+sell$timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$time_operating[which(sell$country == "PER")]
+sell$timeframe_of_amt_sold[which(sell$country == "URU")] <- sell$time_operating[which(sell$country == "URU")]
+
 # Converting to integers.
 units_of_time_operating_values <- sell$units_of_time_operating[!duplicated(sell$units_of_time_operating)]
 units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of_time_operating_values)]

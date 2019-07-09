@@ -431,7 +431,6 @@ seller_df <- backup_seller_df
 # Extracts number from "(### disponibles)"
 df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 
-
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
 seller_df$units_of_time_operating <- sapply(seller_df$units_of_time_operating, function(x) { strsplit(x, " ")[[1]][2] })
