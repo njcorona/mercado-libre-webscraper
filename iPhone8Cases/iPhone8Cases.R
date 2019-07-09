@@ -1,5 +1,5 @@
 #' ---
-#' title: "iPh8PlCase"
+#' title: "iPh8Case"
 #' author: "NicolasCorona"
 #' date: "6/16/2019"
 #' output: html_document
@@ -16,22 +16,22 @@ suppressWarnings(suppressMessages(library(future)))
 
 #' 
 ## ------------------------------------------------------------------------
-date <- "6_18_"
-arg_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Arg.csv", sep = ""), col_names = TRUE)
-bra_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Bra.csv", sep = ""), col_names = TRUE)
-chi_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Chi.csv", sep = ""), col_names = TRUE)
-col_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Col.csv", sep = ""), col_names = TRUE)
-mex_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Mex.csv", sep = ""), col_names = TRUE)
-per_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Per.csv", sep = ""), col_names = TRUE)
-uru_p <- read_csv(date %>% paste("iPh8PlCase_Prod_Uru.csv", sep = ""), col_names = TRUE)
+date <- "6_22_"
+arg_p <- read_csv(date %>% paste("iPh8Case_Prod_Arg.csv", sep = ""), col_names = TRUE)
+bra_p <- read_csv(date %>% paste("iPh8Case_Prod_Bra.csv", sep = ""), col_names = TRUE)
+chi_p <- read_csv(date %>% paste("iPh8Case_Prod_Chi.csv", sep = ""), col_names = TRUE)
+col_p <- read_csv(date %>% paste("iPh8Case_Prod_Col.csv", sep = ""), col_names = TRUE)
+mex_p <- read_csv(date %>% paste("iPh8Case_Prod_Mex.csv", sep = ""), col_names = TRUE)
+per_p <- read_csv(date %>% paste("iPh8Case_Prod_Per.csv", sep = ""), col_names = TRUE)
+uru_p <- read_csv(date %>% paste("iPh8Case_Prod_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Arg.csv", sep = ""), col_names = TRUE)
-bra_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Bra.csv", sep = ""), col_names = TRUE)
-chi_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Chi.csv", sep = ""), col_names = TRUE)
-col_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Col.csv", sep = ""), col_names = TRUE)
-mex_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Mex.csv", sep = ""), col_names = TRUE)
-per_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Per.csv", sep = ""), col_names = TRUE)
-uru_s <- read_csv(date %>% paste("iPh8PlCase_Sell_Uru.csv", sep = ""), col_names = TRUE)
+arg_s <- read_csv(date %>% paste("iPh8Case_Sell_Arg.csv", sep = ""), col_names = TRUE)
+bra_s <- read_csv(date %>% paste("iPh8Case_Sell_Bra.csv", sep = ""), col_names = TRUE)
+chi_s <- read_csv(date %>% paste("iPh8Case_Sell_Chi.csv", sep = ""), col_names = TRUE)
+col_s <- read_csv(date %>% paste("iPh8Case_Sell_Col.csv", sep = ""), col_names = TRUE)
+mex_s <- read_csv(date %>% paste("iPh8Case_Sell_Mex.csv", sep = ""), col_names = TRUE)
+per_s <- read_csv(date %>% paste("iPh8Case_Sell_Per.csv", sep = ""), col_names = TRUE)
+uru_s <- read_csv(date %>% paste("iPh8Case_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
 arg_p <- cbind(country = "ARG", arg_p)
 bra_p <- cbind(country = "BRA", bra_p)
@@ -113,6 +113,14 @@ prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devoluci�
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
 
+# Set seller amount sold timeframe values for Peru and Uruguay.
+sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
+
+sell$units_timeframe_of_amt_sold[which(sell$country == "URU")] <- sell$units_of_time_operating[which(sell$country == "URU")]
+
+sell$timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$time_operating[which(sell$country == "PER")]
+sell$timeframe_of_amt_sold[which(sell$country == "URU")] <- sell$time_operating[which(sell$country == "URU")]
+
 # Converting to integers.
 units_of_time_operating_values <- sell$units_of_time_operating[!duplicated(sell$units_of_time_operating)]
 units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of_time_operating_values)]
@@ -167,6 +175,9 @@ prod$`Modelo de la Funda`[which(prod$country == "BRA")] <- prod$`Modelo da Capa`
 
 prod$`Tipo de funda`[which(prod$country == "BRA")] <- prod$`Tipo de capa`[which(prod$country == "BRA")]
 
+# Also check for iPh8PlCases
+prod$Material[which(prod$country == "ARG")] <- prod$`Material de la funda`[which(prod$country == "ARG")]
+
 prod$`Marca da Capa` <- NULL
 prod$Marca <- NULL
 prod$`Marca de Celular` <- NULL
@@ -175,10 +186,10 @@ prod$`Modelo de Celular` <- NULL
 prod$`Modelo` <- NULL
 prod$`Modelo da Capa` <- NULL
 prod$`Tipo de capa` <- NULL
+prod$`Material de la funda` <- NULL
 
-date <- "6_19_"
-write_csv(prod, date %>% paste("iPh8PlCase_Prod.csv", sep = ""))
-write_csv(sell, date %>% paste("iPh8PlCase_Sell.csv", sep = ""))
+write_csv(prod, date %>% paste("iPh8Case_Prod.csv", sep = ""))
+write_csv(sell, date %>% paste("iPh8Case_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, units_timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -195,7 +206,7 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
-write_csv(data_legend, date %>% paste("iPh8PlCase_Legend.csv", sep = ""))
+write_csv(data_legend, date %>% paste("iPh8Case_Legend.csv", sep = ""))
 
 
 #' 
