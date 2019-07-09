@@ -127,6 +127,10 @@ scrapeNodes <- function(test, search_position, name) {
   } else {
     orig_price <- NA
   }
+  
+   # Per has periods to designate thousands.  Default interpretation is mistakenly that they're decimals, crops out trailing zeroes.
+  curr_price <- str_replace(curr_price, "[\\.]", "")
+  orig_price <- str_replace(orig_price, "[\\.]", "")
 
   num_sold <- get_html_text(read_html, ".item-conditions")
   
