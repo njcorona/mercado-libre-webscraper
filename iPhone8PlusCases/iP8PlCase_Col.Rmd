@@ -158,6 +158,12 @@ scrapeNodes <- function(test, search_position, name) {
   
   shipping <- get_html_text(read_html, ".green")
   shipping <- shipping[which(shipping != "")]
+  shipping <- turn_to_na(shipping)
+
+  if (is.na(shipping)) {
+    shipping <- arrival_time
+    arrival_time <- NA
+  }
 
   free_return <- get_html_text(read_html, ".benefits-row__title--returns")
   free_return_info <- get_html_text(read_html, ".benefits-row__subtitle")

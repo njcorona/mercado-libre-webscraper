@@ -158,6 +158,12 @@ scrapeNodes <- function(test, search_position, name) {
   
   shipping <- get_html_text(read_html, ".green")
   shipping <- shipping[which(shipping != "")]
+  shipping <- turn_to_na(shipping)
+
+  if (is.na(shipping)) {
+    shipping <- arrival_time
+    arrival_time <- NA
+  }
 
   free_return <- get_html_text(read_html, ".benefits-row__title--returns")
   free_return_info <- get_html_text(read_html, ".benefits-row__subtitle")
@@ -227,7 +233,7 @@ scrapeNodes <- function(test, search_position, name) {
   name <- turn_to_na(name)
   item_id <- turn_to_na(item_id)
   amt_installments <- turn_to_na(amt_installments)
-
+  
   df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
   return(df1)
 }
