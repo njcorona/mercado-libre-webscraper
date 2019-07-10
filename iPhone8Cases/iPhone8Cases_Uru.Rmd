@@ -1,5 +1,5 @@
 ---
-title: "iP8Case_Uru"
+title: "iPhone8Cases_Uru"
 author: "NicolasCorona"
 date: "6/6/2019"
 output: html_document
@@ -14,6 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 ```
 
 ### Links for iPhone8 cases, Argentina, including the first 50
@@ -358,7 +359,7 @@ df <- df[, which(df2 == TRUE)]
 
 backup_df <- df
 
-write_csv(df, date %>% paste("iPh8Case_Prod_Uru_Raw.csv", sep = ""))
+write_csv(df, date %>% paste("iPhone8Cases_Prod_Uru_Raw.csv", sep = ""))
 ```
 
 ### Collect seller info.
@@ -428,7 +429,7 @@ for (i in 1:length(list_of_seller_links)) {
 }
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
-write_csv(seller_df, date %>% paste("iPh8Case_Sell_Uru_Raw.csv", sep = ""))
+write_csv(seller_df, date %>% paste("iPhone8Cases_Sell_Uru_Raw.csv", sep = ""))
 ```
 
 ### Cleaning the data.
@@ -548,8 +549,8 @@ df[which(df$num_reviews == 2 & df$review_avg == 4.5), 17] <- 1
 
 df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
-write_csv(df, date %>% paste("iPh8Case_Prod_Uru.csv", sep = ""))
-write_csv(seller_df, date %>% paste("iPh8Case_Sell_Uru.csv", sep = ""))
+write_csv(df, date %>% paste("iPhone8Cases_Prod_Uru.csv", sep = ""))
+write_csv(seller_df, date %>% paste("iPhone8Cases_Sell_Uru.csv", sep = ""))
 
 # # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 # list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
@@ -565,6 +566,6 @@ write_csv(seller_df, date %>% paste("iPh8Case_Sell_Uru.csv", sep = ""))
 # })
 # 
 # data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-# write_csv(data_legend, "6_12_iPh8Case_Legend_Uru.csv")
+# write_csv(data_legend, "6_12_iPhone8Cases_Legend_Uru.csv")
 ```
 
