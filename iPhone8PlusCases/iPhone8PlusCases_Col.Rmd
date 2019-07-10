@@ -1,5 +1,5 @@
 ---
-title: "iP8PlCase_Col"
+title: "iPhone8PlusCases_Col"
 author: "NicolasCorona"
 date: "6/4/2019"
 output: html_document
@@ -14,6 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
 ```
 
 ### Links for iPhone8+ cases, Colombia, including the first 50

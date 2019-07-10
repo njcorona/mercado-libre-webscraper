@@ -1,5 +1,5 @@
 ---
-title: "iP8PlCase_Bra"
+title: "iPhone8PlusCases_Bra"
 author: "NicolasCorona"
 date: "6/13/2019"
 output: html_document
@@ -14,12 +14,13 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
 ```
 
 ### Links for iPhone8+ cases, Brazil, including the first 50
 
 ```{r scrape_links}
-date <- "6_19_"
+date <- "6_18_"
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.

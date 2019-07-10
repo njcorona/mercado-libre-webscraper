@@ -13,6 +13,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
 ```
 
 ```{r}

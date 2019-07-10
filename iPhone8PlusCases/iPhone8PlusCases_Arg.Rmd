@@ -1,5 +1,5 @@
 ---
-title: "iP8PlCase_Arg"
+title: "iPhone8PlusCases_Arg"
 author: "NicolasCorona"
 date: "5/27/2019"
 output: html_document
@@ -14,6 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
 ```
 
 ### Links for iPhone8+ cases, Argentina, including the first 50
@@ -247,7 +248,7 @@ df <- NULL
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
 seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-# seq <- seq(1, 201, 20) # REMOVE TO COMPLETE
+# seq <- seq(1, 41, 20) # REMOVE TO COMPLETE
 max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
@@ -424,7 +425,7 @@ seller_df <- backup_seller_df
 df <- backup_df
 
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
