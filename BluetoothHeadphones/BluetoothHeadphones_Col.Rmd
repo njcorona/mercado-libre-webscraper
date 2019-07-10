@@ -242,7 +242,7 @@ df <- NULL
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
 seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-#seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
+# seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
 max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
