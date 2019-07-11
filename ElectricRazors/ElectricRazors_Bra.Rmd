@@ -14,6 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors")
 ```
 
 ### Links for electric razors, Brazil, including the first 50
@@ -127,6 +128,10 @@ scrapeNodes <- function(test, search_position, name) {
   } else {
     orig_price <- NA
   }
+  
+  # Bra has periods to designate thousands.  Default interpretation is mistakenly that they're decimals, crops out trailing zeroes.
+  curr_price <- str_replace(curr_price, "[\\.]", "")
+  orig_price <- str_replace(orig_price, "[\\.]", "")
 
   num_sold <- get_html_text(read_html, ".item-conditions")
   
@@ -154,6 +159,12 @@ scrapeNodes <- function(test, search_position, name) {
   
   shipping <- get_html_text(read_html, ".green")
   shipping <- shipping[which(shipping != "")]
+  shipping <- turn_to_na(shipping)
+
+  if (is.na(shipping)) {
+    shipping <- arrival_time
+    arrival_time <- NA
+  }
 
   free_return <- get_html_text(read_html, ".benefits-row__title--returns")
   free_return_info <- get_html_text(read_html, ".benefits-row__subtitle")
@@ -436,7 +447,7 @@ write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Bra_Raw.csv", sep = "")
 seller_df <- backup_seller_df
 df <- backup_df
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 
 # Extracts units in time_operating (either months or years).
