@@ -435,7 +435,7 @@ write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Uru_Raw.csv", sep = "")
 ### Cleaning the data.
 ```{r}
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
