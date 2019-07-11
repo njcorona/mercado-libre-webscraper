@@ -447,7 +447,7 @@ write_csv(seller_df, date %>% paste("BluetoothSpeakers_Sell_Bra_Raw.csv", sep = 
 seller_df <- backup_seller_df
 df <- backup_df
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 
 # Extracts units in time_operating (either months or years).
@@ -567,21 +567,5 @@ seller_df$units_timeframe_of_amt_sold[which(seller_df$units_of_time_operating ==
 
 write_csv(df, date %>% paste("BluetoothSpeakers_Prod_Bra.csv", sep = ""))
 write_csv(seller_df, date %>% paste("BluetoothSpeakers_Sell_Bra.csv", sep = ""))
-
-# I may want to remove this particular bit of cleaning until I bring all of the countries together.
-# list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
-# max <- max( sapply(list, function(x) { length(x) }) )
-# list <- lapply(list, function(x) {
-#   if (length(x) < max) {
-#     orig_l <- length(x)
-#     x <- rep(x, length.out = max)
-#     x[c((orig_l + 1):max)] <- "" # As opposed to " ".
-#     return (x)
-#   }
-#   return (x)
-# })
-# 
-# data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-# write_csv(data_legend, "6_16_BluetoothSpeakers_Legend_Bra.csv")
 ```
 
