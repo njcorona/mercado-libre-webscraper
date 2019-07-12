@@ -20,7 +20,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 ### Links for iPhone8+ cases, Colombia, including the first 50
 
 ```{r scrape_links}
-date <- "6_22_"
+date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.

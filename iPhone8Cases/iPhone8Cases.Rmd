@@ -17,6 +17,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 ```
 
 ```{r}
+# date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 date <- "6_22_"
 arg_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Bra.csv", sep = ""), col_names = TRUE)

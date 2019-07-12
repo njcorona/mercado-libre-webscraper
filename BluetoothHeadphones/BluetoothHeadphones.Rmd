@@ -18,6 +18,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothHeadphones"
 
 ```{r}
 date <- "6_29_"
+# date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 arg_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Bra.csv", sep = ""), col_names = TRUE)
 chi_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Chi.csv", sep = ""), col_names = TRUE)
