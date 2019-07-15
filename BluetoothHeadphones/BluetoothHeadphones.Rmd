@@ -160,6 +160,9 @@ prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == 
 
 prod$Linha <- NULL
 
+# Remove arrival_time column. #14
+prod$arrival_time <- NULL
+
 write_csv(prod, date %>% paste("BluetoothHeadphones_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("BluetoothHeadphones_Sell.csv", sep = ""))
 

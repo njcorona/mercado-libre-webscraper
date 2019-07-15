@@ -166,6 +166,9 @@ prod$`Tipo de alimentação` <- NULL
 prod$`Tipos de cabeças` <- NULL
 prod$`Tempo de funcionamento`<- NULL
 
+# Remove arrival_time column. #14
+prod$arrival_time <- NULL
+
 write_csv(prod, date %>% paste("ElectricRazors_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("ElectricRazors_Sell.csv", sep = ""))
 

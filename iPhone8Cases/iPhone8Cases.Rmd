@@ -190,6 +190,9 @@ prod$`Modelo da Capa` <- NULL
 prod$`Tipo de capa` <- NULL
 prod$`Material de la funda` <- NULL
 
+# Remove arrival_time column. #14
+prod$arrival_time <- NULL
+
 write_csv(prod, date %>% paste("iPhone8Cases_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("iPhone8Cases_Sell.csv", sep = ""))
 

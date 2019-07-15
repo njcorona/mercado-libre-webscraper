@@ -192,6 +192,9 @@ prod$`Resposta mínima em frequência` <- NULL
 prod$Ancho <- NULL # Only appears for Chile.
 prod$Profundidad <- NULL # Only appears for Chile.
 
+# Remove arrival_time column. #14
+prod$arrival_time <- NULL
+
 write_csv(prod, date %>% paste("BluetoothSpeakers_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("BluetoothSpeakers_Sell.csv", sep = ""))
 
