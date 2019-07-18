@@ -6,9 +6,6 @@ This is a MercadoLibre webscraper written in R.  It scrapes Argentina, Brazil, C
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-1. Install R on your computer:  http://lib.stat.cmu.edu/R/CRAN/
-Install RStudio Desktop (or your preferred IDE):  https://www.rstudio.com/products/rstudio/download/
-
 ### Prerequisites
 
 1.  Install R on your computer:  http://lib.stat.cmu.edu/R/CRAN/
