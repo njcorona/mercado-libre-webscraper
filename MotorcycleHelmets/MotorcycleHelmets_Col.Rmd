@@ -177,6 +177,24 @@ scrapeNodes <- function(test, search_position, name) {
   seller_link <- get_html_attr_href(read_html, ".card-block-link")
   item_id <- get_html_text(read_html, ".item-info__id-number")
   
+  color <- get_html_text(read_html, "input+ .u-clearfix .vip-variation-choose-selected")
+  size <- get_html_text(read_html, ".u-clearfix+ .u-clearfix .vip-variation-choose-selected")
+  
+  if (length(size) > 0) {
+    size <- paste(size, collapse = ",")
+  }
+  
+  if (length(color) > 0) {
+    color <- paste(color, collapse = ",")
+  }
+  
+  if (length(color) == 0) {
+    color <- gsub("[\t\n]", "", get_html_text(read_html, "[data-id='COLOR_SECONDARY_COLOR'] strong"))
+  }
+  
+  if (length(size) == 0) {
+    size <- gsub("[\t\n]", "", get_html_text(read_html, "[data-id='MOTORCYCLE_HELMET_SIZE'] strong"))
+  }
   
   full_reviews_link <- get_html_attr_href(read_html, "#reviewsCard .main-section__view-more")
   full_reviews_link <- turn_to_na(full_reviews_link)
@@ -227,8 +245,10 @@ scrapeNodes <- function(test, search_position, name) {
   name <- turn_to_na(name)
   item_id <- turn_to_na(item_id)
   amt_installments <- turn_to_na(amt_installments)
+  color <- turn_to_na(color)
+  size <- turn_to_na(size)
 
-  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id)
+  df1 <- tibble(search_position, name, list(char_categories), list(char_values), curr_price, orig_price, num_sold, in_stock, num_installments, amt_installments, arrival_time, shipping, free_return, free_return_info, review_avg, num_reviews, seller_link, product_link = test, five_star, four_star, three_star, two_star, one_star, item_id, color, size)
   return(df1)
 }
 ```
@@ -243,7 +263,7 @@ df <- NULL
 print("Scraping from product links.")
 list_of_dfs <- vector("list", 3000)
 seq <- seq(1, length(links$curr_item.1.length.curr_url..) - 20, 20) # PUT BACK IN TO COMPLETE
-#seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
+# seq <- seq(1, 301, 20) # REMOVE TO COMPLETE
 max <- seq[length(seq)] + 20  # PUT BACK IN TO COMPLETE
 
 # This for-loop requests data for 20 links at a time to make the scraping process move faster.
