@@ -102,10 +102,10 @@ sell$units_of_time_operating[which(sell$units_of_time_operating == "mes")] <- "m
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
 
-prod$arrival_time[which(prod$arrival_time == "Envio")] <- "Envío"
-prod$arrival_time[which(prod$arrival_time == "Envio para todo o país")] <- "Envío a todo el país"
-prod$arrival_time[which(prod$arrival_time == "Envío a nivel nacional")] <- "Envío a todo el país"
-prod$arrival_time[which(prod$arrival_time == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
+prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
+prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
 
 prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
 prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"
@@ -129,16 +129,7 @@ units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of
 
 sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
-# These were commented out.  Why?
-units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
-units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
-
 sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
-
-arrival_time_values <- prod$arrival_time[!duplicated(prod$arrival_time)]
-arrival_time_values <- arrival_time_values[!is.na(arrival_time_values)]
-
-prod$arrival_time <- sapply(prod$arrival_time, function(x) { return ( if (is.na(x)) { NA } else { which(x == arrival_time_values) }) })
 
 shipping_values <- prod$shipping[!duplicated(prod$shipping)]
 shipping_values <- shipping_values[!is.na(shipping_values)]
@@ -167,7 +158,7 @@ write_csv(prod, date %>% paste("BluetoothHeadphones_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("BluetoothHeadphones_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
-list <- list(units_of_time_operating_values, units_timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
+list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
 max <- max( sapply(list, function(x) { length(x) }) )
 list <- lapply(list, function(x) {
   if (length(x) < max) {
@@ -180,7 +171,7 @@ list <- lapply(list, function(x) {
   
 })
 
-data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
+data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
 write_csv(data_legend, date %>% paste("BluetoothHeadphones_Legend.csv", sep = ""))
 
 ```
