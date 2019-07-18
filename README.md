@@ -1,6 +1,6 @@
 # MercadoLibre webscraper 
 
-This is a MercadoLibre webscraper written in R.  It scrapes Argentina, Brazil, Chile, Colombia, Mexico, Peru, and Uruguay for data on the listings and sellers of iPhone8 cases, iPhone8+ cases, motorcycle helmets, Bluetooth speakers, and Bluetooth headphones.
+This is a MercadoLibre webscraper written in R.  It scrapes Argentina, Brazil, Chile, Colombia, Mexico, Peru, and Uruguay for data on the listings and sellers of iPhone8 cases, iPhone8+ cases, motorcycle helmets, Bluetooth speakers, and Bluetooth headphones, and it cleans that data to be research-ready.
 
 ## Getting started
 
