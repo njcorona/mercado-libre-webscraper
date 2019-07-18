@@ -17,8 +17,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/MotorcycleHelmets")
 ```
 
 ```{r}
-date <- "6_23_"
-# date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
+date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 arg_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Bra.csv", sep = ""), col_names = TRUE)
 chi_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Chi.csv", sep = ""), col_names = TRUE)
@@ -102,10 +101,10 @@ sell$units_of_time_operating[which(sell$units_of_time_operating == "mes")] <- "m
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
 
-prod$arrival_time[which(prod$arrival_time == "Envio")] <- "Envío"
-prod$arrival_time[which(prod$arrival_time == "Envio para todo o país")] <- "Envío a todo el país"
-prod$arrival_time[which(prod$arrival_time == "Envío a nivel nacional")] <- "Envío a todo el país"
-prod$arrival_time[which(prod$arrival_time == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
+prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
+prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
 
 prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
 prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"
@@ -114,6 +113,9 @@ prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devoluci�
 
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
+
+prod$free_return_info[which(prod$free_return_info == "Tenés 30 días desde que lo recibís")] <- "Tienes 30 días desde que lo recibes" 
+prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir do recebimento")] <- "Tienes 30 días desde que lo recibes" 
 
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
@@ -130,15 +132,10 @@ units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of
 sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
 # These were commented out.  Why?
-units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
-units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
+# units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
+# units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
 
 sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
-
-arrival_time_values <- prod$arrival_time[!duplicated(prod$arrival_time)]
-arrival_time_values <- arrival_time_values[!is.na(arrival_time_values)]
-
-prod$arrival_time <- sapply(prod$arrival_time, function(x) { return ( if (is.na(x)) { NA } else { which(x == arrival_time_values) }) })
 
 shipping_values <- prod$shipping[!duplicated(prod$shipping)]
 shipping_values <- shipping_values[!is.na(shipping_values)]
@@ -157,14 +154,26 @@ prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if
 
 # Combining characteristics with different names.
 prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
-prod$`Tipo de alimentación`[which(prod$country == "BRA")] <- prod$`Tipo de alimentação`[which(prod$country == "BRA")]
-prod$`Tipos de cabezales`[which(prod$country == "BRA")] <- prod$`Tipos de cabeças`[which(prod$country == "BRA")]
-prod$`Tiempo de funcionamiento`[which(prod$country == "BRA")] <- prod$`Tempo de funcionamento`[which(prod$country == "BRA")]
+prod$`Tipo de casco`[which(prod$country == "BRA")] <- prod$`Tipo de capacete`[which(prod$country == "BRA")]
+prod$`Materiales del exterior`[which(prod$country == "BRA")] <- prod$`Materiais do exterior`[which(prod$country == "BRA")]
+prod$`Materiales del interior`[which(prod$country == "BRA")] <- prod$`Materiais do interior`[which(prod$country == "BRA")]
+prod$Edad[which(prod$country == "BRA")] <- prod$Idade[which(prod$country == "BRA")]
+prod$`Tipo de casco`[which(prod$country == "CHI")] <- prod$Tipo[which(prod$country == "CHI")]
+
+t <- prod$`Tipo de casco`[which(prod$country == "URU")] 
+t[which(is.na(t))] <- prod$Tipo[which(prod$country == "URU")][which(is.na(t))]
+prod$`Tipo de casco`[which(prod$country == "URU")] <- t
+
+t <- prod$`Tipo de casco`[which(prod$country == "COL")] 
+t[which(is.na(t))] <- prod$Tipo[which(prod$country == "COL")][which(is.na(t))]
+prod$`Tipo de casco`[which(prod$country == "COL")] <- t
 
 prod$Linha <- NULL
-prod$`Tipo de alimentação` <- NULL
-prod$`Tipos de cabeças` <- NULL
-prod$`Tempo de funcionamento`<- NULL
+prod$`Tipo de capacete` <- NULL
+prod$`Materiais do exterior` <- NULL
+prod$`Materiais do interior` <- NULL
+prod$Idade <- NULL
+prod$Tipo <- NULL
 
 # Remove arrival_time column. #14
 prod$arrival_time <- NULL
@@ -173,7 +182,7 @@ write_csv(prod, date %>% paste("MotorcycleHelmets_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("MotorcycleHelmets_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
-list <- list(units_of_time_operating_values, units_timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
+list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
 max <- max( sapply(list, function(x) { length(x) }) )
 list <- lapply(list, function(x) {
   if (length(x) < max) {
@@ -186,7 +195,7 @@ list <- lapply(list, function(x) {
   
 })
 
-data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
+data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
 write_csv(data_legend, date %>% paste("MotorcycleHelmets_Legend.csv", sep = ""))
 
 ```
