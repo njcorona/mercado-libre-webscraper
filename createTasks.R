@@ -1,5 +1,7 @@
 library(taskscheduleR)
 
+# Common error:  you may need to format the startdate to coincide with your device's standard date format.
+
 taskscheduler_create(taskname = "Scrape_ElectricRazors_Arg", rscript = "C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors/ElectricRazors_Arg.R", schedule = "WEEKLY", Rexe = "C:/'Program Files'/R/R-3.6.0/bin/x64/Rscript.exe", starttime = "18:00", startdate = format(Sys.Date(), "%m/%d/%Y"), days = c("SUN", "WED"))
 taskscheduler_create(taskname = "Scrape_ElectricRazors_Bra", rscript = "C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors/ElectricRazors_Bra.R", schedule = "WEEKLY", Rexe = "C:/'Program Files'/R/R-3.6.0/bin/x64/Rscript.exe", starttime = "18:10", startdate = format(Sys.Date(), "%m/%d/%Y"), days = c("SUN", "WED"))
 taskscheduler_create(taskname = "Scrape_ElectricRazors_Chi", rscript = "C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors/ElectricRazors_Chi.R", schedule = "WEEKLY", Rexe = "C:/'Program Files'/R/R-3.6.0/bin/x64/Rscript.exe", starttime = "18:20", startdate = format(Sys.Date(), "%m/%d/%Y"), days = c("SUN", "WED"))
