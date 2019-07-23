@@ -14,12 +14,13 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothHeadphones")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones")
 ```
 
 ### Links for bluetooth headphones, Mexico, including the first 50
 
 ```{r scrape_links}
+print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
@@ -556,5 +557,6 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
 write_csv(df, date %>% paste("BluetoothHeadphones_Prod_Mex.csv", sep = ""))
 write_csv(seller_df, date %>% paste("BluetoothHeadphones_Sell_Mex.csv", sep = ""))
+print(Sys.time())
 ```
 

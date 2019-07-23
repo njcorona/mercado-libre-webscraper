@@ -17,6 +17,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/MotorcycleHelmets")
 ```
 
 ```{r}
+print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 arg_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Arg.csv", sep = ""), col_names = TRUE)
 bra_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Bra.csv", sep = ""), col_names = TRUE)
@@ -197,6 +198,7 @@ list <- lapply(list, function(x) {
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
 write_csv(data_legend, date %>% paste("MotorcycleHelmets_Legend.csv", sep = ""))
+print(Sys.time())
 
 ```
 

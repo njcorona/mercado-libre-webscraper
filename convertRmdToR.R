@@ -1,6 +1,6 @@
 library(magrittr)
 
-files <- c("iPhone8PlusCases", "iPhone8Cases", "ElectricRazors", "BluetoothHeadphones", "BluetoothSpeakers", "MotorcycleHelmets")
+files <- c("iPhone8PlusCases", "iPhone8Cases", "ElectricRazors", "BTHeadphones", "BluetoothSpeakers", "MotorcycleHelmets")
 
 updateFiles <- function(x) {
   filename <- x

@@ -20,6 +20,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
 ### Links for iPhone8+ cases, Brazil, including the first 50
 
 ```{r scrape_links}
+print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
@@ -552,20 +553,6 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 write_csv(df, date %>% paste("iPh8PlCase_Prod_Bra.csv", sep = ""))
 write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Bra.csv", sep = ""))
 
-# I may want to remove this particular bit of cleaning until I bring all of the countries together.
-# list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
-# max <- max( sapply(list, function(x) { length(x) }) )
-# list <- lapply(list, function(x) {
-#   if (length(x) < max) {
-#     orig_l <- length(x)
-#     x <- rep(x, length.out = max)
-#     x[c((orig_l + 1):max)] <- "" # As opposed to " ".
-#     return (x)
-#   }
-#   return (x)
-# })
-# 
-# data_legend <- tibble(value = c(1:max), units_of_time_operating_values = list[[1]], timeframe_of_amt_sold_values = list[[2]], arrival_time_values = list[[3]], shipping_values = list[[4]], free_return_values = list[[5]], free_return_info_values = list[[6]])
-# write_csv(data_legend, "6_16_iPh8PlCase_Legend_Bra.csv")
+print(Sys.time())
 ```
 

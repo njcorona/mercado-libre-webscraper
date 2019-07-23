@@ -20,6 +20,7 @@ setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/MotorcycleHelmets")
 ### Links for motorcycle helmets, Colombia, including the first 50
 
 ```{r scrape_links}
+print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
@@ -580,10 +581,5 @@ df$orig_price <- as.numeric(df$orig_price)
 
 write_csv(df, date %>% paste("MotorcycleHelmets_Prod_Col.csv", sep = ""))
 write_csv(seller_df, date %>% paste("MotorcycleHelmets_Sell_Col.csv", sep = ""))
-```
-
-### Quick reset for convenience
-```{r}
-df <- backup_df
-seller_df <- backup_seller_df
+print(Sys.time())
 ```
