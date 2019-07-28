@@ -1,5 +1,5 @@
 #' ---
-#' title: "ElectricRazors"
+#' title: "BluetoothSpeakers"
 #' author: "NicolasCorona"
 #' date: "6/16/2019"
 #' output: html_document
@@ -13,27 +13,27 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothSpeakers")
 
 #' 
 ## ------------------------------------------------------------------------
 print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
-arg_p <- read_csv(date %>% paste("ElectricRazors_Prod_Arg.csv", sep = ""), col_names = TRUE)
-bra_p <- read_csv(date %>% paste("ElectricRazors_Prod_Bra.csv", sep = ""), col_names = TRUE)
-chi_p <- read_csv(date %>% paste("ElectricRazors_Prod_Chi.csv", sep = ""), col_names = TRUE)
-col_p <- read_csv(date %>% paste("ElectricRazors_Prod_Col.csv", sep = ""), col_names = TRUE)
-mex_p <- read_csv(date %>% paste("ElectricRazors_Prod_Mex.csv", sep = ""), col_names = TRUE)
-per_p <- read_csv(date %>% paste("ElectricRazors_Prod_Per.csv", sep = ""), col_names = TRUE)
-uru_p <- read_csv(date %>% paste("ElectricRazors_Prod_Uru.csv", sep = ""), col_names = TRUE)
+arg_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Arg.csv", sep = ""), col_names = TRUE)
+bra_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Bra.csv", sep = ""), col_names = TRUE)
+chi_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Chi.csv", sep = ""), col_names = TRUE)
+col_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Col.csv", sep = ""), col_names = TRUE)
+mex_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Mex.csv", sep = ""), col_names = TRUE)
+per_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Per.csv", sep = ""), col_names = TRUE)
+uru_p <- read_csv(date %>% paste("BluetoothSpeakers_Prod_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_s <- read_csv(date %>% paste("ElectricRazors_Sell_Arg.csv", sep = ""), col_names = TRUE)
-bra_s <- read_csv(date %>% paste("ElectricRazors_Sell_Bra.csv", sep = ""), col_names = TRUE)
-chi_s <- read_csv(date %>% paste("ElectricRazors_Sell_Chi.csv", sep = ""), col_names = TRUE)
-col_s <- read_csv(date %>% paste("ElectricRazors_Sell_Col.csv", sep = ""), col_names = TRUE)
-mex_s <- read_csv(date %>% paste("ElectricRazors_Sell_Mex.csv", sep = ""), col_names = TRUE)
-per_s <- read_csv(date %>% paste("ElectricRazors_Sell_Per.csv", sep = ""), col_names = TRUE)
-uru_s <- read_csv(date %>% paste("ElectricRazors_Sell_Uru.csv", sep = ""), col_names = TRUE)
+arg_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Arg.csv", sep = ""), col_names = TRUE)
+bra_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Bra.csv", sep = ""), col_names = TRUE)
+chi_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Chi.csv", sep = ""), col_names = TRUE)
+col_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Col.csv", sep = ""), col_names = TRUE)
+mex_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Mex.csv", sep = ""), col_names = TRUE)
+per_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Per.csv", sep = ""), col_names = TRUE)
+uru_s <- read_csv(date %>% paste("BluetoothSpeakers_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
 arg_p <- cbind(country = "ARG", arg_p)
 bra_p <- cbind(country = "BRA", bra_p)
@@ -106,7 +106,7 @@ prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
 prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
 prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
 prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
-
+prod$shipping[which(prod$shipping == "Chegará grátis amanhã")] <- "Llega gratis mañana" 
 prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
 prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"
 
@@ -114,6 +114,8 @@ prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devoluci�
 
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Tienes 30 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
 
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
@@ -148,20 +150,44 @@ prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if
 
 # Combining characteristics with different names.
 prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
-prod$`Tipo de alimentación`[which(prod$country == "BRA")] <- prod$`Tipo de alimentação`[which(prod$country == "BRA")]
-prod$`Tipos de cabezales`[which(prod$country == "BRA")] <- prod$`Tipos de cabeças`[which(prod$country == "BRA")]
-prod$`Tiempo de funcionamiento`[which(prod$country == "BRA")] <- prod$`Tempo de funcionamento`[which(prod$country == "BRA")]
+prod$`Potencia de salida (RMS)`[which(prod$country == "BRA")] <- prod$`Potência de saída (RMS)`[which(prod$country == "BRA")]
+prod$`Tipos de filtros del parlante`[which(prod$country == "BRA")] <- prod$`Tipos de filtros do alto-falante`[which(prod$country == "BRA")]
+prod$`Cantidad de parlantes`[which(prod$country == "BRA")] <- prod$`Quantidade de alto-falantes`[which(prod$country == "BRA")]
+prod$`Sensibilidad de entrada`[which(prod$country == "BRA")] <- prod$`Sensibilidade de entrada`[which(prod$country == "BRA")]
+prod$`Formato del parlante`[which(prod$country == "BRA")] <- prod$`Formato do alto-falante`[which(prod$country == "BRA")]
+prod$`Tipos de parlante`[which(prod$country == "BRA")] <- prod$`Tipos de alto-falante`[which(prod$country == "BRA")]
+prod$`Configuración de canales`[which(prod$country == "BRA")] <- prod$`Configuração de canais`[which(prod$country == "BRA")]
+prod$`Lugares de colocación`[which(prod$country == "BRA")] <- prod$`Lugares de colocação`[which(prod$country == "BRA")]
+prod$Voltaje[which(prod$country == "BRA")] <- prod$Voltagem[which(prod$country == "BRA")]
+prod$`Respuesta máxima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta máxima em frequência`[which(prod$country == "BRA")]
+prod$`Respuesta mínima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta mínima em frequência`[which(prod$country == "BRA")]
 
 prod$Linha <- NULL
-prod$`Tipo de alimentação` <- NULL
-prod$`Tipos de cabeças` <- NULL
-prod$`Tempo de funcionamento`<- NULL
+prod$`Potência de saída (RMS)` <- NULL
+prod$`Tipos de filtros do alto-falante` <- NULL
+prod$`Quantidade de alto-falantes` <- NULL
+prod$`Sensibilidade de entrada` <- NULL
+prod$Largura <- NULL # Only appears for Brazil.
+prod$Altura <- NULL # Only appears Brazil and Chile, and they are sparse in this.
+prod$`Formato do alto-falante` <- NULL
+prod$`Tipos de alto-falante` <- NULL
+prod$`Modelo detalhado` <- NULL # Only for Brazil.
+prod$`Distorção` <- NULL # Only appears or Brazil.
+prod$Ambientes <- NULL # Only appears for Brazil.
+prod$`Lugares de colocação` <- NULL
+prod$`Configuração de canais` <- NULL
+prod$`Modelo alfanumérico` <- NULL
+prod$Voltagem <- NULL
+prod$`Resposta máxima em frequência` <- NULL
+prod$`Resposta mínima em frequência` <- NULL
+prod$Ancho <- NULL # Only appears for Chile.
+prod$Profundidad <- NULL # Only appears for Chile.
 
 # Remove arrival_time column. #14
 prod$arrival_time <- NULL
 
-write_csv(prod, date %>% paste("ElectricRazors_Prod.csv", sep = ""))
-write_csv(sell, date %>% paste("ElectricRazors_Sell.csv", sep = ""))
+write_csv(prod, date %>% paste("BluetoothSpeakers_Prod.csv", sep = ""))
+write_csv(sell, date %>% paste("BluetoothSpeakers_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
@@ -178,7 +204,7 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
-write_csv(data_legend, date %>% paste("ElectricRazors_Legend.csv", sep = ""))
+write_csv(data_legend, date %>% paste("BluetoothSpeakers_Legend.csv", sep = ""))
 print(Sys.time())
 
 

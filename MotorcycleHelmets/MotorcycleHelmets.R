@@ -1,5 +1,5 @@
 #' ---
-#' title: "ElectricRazors"
+#' title: "MotorcycleHelmets"
 #' author: "NicolasCorona"
 #' date: "6/16/2019"
 #' output: html_document
@@ -13,27 +13,27 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/MotorcycleHelmets")
 
 #' 
 ## ------------------------------------------------------------------------
 print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
-arg_p <- read_csv(date %>% paste("ElectricRazors_Prod_Arg.csv", sep = ""), col_names = TRUE)
-bra_p <- read_csv(date %>% paste("ElectricRazors_Prod_Bra.csv", sep = ""), col_names = TRUE)
-chi_p <- read_csv(date %>% paste("ElectricRazors_Prod_Chi.csv", sep = ""), col_names = TRUE)
-col_p <- read_csv(date %>% paste("ElectricRazors_Prod_Col.csv", sep = ""), col_names = TRUE)
-mex_p <- read_csv(date %>% paste("ElectricRazors_Prod_Mex.csv", sep = ""), col_names = TRUE)
-per_p <- read_csv(date %>% paste("ElectricRazors_Prod_Per.csv", sep = ""), col_names = TRUE)
-uru_p <- read_csv(date %>% paste("ElectricRazors_Prod_Uru.csv", sep = ""), col_names = TRUE)
+arg_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Arg.csv", sep = ""), col_names = TRUE)
+bra_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Bra.csv", sep = ""), col_names = TRUE)
+chi_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Chi.csv", sep = ""), col_names = TRUE)
+col_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Col.csv", sep = ""), col_names = TRUE)
+mex_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Mex.csv", sep = ""), col_names = TRUE)
+per_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Per.csv", sep = ""), col_names = TRUE)
+uru_p <- read_csv(date %>% paste("MotorcycleHelmets_Prod_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_s <- read_csv(date %>% paste("ElectricRazors_Sell_Arg.csv", sep = ""), col_names = TRUE)
-bra_s <- read_csv(date %>% paste("ElectricRazors_Sell_Bra.csv", sep = ""), col_names = TRUE)
-chi_s <- read_csv(date %>% paste("ElectricRazors_Sell_Chi.csv", sep = ""), col_names = TRUE)
-col_s <- read_csv(date %>% paste("ElectricRazors_Sell_Col.csv", sep = ""), col_names = TRUE)
-mex_s <- read_csv(date %>% paste("ElectricRazors_Sell_Mex.csv", sep = ""), col_names = TRUE)
-per_s <- read_csv(date %>% paste("ElectricRazors_Sell_Per.csv", sep = ""), col_names = TRUE)
-uru_s <- read_csv(date %>% paste("ElectricRazors_Sell_Uru.csv", sep = ""), col_names = TRUE)
+arg_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Arg.csv", sep = ""), col_names = TRUE)
+bra_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Bra.csv", sep = ""), col_names = TRUE)
+chi_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Chi.csv", sep = ""), col_names = TRUE)
+col_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Col.csv", sep = ""), col_names = TRUE)
+mex_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Mex.csv", sep = ""), col_names = TRUE)
+per_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Per.csv", sep = ""), col_names = TRUE)
+uru_s <- read_csv(date %>% paste("MotorcycleHelmets_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
 arg_p <- cbind(country = "ARG", arg_p)
 bra_p <- cbind(country = "BRA", bra_p)
@@ -115,6 +115,9 @@ prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devoluci�
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
 
+prod$free_return_info[which(prod$free_return_info == "Tenés 30 días desde que lo recibís")] <- "Tienes 30 días desde que lo recibes" 
+prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir do recebimento")] <- "Tienes 30 días desde que lo recibes" 
+
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
 
@@ -128,6 +131,10 @@ units_of_time_operating_values <- sell$units_of_time_operating[!duplicated(sell$
 units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of_time_operating_values)]
 
 sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
+
+# These were commented out.  Why?
+# units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
+# units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
 
 sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
@@ -148,20 +155,32 @@ prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if
 
 # Combining characteristics with different names.
 prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
-prod$`Tipo de alimentación`[which(prod$country == "BRA")] <- prod$`Tipo de alimentação`[which(prod$country == "BRA")]
-prod$`Tipos de cabezales`[which(prod$country == "BRA")] <- prod$`Tipos de cabeças`[which(prod$country == "BRA")]
-prod$`Tiempo de funcionamiento`[which(prod$country == "BRA")] <- prod$`Tempo de funcionamento`[which(prod$country == "BRA")]
+prod$`Tipo de casco`[which(prod$country == "BRA")] <- prod$`Tipo de capacete`[which(prod$country == "BRA")]
+prod$`Materiales del exterior`[which(prod$country == "BRA")] <- prod$`Materiais do exterior`[which(prod$country == "BRA")]
+prod$`Materiales del interior`[which(prod$country == "BRA")] <- prod$`Materiais do interior`[which(prod$country == "BRA")]
+prod$Edad[which(prod$country == "BRA")] <- prod$Idade[which(prod$country == "BRA")]
+prod$`Tipo de casco`[which(prod$country == "CHI")] <- prod$Tipo[which(prod$country == "CHI")]
+
+t <- prod$`Tipo de casco`[which(prod$country == "URU")] 
+t[which(is.na(t))] <- prod$Tipo[which(prod$country == "URU")][which(is.na(t))]
+prod$`Tipo de casco`[which(prod$country == "URU")] <- t
+
+t <- prod$`Tipo de casco`[which(prod$country == "COL")] 
+t[which(is.na(t))] <- prod$Tipo[which(prod$country == "COL")][which(is.na(t))]
+prod$`Tipo de casco`[which(prod$country == "COL")] <- t
 
 prod$Linha <- NULL
-prod$`Tipo de alimentação` <- NULL
-prod$`Tipos de cabeças` <- NULL
-prod$`Tempo de funcionamento`<- NULL
+prod$`Tipo de capacete` <- NULL
+prod$`Materiais do exterior` <- NULL
+prod$`Materiais do interior` <- NULL
+prod$Idade <- NULL
+prod$Tipo <- NULL
 
 # Remove arrival_time column. #14
 prod$arrival_time <- NULL
 
-write_csv(prod, date %>% paste("ElectricRazors_Prod.csv", sep = ""))
-write_csv(sell, date %>% paste("ElectricRazors_Sell.csv", sep = ""))
+write_csv(prod, date %>% paste("MotorcycleHelmets_Prod.csv", sep = ""))
+write_csv(sell, date %>% paste("MotorcycleHelmets_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
@@ -178,7 +197,7 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
-write_csv(data_legend, date %>% paste("ElectricRazors_Legend.csv", sep = ""))
+write_csv(data_legend, date %>% paste("MotorcycleHelmets_Legend.csv", sep = ""))
 print(Sys.time())
 
 

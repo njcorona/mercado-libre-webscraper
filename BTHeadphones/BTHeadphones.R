@@ -1,5 +1,5 @@
 #' ---
-#' title: "ElectricRazors"
+#' title: "BluetoothHeadphones"
 #' author: "NicolasCorona"
 #' date: "6/16/2019"
 #' output: html_document
@@ -13,27 +13,27 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones")
 
 #' 
 ## ------------------------------------------------------------------------
 print(Sys.time())
 date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
-arg_p <- read_csv(date %>% paste("ElectricRazors_Prod_Arg.csv", sep = ""), col_names = TRUE)
-bra_p <- read_csv(date %>% paste("ElectricRazors_Prod_Bra.csv", sep = ""), col_names = TRUE)
-chi_p <- read_csv(date %>% paste("ElectricRazors_Prod_Chi.csv", sep = ""), col_names = TRUE)
-col_p <- read_csv(date %>% paste("ElectricRazors_Prod_Col.csv", sep = ""), col_names = TRUE)
-mex_p <- read_csv(date %>% paste("ElectricRazors_Prod_Mex.csv", sep = ""), col_names = TRUE)
-per_p <- read_csv(date %>% paste("ElectricRazors_Prod_Per.csv", sep = ""), col_names = TRUE)
-uru_p <- read_csv(date %>% paste("ElectricRazors_Prod_Uru.csv", sep = ""), col_names = TRUE)
+arg_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Arg.csv", sep = ""), col_names = TRUE)
+bra_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Bra.csv", sep = ""), col_names = TRUE)
+chi_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Chi.csv", sep = ""), col_names = TRUE)
+col_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Col.csv", sep = ""), col_names = TRUE)
+mex_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Mex.csv", sep = ""), col_names = TRUE)
+per_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Per.csv", sep = ""), col_names = TRUE)
+uru_p <- read_csv(date %>% paste("BluetoothHeadphones_Prod_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_s <- read_csv(date %>% paste("ElectricRazors_Sell_Arg.csv", sep = ""), col_names = TRUE)
-bra_s <- read_csv(date %>% paste("ElectricRazors_Sell_Bra.csv", sep = ""), col_names = TRUE)
-chi_s <- read_csv(date %>% paste("ElectricRazors_Sell_Chi.csv", sep = ""), col_names = TRUE)
-col_s <- read_csv(date %>% paste("ElectricRazors_Sell_Col.csv", sep = ""), col_names = TRUE)
-mex_s <- read_csv(date %>% paste("ElectricRazors_Sell_Mex.csv", sep = ""), col_names = TRUE)
-per_s <- read_csv(date %>% paste("ElectricRazors_Sell_Per.csv", sep = ""), col_names = TRUE)
-uru_s <- read_csv(date %>% paste("ElectricRazors_Sell_Uru.csv", sep = ""), col_names = TRUE)
+arg_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Arg.csv", sep = ""), col_names = TRUE)
+bra_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Bra.csv", sep = ""), col_names = TRUE)
+chi_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Chi.csv", sep = ""), col_names = TRUE)
+col_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Col.csv", sep = ""), col_names = TRUE)
+mex_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Mex.csv", sep = ""), col_names = TRUE)
+per_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Per.csv", sep = ""), col_names = TRUE)
+uru_s <- read_csv(date %>% paste("BluetoothHeadphones_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
 arg_p <- cbind(country = "ARG", arg_p)
 bra_p <- cbind(country = "BRA", bra_p)
@@ -148,20 +148,14 @@ prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if
 
 # Combining characteristics with different names.
 prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
-prod$`Tipo de alimentación`[which(prod$country == "BRA")] <- prod$`Tipo de alimentação`[which(prod$country == "BRA")]
-prod$`Tipos de cabezales`[which(prod$country == "BRA")] <- prod$`Tipos de cabeças`[which(prod$country == "BRA")]
-prod$`Tiempo de funcionamiento`[which(prod$country == "BRA")] <- prod$`Tempo de funcionamento`[which(prod$country == "BRA")]
 
 prod$Linha <- NULL
-prod$`Tipo de alimentação` <- NULL
-prod$`Tipos de cabeças` <- NULL
-prod$`Tempo de funcionamento`<- NULL
 
 # Remove arrival_time column. #14
 prod$arrival_time <- NULL
 
-write_csv(prod, date %>% paste("ElectricRazors_Prod.csv", sep = ""))
-write_csv(sell, date %>% paste("ElectricRazors_Sell.csv", sep = ""))
+write_csv(prod, date %>% paste("BluetoothHeadphones_Prod.csv", sep = ""))
+write_csv(sell, date %>% paste("BluetoothHeadphones_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
@@ -178,8 +172,7 @@ list <- lapply(list, function(x) {
 })
 
 data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
-write_csv(data_legend, date %>% paste("ElectricRazors_Legend.csv", sep = ""))
+write_csv(data_legend, date %>% paste("BluetoothHeadphones_Legend.csv", sep = ""))
 print(Sys.time())
-
 
 #' 
