@@ -13,7 +13,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases/2019-07-29/")
 
 #' 
 ## ------------------------------------------------------------------------
@@ -92,28 +92,33 @@ sell$units_timeframe_of_amt_sold <- sell$timeframe_of_amt_sold
 sell$timeframe_of_amt_sold <- stored_units_timeframe_of_amt_sold
 
 # Combining plural/singuler/Spanish/Portuguese words.
-sell$units_of_time_operating[which(sell$units_of_time_operating == "ano")] <- "aÃ±os"
-sell$units_of_time_operating[which(sell$units_of_time_operating == "anos")] <- "aÃ±os"
-sell$units_of_time_operating[which(sell$units_of_time_operating == "aÃ±o")] <- "aÃ±os"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "ano")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "anos")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "año")] <- "años"
 
-sell$units_of_time_operating[which(sell$units_of_time_operating == "mÃªs")] <- "meses"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "mês")] <- "meses"
 sell$units_of_time_operating[which(sell$units_of_time_operating == "mes")] <- "meses"
 
-sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "aÃ±os"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "dias")] <- "días" 
+
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
 
-prod$shipping[which(prod$shipping == "Envio")] <- "EnvÃ­o"
-prod$shipping[which(prod$shipping == "Envio para todo o paÃ­s")] <- "EnvÃ­o a todo el paÃ­s"
-prod$shipping[which(prod$shipping == "EnvÃ­o a nivel nacional")] <- "EnvÃ­o a todo el paÃ­s"
+prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
+prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
 prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
 
-prod$shipping[which(prod$shipping == "Frete grÃ¡tis")] <- "EnvÃ­o gratis"
-prod$shipping[which(prod$shipping == "EnvÃ­o gratis a nivel nacional")] <- "EnvÃ­o gratis a todo el paÃ­s"
+prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
+prod$shipping[which(prod$shipping == "Chegará hoje")] <- "Llega hoy"
+prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"
 
-prod$free_return[which(prod$free_return == "DevoluÃ§Ã£o grÃ¡tis")] <- "DevoluciÃ³n gratis"
+prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devolución gratis"
 
-prod$free_return_info[which(prod$free_return_info == "VocÃª tem 10 dias a partir do recebimento")] <- "TenÃ©s 10 dÃ­as desde que lo recibÃ­s"
-prod$free_return_info[which(prod$free_return_info == "Tienes 10 dÃ­as desde que lo recibes")] <- "TenÃ©s 10 dÃ­as desde que lo recibÃ­s"
+prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir do recebimento")] <- "Tenés 30 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Tienes 30 días desde que lo recibes")] <- "Tenés 30 días desde que lo recibís"
 
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
@@ -179,6 +184,7 @@ prod$`Tipo de capa` <- NULL
 
 # Remove arrival_time column. #14
 prod$arrival_time <- NULL
+# sell$units_timeframe_of_amt_sold <- sapply(c(1:length(sell$units_timeframe_of_amt_sold)), function(x) {print(x) ; return(unlist(sell$units_timeframe_of_amt_sold[x]))})
 
 write_csv(prod, date %>% paste("iPh8PlCase_Prod.csv", sep = ""))
 write_csv(sell, date %>% paste("iPh8PlCase_Sell.csv", sep = ""))
