@@ -25,7 +25,7 @@ date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_ItemTypeID_N"
+url <- "https://listado.mercadolibre.com.ar/iphone8-funda_ITEM*CONDITION_2230284"
 
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
