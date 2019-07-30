@@ -10,13 +10,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 1.  Install R on your computer:  http://lib.stat.cmu.edu/R/CRAN/
 2.  Install RStudio Desktop (or your preferred IDE):  https://www.rstudio.com/products/rstudio/download/
-3.  After you move the code onto your system (fork, clone, download, etc.), run the file mercado-libre/setup.R to install the relevant R packages on your computer.
+3.  After you move the code onto your system (fork, clone, download, etc.), run the file mercado-libre/setup.R (which I haven't written yet :) ) to install the relevant R packages on your computer.
 
 ### Running the code
 
 ### Building your own MercadoLibre webscraper
 
 ### Automating the scraper
+
+This is my ongoing struggle.  
 
 ## Author
 
