@@ -103,6 +103,7 @@ sell$units_of_time_operating[which(sell$units_of_time_operating == "dias")] <- "
 
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "dias")] <- "días"
 
 prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
 prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
@@ -152,7 +153,7 @@ free_return_info_values <- free_return_info_values[!is.na(free_return_info_value
 prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if (is.na(x)) { NA } else { which(x == free_return_info_values) }) })
 
 # Combining characteristics with different names.
-prod$`LÃ­nea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
+prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
 
 prod$Linha <- NULL
 

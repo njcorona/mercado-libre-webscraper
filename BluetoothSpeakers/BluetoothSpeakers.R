@@ -103,6 +103,7 @@ sell$units_of_time_operating[which(sell$units_of_time_operating == "dias")] <- "
 
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "dias")] <- "días"
 
 prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
 prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
@@ -152,21 +153,27 @@ free_return_info_values <- free_return_info_values[!is.na(free_return_info_value
 prod$free_return_info <- sapply(prod$free_return_info, function(x) { return ( if (is.na(x)) { NA } else { which(x == free_return_info_values) }) })
 
 # Combining characteristics with different names.
-prod$`LÃ­nea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
-prod$`Potencia de salida (RMS)`[which(prod$country == "BRA")] <- prod$`PotÃªncia de saÃ­da (RMS)`[which(prod$country == "BRA")]
+prod$`Línea`[which(prod$country == "BRA")] <- prod$Linha[which(prod$country == "BRA")]
+prod$`Potencia de salida (RMS)`[which(prod$country == "BRA")] <- prod$`Potência de saída (RMS)`[which(prod$country == "BRA")]
 prod$`Tipos de filtros del parlante`[which(prod$country == "BRA")] <- prod$`Tipos de filtros do alto-falante`[which(prod$country == "BRA")]
+if (length(prod$`Cantidad de parlantes`[which(prod$country == "BRA")]) == 0) { prod$`Cantidad de parlantes` <- NA }
 prod$`Cantidad de parlantes`[which(prod$country == "BRA")] <- prod$`Quantidade de alto-falantes`[which(prod$country == "BRA")]
+if (length(prod$`Sensibilidad de entrada`[which(prod$country == "BRA")]) == 0) { prod$`Sensibilidad de entrada` <- NA }
 prod$`Sensibilidad de entrada`[which(prod$country == "BRA")] <- prod$`Sensibilidade de entrada`[which(prod$country == "BRA")]
 prod$`Formato del parlante`[which(prod$country == "BRA")] <- prod$`Formato do alto-falante`[which(prod$country == "BRA")]
 prod$`Tipos de parlante`[which(prod$country == "BRA")] <- prod$`Tipos de alto-falante`[which(prod$country == "BRA")]
 prod$`ConfiguraciÃ³n de canales`[which(prod$country == "BRA")] <- prod$`ConfiguraÃ§Ã£o de canais`[which(prod$country == "BRA")]
 prod$`Lugares de colocaciÃ³n`[which(prod$country == "BRA")] <- prod$`Lugares de colocaÃ§Ã£o`[which(prod$country == "BRA")]
 prod$Voltaje[which(prod$country == "BRA")] <- prod$Voltagem[which(prod$country == "BRA")]
-prod$`Respuesta mÃ¡xima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta mÃ¡xima em frequÃªncia`[which(prod$country == "BRA")]
-prod$`Respuesta mÃ­nima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta mÃ­nima em frequÃªncia`[which(prod$country == "BRA")]
+
+if (length(prod$`Respuesta máxima en frecuencia`[which(prod$country == "BRA")]) == 0) { prod$`Respuesta máxima en frecuencia` <- NA }
+if (length(prod$`Respuesta mínima en frecuencia`[which(prod$country == "BRA")]) == 0) { prod$`Respuesta mínima en frecuencia` <- NA }
+
+prod$`Respuesta máxima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta máxima em frequência`[which(prod$country == "BRA")]
+prod$`Respuesta mínima en frecuencia`[which(prod$country == "BRA")] <- prod$`Resposta mínima em frequência`[which(prod$country == "BRA")]
 
 prod$Linha <- NULL
-prod$`PotÃªncia de saÃ­da (RMS)` <- NULL
+prod$`Potência de saída (RMS)` <- NULL
 prod$`Tipos de filtros do alto-falante` <- NULL
 prod$`Quantidade de alto-falantes` <- NULL
 prod$`Sensibilidade de entrada` <- NULL
@@ -181,8 +188,8 @@ prod$`Lugares de colocaÃ§Ã£o` <- NULL
 prod$`ConfiguraÃ§Ã£o de canais` <- NULL
 prod$`Modelo alfanumÃ©rico` <- NULL
 prod$Voltagem <- NULL
-prod$`Resposta mÃ¡xima em frequÃªncia` <- NULL
-prod$`Resposta mÃ­nima em frequÃªncia` <- NULL
+prod$`Resposta máxima em frequência` <- NULL
+prod$`Resposta mínima em frequência` <- NULL
 prod$Ancho <- NULL # Only appears for Chile.
 prod$Profundidad <- NULL # Only appears for Chile.
 

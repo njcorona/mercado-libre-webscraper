@@ -547,6 +547,7 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
 # Identify numbers with two periods.
 df$curr_price <- sapply(df$curr_price, function(x) {
+  if (is.na(x)) { return(NA) }
   if (str_count(x, "[\\.]") == 2) {
     return(str_replace(x, "[\\.]", ""))
   } else {
