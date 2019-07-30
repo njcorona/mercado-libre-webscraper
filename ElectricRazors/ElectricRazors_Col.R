@@ -14,12 +14,14 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
 
 #' 
 #' ### Links for electric razors, Colombia, including the first 50
 #' 
 ## ----scrape_links--------------------------------------------------------
-date <- "6_23_"
+print(Sys.time())
+date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
@@ -158,6 +160,12 @@ scrapeNodes <- function(test, search_position, name) {
   
   shipping <- get_html_text(read_html, ".green")
   shipping <- shipping[which(shipping != "")]
+  shipping <- turn_to_na(shipping)
+
+  if (is.na(shipping)) {
+    shipping <- arrival_time
+    arrival_time <- NA
+  }
 
   free_return <- get_html_text(read_html, ".benefits-row__title--returns")
   free_return_info <- get_html_text(read_html, ".benefits-row__subtitle")
@@ -553,10 +561,8 @@ df$orig_price <- as.numeric(df$orig_price)
 
 write_csv(df, date %>% paste("ElectricRazors_Prod_Col.csv", sep = ""))
 write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Col.csv", sep = ""))
+print(Sys.time())
 
 #' 
-#' ### Quick reset for convenience
 ## ------------------------------------------------------------------------
-df <- backup_df
-seller_df <- backup_seller_df
 

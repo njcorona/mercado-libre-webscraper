@@ -1,5 +1,5 @@
 #' ---
-#' title: "iPh8Case"
+#' title: "iPhone8Cases"
 #' author: "NicolasCorona"
 #' date: "6/16/2019"
 #' output: html_document
@@ -13,25 +13,27 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 
 #' 
 ## ------------------------------------------------------------------------
-date <- "6_22_"
-arg_p <- read_csv(date %>% paste("iPh8Case_Prod_Arg.csv", sep = ""), col_names = TRUE)
-bra_p <- read_csv(date %>% paste("iPh8Case_Prod_Bra.csv", sep = ""), col_names = TRUE)
-chi_p <- read_csv(date %>% paste("iPh8Case_Prod_Chi.csv", sep = ""), col_names = TRUE)
-col_p <- read_csv(date %>% paste("iPh8Case_Prod_Col.csv", sep = ""), col_names = TRUE)
-mex_p <- read_csv(date %>% paste("iPh8Case_Prod_Mex.csv", sep = ""), col_names = TRUE)
-per_p <- read_csv(date %>% paste("iPh8Case_Prod_Per.csv", sep = ""), col_names = TRUE)
-uru_p <- read_csv(date %>% paste("iPh8Case_Prod_Uru.csv", sep = ""), col_names = TRUE)
+print(Sys.time())
+date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
+arg_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Arg.csv", sep = ""), col_names = TRUE)
+bra_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Bra.csv", sep = ""), col_names = TRUE)
+chi_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Chi.csv", sep = ""), col_names = TRUE)
+col_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Col.csv", sep = ""), col_names = TRUE)
+mex_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Mex.csv", sep = ""), col_names = TRUE)
+per_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Per.csv", sep = ""), col_names = TRUE)
+uru_p <- read_csv(date %>% paste("iPhone8Cases_Prod_Uru.csv", sep = ""), col_names = TRUE)
 
-arg_s <- read_csv(date %>% paste("iPh8Case_Sell_Arg.csv", sep = ""), col_names = TRUE)
-bra_s <- read_csv(date %>% paste("iPh8Case_Sell_Bra.csv", sep = ""), col_names = TRUE)
-chi_s <- read_csv(date %>% paste("iPh8Case_Sell_Chi.csv", sep = ""), col_names = TRUE)
-col_s <- read_csv(date %>% paste("iPh8Case_Sell_Col.csv", sep = ""), col_names = TRUE)
-mex_s <- read_csv(date %>% paste("iPh8Case_Sell_Mex.csv", sep = ""), col_names = TRUE)
-per_s <- read_csv(date %>% paste("iPh8Case_Sell_Per.csv", sep = ""), col_names = TRUE)
-uru_s <- read_csv(date %>% paste("iPh8Case_Sell_Uru.csv", sep = ""), col_names = TRUE)
+arg_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Arg.csv", sep = ""), col_names = TRUE)
+bra_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Bra.csv", sep = ""), col_names = TRUE)
+chi_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Chi.csv", sep = ""), col_names = TRUE)
+col_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Col.csv", sep = ""), col_names = TRUE)
+mex_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Mex.csv", sep = ""), col_names = TRUE)
+per_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Per.csv", sep = ""), col_names = TRUE)
+uru_s <- read_csv(date %>% paste("iPhone8Cases_Sell_Uru.csv", sep = ""), col_names = TRUE)
 
 arg_p <- cbind(country = "ARG", arg_p)
 bra_p <- cbind(country = "BRA", bra_p)
@@ -90,28 +92,34 @@ sell$units_timeframe_of_amt_sold <- sell$timeframe_of_amt_sold
 sell$timeframe_of_amt_sold <- stored_units_timeframe_of_amt_sold
 
 # Combining plural/singuler/Spanish/Portuguese words.
-sell$units_of_time_operating[which(sell$units_of_time_operating == "ano")] <- "aÃ±os"
-sell$units_of_time_operating[which(sell$units_of_time_operating == "anos")] <- "aÃ±os"
-sell$units_of_time_operating[which(sell$units_of_time_operating == "aÃ±o")] <- "aÃ±os"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "ano")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "anos")] <- "años"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "año")] <- "años"
 
-sell$units_of_time_operating[which(sell$units_of_time_operating == "mÃªs")] <- "meses"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "mês")] <- "meses"
 sell$units_of_time_operating[which(sell$units_of_time_operating == "mes")] <- "meses"
 
-sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "aÃ±os"
+sell$units_of_time_operating[which(sell$units_of_time_operating == "dias")] <- "días" 
+
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "anos")] <- "años"
 sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "mes")] <- "meses"
+sell$units_timeframe_of_amt_sold[which(sell$units_timeframe_of_amt_sold == "dias")] <- "días"
 
-prod$arrival_time[which(prod$arrival_time == "Envio")] <- "EnvÃ­o"
-prod$arrival_time[which(prod$arrival_time == "Envio para todo o paÃ­s")] <- "EnvÃ­o a todo el paÃ­s"
-prod$arrival_time[which(prod$arrival_time == "EnvÃ­o a nivel nacional")] <- "EnvÃ­o a todo el paÃ­s"
-prod$arrival_time[which(prod$arrival_time == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
+prod$shipping[which(prod$shipping == "Envio")] <- "Envío"
+prod$shipping[which(prod$shipping == "Envio para todo o país")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
+prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
 
-prod$shipping[which(prod$shipping == "Frete grÃ¡tis")] <- "EnvÃ­o gratis"
-prod$shipping[which(prod$shipping == "EnvÃ­o gratis a nivel nacional")] <- "EnvÃ­o gratis a todo el paÃ­s"
+prod$shipping[which(prod$shipping == "Frete grátis")] <- "Envío gratis"
+prod$shipping[which(prod$shipping == "Chegará hoje")] <- "Llega hoy"
+prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"
 
-prod$free_return[which(prod$free_return == "DevoluÃ§Ã£o grÃ¡tis")] <- "DevoluciÃ³n gratis"
+prod$free_return[which(prod$free_return == "Devolução grátis")] <- "Devolución gratis"
 
-prod$free_return_info[which(prod$free_return_info == "VocÃª tem 10 dias a partir do recebimento")] <- "TenÃ©s 10 dÃ­as desde que lo recibÃ­s"
-prod$free_return_info[which(prod$free_return_info == "Tienes 10 dÃ­as desde que lo recibes")] <- "TenÃ©s 10 dÃ­as desde que lo recibÃ­s"
+prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir do recebimento")] <- "Tenés 30 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
+prod$free_return_info[which(prod$free_return_info == "Tienes 30 días desde que lo recibes")] <- "Tenés 30 días desde que lo recibís"
 
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]
@@ -127,16 +135,7 @@ units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of
 
 sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
-# These were commented out.  Why?
-units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
-units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
-
 sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
-
-arrival_time_values <- prod$arrival_time[!duplicated(prod$arrival_time)]
-arrival_time_values <- arrival_time_values[!is.na(arrival_time_values)]
-
-prod$arrival_time <- sapply(prod$arrival_time, function(x) { return ( if (is.na(x)) { NA } else { which(x == arrival_time_values) }) })
 
 shipping_values <- prod$shipping[!duplicated(prod$shipping)]
 shipping_values <- shipping_values[!is.na(shipping_values)]
@@ -188,11 +187,14 @@ prod$`Modelo da Capa` <- NULL
 prod$`Tipo de capa` <- NULL
 prod$`Material de la funda` <- NULL
 
-write_csv(prod, date %>% paste("iPh8Case_Prod.csv", sep = ""))
-write_csv(sell, date %>% paste("iPh8Case_Sell.csv", sep = ""))
+# Remove arrival_time column. #14
+prod$arrival_time <- NULL
+
+write_csv(prod, date %>% paste("iPhone8Cases_Prod.csv", sep = ""))
+write_csv(sell, date %>% paste("iPhone8Cases_Sell.csv", sep = ""))
 
 # I may want to remove this particular bit of cleaning until I bring all of the countries together.
-list <- list(units_of_time_operating_values, units_timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
+list <- list(units_of_time_operating_values, shipping_values, free_return_values, free_return_info_values)
 max <- max( sapply(list, function(x) { length(x) }) )
 list <- lapply(list, function(x) {
   if (length(x) < max) {
@@ -205,8 +207,8 @@ list <- lapply(list, function(x) {
   
 })
 
-data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], arrival_time = list[[3]], shipping = list[[4]], free_return = list[[5]], free_return_info = list[[6]])
-write_csv(data_legend, date %>% paste("iPh8Case_Legend.csv", sep = ""))
-
+data_legend <- tibble(value = c(1:max), units_of_time_operating = list[[1]], units_timeframe_of_amt_sold = list[[1]], shipping = list[[2]], free_return = list[[3]], free_return_info = list[[4]])
+write_csv(data_legend, date %>% paste("iPhone8Cases_Legend.csv", sep = ""))
+print(Sys.time())
 
 #' 

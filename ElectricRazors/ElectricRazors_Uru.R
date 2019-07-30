@@ -14,12 +14,14 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
+setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
 
 #' 
 #' ### Links for electric razors, Argentina, including the first 50
 #' 
 ## ----scrape_links--------------------------------------------------------
-date <- "6_23_"
+print(Sys.time())
+date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
@@ -128,6 +130,10 @@ scrapeNodes <- function(test, search_position, name) {
   } else {
     orig_price <- NA
   }
+  
+  # Uru has periods to designate thousands.  Default interpretation is mistakenly that they're decimals, crops out trailing zeroes.
+  curr_price <- str_replace(curr_price, "[\\.]", "")
+  orig_price <- str_replace(orig_price, "[\\.]", "")
 
   num_sold <- get_html_text(read_html, ".item-conditions")
   
@@ -156,6 +162,12 @@ scrapeNodes <- function(test, search_position, name) {
   
   shipping <- get_html_text(read_html, ".green")
   shipping <- shipping[which(shipping != "")]
+  shipping <- turn_to_na(shipping)
+
+  if (is.na(shipping)) {
+    shipping <- arrival_time
+    arrival_time <- NA
+  }
 
   free_return <- get_html_text(read_html, ".benefits-row__title--returns")
   free_return_info <- get_html_text(read_html, ".benefits-row__subtitle")
@@ -424,7 +436,7 @@ write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Uru_Raw.csv", sep = "")
 #' ### Cleaning the data.
 ## ------------------------------------------------------------------------
 # Extracts number from "(### disponibles)"
-df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
+df$in_stock <- sapply(df$in_stock, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]][1]) })
 
 # Extracts units in time_operating (either months or years).
 # Note: this may run into an error if anything in the vector is NA.
@@ -540,6 +552,7 @@ df[which(df$num_reviews == 2 & df$review_avg == 5), 17] <- 2
 
 write_csv(df, date %>% paste("ElectricRazors_Prod_Uru.csv", sep = ""))
 write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Uru.csv", sep = ""))
+print(Sys.time())
 
 # # I may want to remove this particular bit of cleaning until I bring all of the countries together.
 # list <- list(units_of_time_operating_values, timeframe_of_amt_sold_values, arrival_time_values, shipping_values, free_return_values, free_return_info_values)
