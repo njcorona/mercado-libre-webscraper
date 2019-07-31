@@ -14,7 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors")
 
 #' 
 #' ### Links for electric razors, Brazil, including the first 50
@@ -139,10 +139,10 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "Ãšltimo disponÃ­vel!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
       in_stock <- "1"
     }
-    if (gsub("[\t\n$]", "", in_stock) == "Ãšnico disponÃ­vel!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
       in_stock <- "1"
     }
   }
