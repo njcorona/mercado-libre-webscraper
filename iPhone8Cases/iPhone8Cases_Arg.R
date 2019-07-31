@@ -58,11 +58,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.ar/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.ar/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
