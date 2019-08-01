@@ -1,0 +1,8 @@
+<simpleError in if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {    in_stock <- "1"}: argument is of length zero>
+^ for BTHeaphones Arg
+MH:  Bra all,
+ER:  all but Br and Chi
+iP8:  Arg, Mex all; Bra, Chi seller
+iP8+:  Col seller,
+BTH:  Arg all, Per/Uru seller
+BTS:  Arg all
