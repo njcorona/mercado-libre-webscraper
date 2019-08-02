@@ -14,7 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/ElectricRazors")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/ElectricRazors")
 
 #' 
 #' ### Links for electric razors, Peru, including the first 50

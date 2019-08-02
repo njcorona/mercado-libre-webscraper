@@ -14,7 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/iPhone8Cases")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 
 #' 
 #' ### Links for iPhone8 cases, Argentina, including the first 50

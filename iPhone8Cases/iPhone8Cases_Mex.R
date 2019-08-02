@@ -25,7 +25,7 @@ date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://listado.mercadolibre.com.mx/iphone8-funda_ITEM*CONDITION_2230284"
+url <- "https://listado.mercadolibre.com.mx/iphone8-funda_DisplayType_LF_ITEM*CONDITION_2230284"
 
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
@@ -58,11 +58,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://listado.mercadolibre.com.mx/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.mx/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_DisplayType_LF_ITEM*CONDITION_2230284", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.mx/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.mx/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_DisplayType_LF_ITEM*CONDITION_2230284", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
