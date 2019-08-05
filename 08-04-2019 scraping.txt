@@ -1,8 +1,8 @@
-BS:  peru seller,
-BH: arg seller, Chi all, Per seller
+BS:  merge
+BH: merge
 iP8:  merge
-iP8+:  Uru all
+iP8+:  merge
 ER:  merge
-MH:  arg sell, chi sell, uru sell
+MH:  merge
 
 
