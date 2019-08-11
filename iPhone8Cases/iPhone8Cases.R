@@ -83,6 +83,42 @@ mex_p$amt_installments <- as.character(mex_p$amt_installments)
 per_p$amt_installments <- as.character(per_p$amt_installments)
 uru_p$amt_installments <- as.character(uru_p$amt_installments)
 
+# arg_s[which(arg_s$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+# arg_s[which(arg_s$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
+# arg_s[which(arg_s$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+# arg_s[which(arg_s$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+# arg_s$units_timeframe_of_amt_sold <- as.numeric(arg_s$units_timeframe_of_amt_sold)
+# 
+# indexes <- which(bra_s$units_timeframe_of_amt_sold == "últimos")
+# for (i in indexes) {
+#   numberofdays <- bra_s[i,]$timeframe_of_amt_sold
+#   bra_s[i,]$timeframe_of_amt_sold <- "días"
+#   bra_s[i,]$units_timeframe_of_amt_sold <- numberofdays
+# }
+# bra_s[which(bra_s$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+# bra_s[which(bra_s$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
+# bra_s[which(bra_s$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+# bra_s[which(bra_s$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+# bra_s$units_timeframe_of_amt_sold <- as.numeric(bra_s$units_timeframe_of_amt_sold)
+# 
+# chi_s[which(chi_s$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+# chi_s[which(chi_s$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
+# chi_s[which(chi_s$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+# chi_s[which(chi_s$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+# chi_s$units_timeframe_of_amt_sold <- as.numeric(chi_s$units_timeframe_of_amt_sold)
+# 
+# col_s[which(col_s$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+# col_s[which(col_s$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
+# col_s[which(col_s$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+# col_s[which(col_s$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+# col_s$units_timeframe_of_amt_sold <- as.numeric(col_s$units_timeframe_of_amt_sold)
+# 
+# mex_s[which(mex_s$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+# mex_s[which(mex_s$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
+# mex_s[which(mex_s$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+# mex_s[which(mex_s$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+# mex_s$units_timeframe_of_amt_sold <- as.numeric(mex_s$units_timeframe_of_amt_sold)
+
 prod <- bind_rows(arg_p, bra_p, chi_p, col_p, mex_p, per_p, uru_p)
 sell <- bind_rows(arg_s, bra_s, chi_s, col_s, mex_s, per_s, uru_s)
 

@@ -1,0 +1,7 @@
+List of URLs that encountered errors and their errors:
+URL: http://perfil.mercadolibre.com.pe/MARLEMQ1
+Error message: Error in open.connection(x, "rb"): HTTP error 404.
+
+URL: http://perfil.mercadolibre.com.pe/NIHAOIMPORTLIMA
+Error message: Error in open.connection(x, "rb"): HTTP error 403.
+
