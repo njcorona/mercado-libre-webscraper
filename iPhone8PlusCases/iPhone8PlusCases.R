@@ -13,7 +13,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases/2019-07-29/")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8PlusCases/")
 
 #' 
 ## ------------------------------------------------------------------------
@@ -120,6 +120,11 @@ prod$free_return_info[which(prod$free_return_info == "Você tem 30 dias a partir 
 prod$free_return_info[which(prod$free_return_info == "Você tem 10 dias a partir do recebimento")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 10 días desde que lo recibes")] <- "Tenés 10 días desde que lo recibís"
 prod$free_return_info[which(prod$free_return_info == "Tienes 30 días desde que lo recibes")] <- "Tenés 30 días desde que lo recibís"
+
+prod$shipping[which(prod$shipping == "Chegará grátis hoje")] <- "Llega gratis hoy"
+prod$shipping[which(prod$shipping == "Chega amanhã")] <- "Llega mañana"
+prod$shipping[which(prod$shipping == "Chegará grátis amanhã")] <- "Llega gratis mañana"
+
 
 # Set seller amount sold timeframe values for Peru and Uruguay.
 sell$units_timeframe_of_amt_sold[which(sell$country == "PER")] <- sell$units_of_time_operating[which(sell$country == "PER")]

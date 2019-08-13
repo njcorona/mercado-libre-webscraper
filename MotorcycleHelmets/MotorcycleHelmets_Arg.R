@@ -140,10 +140,10 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "�nico disponible!") {
       in_stock <- "1"
     }
-    if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "�ltimo disponible!") {
       in_stock <- "1"
     }
   }
@@ -554,10 +554,3 @@ df$amt_installments <- NA  # The scraper for these is dragging up other nodes th
 write_csv(df, date %>% paste("MotorcycleHelmets_Prod_Arg.csv", sep = ""))
 write_csv(seller_df, date %>% paste("MotorcycleHelmets_Sell_Arg.csv", sep = ""))
 print(Sys.time())
-
-#' 
-## ------------------------------------------------------------------------
-
-
-#' 
-#' 

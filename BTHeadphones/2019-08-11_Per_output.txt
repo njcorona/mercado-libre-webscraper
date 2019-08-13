@@ -1,0 +1,4 @@
+List of URLs that encountered errors and their errors:
+URL: http://perfil.mercadolibre.com.pe/NIHAOIMPORTLIMA
+Error message: Error in open.connection(x, "rb"): HTTP error 403.
+

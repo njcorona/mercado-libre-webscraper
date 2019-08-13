@@ -14,7 +14,7 @@ suppressWarnings(suppressMessages(library(stringr)))
 suppressWarnings(suppressMessages(library(rvest)))
 suppressWarnings(suppressMessages(library(magrittr)))
 suppressWarnings(suppressMessages(library(future)))
-setwd("C:/Users/njcor/Documents/GitHub/mercado-libre/iPhone8Cases")
+setwd("C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/iPhone8Cases")
 
 #' 
 #' ### Links for iPhone8 cases, Argentina, including the first 50
@@ -58,11 +58,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.ar/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://celulares.mercadolibre.com.ar/accesorios/fundas/apple/iphone-8-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.ar/iphone8-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -140,10 +140,10 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "Â¡Ãšnico disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
       in_stock <- "1"
     }
-    if (gsub("[\t\n$]", "", in_stock) == "Â¡Ãšltimo disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
       in_stock <- "1"
     }
   }
@@ -441,9 +441,9 @@ seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold,
 #seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
-if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$timeframe_of_amt_sold <- "aÃ±os"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$units_timeframe_of_amt_sold <- 1
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
 }
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {

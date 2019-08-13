@@ -1,0 +1,7 @@
+tryCatch({ source(paste(directory, "BluetoothSpeakers/BluetoothSpeakers_Bra.R", sep = "")) }, error = function(err) { print(err) ; print(Sys.time()) })
+<simpleError in if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {    in_stock <- "1"}: argument is of length zero>
+[1] 1121
+
+tryCatch({ source(paste(directory, "BluetoothSpeakers/BluetoothSpeakers_Chi.R", sep = "")) }, error = function(err) { print(err) ; print(Sys.time()) })
+<simpleError in if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {    in_stock <- "1"}: argument is of length zero>
+[1] 1501

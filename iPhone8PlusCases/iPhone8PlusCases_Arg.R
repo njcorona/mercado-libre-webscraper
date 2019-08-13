@@ -140,10 +140,10 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "Â¡Ãšnico disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
       in_stock <- "1"
     }
-    if (gsub("[\t\n$]", "", in_stock) == "Â¡Ãšltimo disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
       in_stock <- "1"
     }
   }
@@ -441,9 +441,9 @@ seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold,
 #seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
-if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$timeframe_of_amt_sold <- "aÃ±os"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$units_timeframe_of_amt_sold <- 1
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
 }
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {
@@ -535,5 +535,3 @@ write_csv(df, date %>% paste("iPh8PlCase_Prod_Arg.csv", sep = ""))
 write_csv(seller_df, date %>% paste("iPh8PlCase_Sell_Arg.csv", sep = ""))
 
 print(Sys.time())
-
-#' 

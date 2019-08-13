@@ -1,0 +1,10 @@
+[1] 365
+Error in open.connection(x, "rb") : HTTP error 404.
+
+...
+
+> list_of_seller_links[365]
+[1] "http://perfil.mercadolibre.com.pe/AFV+TEC"
+
+and the link says "Parece que esta página no existe"
+

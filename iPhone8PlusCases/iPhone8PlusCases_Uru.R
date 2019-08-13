@@ -25,7 +25,7 @@ date <- paste(str_sub(Sys.time(), 1, 10), "_", sep = "")
 links <- data.frame()
 
 # The first URL when you search the products is different from the URLs for all products after the fiftieth.  That is the URL stored here.
-url <- "https://listado.mercadolibre.com.uy/telefonia/accesorios-celulares/fundas/iphone/iphone8-plus-funda_ItemTypeID_N_NoIndex_True"
+url <- "https://listado.mercadolibre.com.uy/iphone8-plus-funda_ITEM*CONDITION_2230284_NoIndex_True"
 
 # read_html() is a function that takes in a URL and extracts the html code that is associated with that URL.
 # html_nodes() is a function that takes in a block of html code and the name of a part of that code and returns that part of the html code, if it exists.
@@ -34,7 +34,7 @@ url <- "https://listado.mercadolibre.com.uy/telefonia/accesorios-celulares/funda
 
 num_products_to_scrape <- read_html(url) %>% html_nodes(".quantity-results") %>% html_text() # Gets node value of the quantity of search results.
 num_products_to_scrape <- as.numeric(paste(str_extract_all(num_products_to_scrape, "[0-9]+")[[1]], collapse = '')) # Extracts integer.
-num_products_to_scrape <- if (num_products_to_scrape >= 1151) { 22 } else { min(floor(num_products_to_scrape / 50) * 50 + 1, 22) } # Sets to correct value.  We assume there will be greater than 50 search results.  If there are greater than 2000sx search results, this is set to 2001.  Otherwise, it's set to the greatest possible number of links we can scrape given the number of search results provided.
+num_products_to_scrape <- if (num_products_to_scrape >= 1151) { 22 } else { min(floor(num_products_to_scrape / 50), 22) } # Sets to correct value.  We assume there will be greater than 50 search results.  If there are greater than 2000sx search results, this is set to 2001.  Otherwise, it's set to the greatest possible number of links we can scrape given the number of search results provided.
 
 curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
@@ -58,11 +58,11 @@ counter = nrow(links) + 1
 print("Scraping from pages with product links.")
 for (i in 1:num_products_to_scrape) {
   print(i)
-  url <- paste(paste("https://listado.mercadolibre.com.uy/telefonia/accesorios-celulares/fundas/iphone/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N_NoIndex_True", sep = "")
+  url <- paste(paste("https://listado.mercadolibre.com.uy/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284_NoIndex_True", sep = "")
   
   curr_url <- read_html(url) %>% html_nodes("a.item__info-title") %>% html_attr("href")
   
-  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.uy/telefonia/accesorios-celulares/fundas/iphone/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ItemTypeID_N_NoIndex_True", sep = "")) %>% html_nodes(".main-title") %>% html_text()
+  curr_item <- read_html(paste(paste("https://listado.mercadolibre.com.uy/iphone8-plus-funda_Desde_", (i * 50) + 1, sep = ""), "_ITEM*CONDITION_2230284_NoIndex_True", sep = "")) %>% html_nodes(".main-title") %>% html_text()
   
   if (length(curr_url) < length(curr_item)) {
     curr_item <- curr_item[1:length(curr_url)]
@@ -140,10 +140,10 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "¡Único disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "�nico disponible!") {
       in_stock <- "1"
     }
-    if (gsub("[\t\n$]", "", in_stock) == "¡Último disponible!") {
+    if (gsub("[\t\n$]", "", in_stock) == "�ltimo disponible!") {
       in_stock <- "1"
     }
   }
