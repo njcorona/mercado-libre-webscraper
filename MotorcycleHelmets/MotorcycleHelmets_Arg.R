@@ -554,10 +554,3 @@ df$amt_installments <- NA  # The scraper for these is dragging up other nodes th
 write_csv(df, date %>% paste("MotorcycleHelmets_Prod_Arg.csv", sep = ""))
 write_csv(seller_df, date %>% paste("MotorcycleHelmets_Sell_Arg.csv", sep = ""))
 print(Sys.time())
-
-#' 
-## ------------------------------------------------------------------------
-
-
-#' 
-#' 

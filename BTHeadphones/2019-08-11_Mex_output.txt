@@ -1,0 +1,7 @@
+List of URLs that encountered errors and their errors:
+URL: NA
+Error message: Error: 'NA' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+URL: 
+Error message: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+

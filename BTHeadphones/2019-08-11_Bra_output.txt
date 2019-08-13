@@ -1,0 +1,10 @@
+List of URLs that encountered errors and their errors:
+URL: https://perfil.mercadolivre.com.br/NOVA+SHOPBRASIL
+Error message: Error in open.connection(x, "rb"): HTTP error 404.
+
+URL: https://perfil.mercadolivre.com.br/ESTRELA10_?brandId=1582
+Error message: Error in open.connection(x, "rb"): HTTP error 404.
+
+URL: https://perfil.mercadolivre.com.br/RODRIGAOIMPORTA
+Error message: Error in open.connection(x, "rb"): HTTP error 404.
+

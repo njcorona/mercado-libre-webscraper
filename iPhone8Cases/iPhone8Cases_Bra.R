@@ -366,7 +366,7 @@ write_csv(df, date %>% paste("iPhone8Cases_Prod_Bra_Raw.csv", sep = ""))
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-# list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
+list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 
