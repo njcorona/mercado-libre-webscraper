@@ -139,11 +139,15 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
+    if (length(in_stock) != 0) {
     if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
       in_stock <- "1"
     }
     if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
       in_stock <- "1"
+    }
+    } else {
+      in_stock <- NA
     }
   }
 
@@ -377,20 +381,40 @@ for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
   
+  jumptonext <- TRUE
   tryCatch(
     {
       read_html <- read_html(as.character(link))
       jumptonext <- FALSE
     },
     error=function(cond) {
-      errorURLs <- paste("URL:", link)
-      errorURLs <- c(errorURLs, paste("Error message: ", cond, sep = ""))
+      errorURLs <- c("-----------------", paste("URL:", link))
+      errorURLs <- c(errorURLs, paste("The above link failed once with error: ", cond, sep = ""))
       writeLines(errorURLs, file_connection)
       jumptonext <- TRUE
     }
   )
   
   if (jumptonext) {
+    tryCatch(
+      {
+        errorURLs <- c("Running it again...")
+        read_html <- read_html(as.character(link))
+        jumptonext <- FALSE
+        errorURLs <- c(errorURLs, "It worked.")
+        writeLines(errorURLs, file_connection)
+      },
+      error=function(cond) {
+        errorURLs <- c(paste("Running it again...", "The above link failed twice.  Second error: ", cond, sep = ""))
+        writeLines(errorURLs, file_connection)
+        jumptonext <- TRUE
+      }
+    )
+  }
+  
+  if (jumptonext) {
+    errorURLs <- c("Failed, so skipping to next iteration.")
+    writeLines(errorURLs, file_connection)
     next()
   }
   
@@ -457,9 +481,9 @@ seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
 write_csv(seller_df, date %>% paste("BluetoothHeadphones_Sell_Bra_Raw.csv", sep = ""))
 
-#' 
-#' ### Cleaning the data.
-## ------------------------------------------------------------------------
+
+### Cleaning the data.
+
 seller_df <- backup_seller_df
 df <- backup_df
 # Extracts number from "(### disponibles)"
@@ -488,9 +512,6 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mÃªs"),]) > 0
     seller_df[which(seller_df$units_timeframe_of_amt_sold == "mÃªs"),]$units_timeframe_of_amt_sold <- 1
 }
 
-#timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
-#seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { which(is.na(timeframe_of_amt_sold_values)) } else { which(x == timeframe_of_amt_sold_values) }) })
-
 # Extracts integers from num_sold data.
 anon <- function(x) {
    t <- substr(gsub("[[:space:]]", "", x),1,1000)
@@ -510,19 +531,6 @@ seller_df$leader_status <- sapply(seller_df$leader_status, function(x) { strspli
 seller_df$num_neg_reviews <- sapply(seller_df$num_neg_reviews, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 seller_df$num_pos_reviews <- sapply(seller_df$num_pos_reviews, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
 seller_df$num_neutral_reviews <- sapply(seller_df$num_neutral_reviews, function(x) { as.numeric(str_extract_all(x, "[0-9]+")[[1]]) })
-
-# Converts string fields to integer identifiers.  For example, all products with "llega manana" are assigned a 1 instead of "llega manana".
-#arrival_time_values <- df$arrival_time[!duplicated(df$arrival_time)]
-#df$arrival_time <- sapply(df$arrival_time, function(x) { return ( if (is.na(x)) { which(is.na(arrival_time_values)) } else { which(x == arrival_time_values) }) })
-
-#shipping_values <- df$shipping[!duplicated(df$shipping)]
-#df$shipping <- sapply(df$shipping, function(x) { return ( if (is.na(x)) { which(is.na(shipping_values)) } else { which(x == shipping_values) }) })
-
-#free_return_values <- df$free_return[!duplicated(df$free_return)]
-#df$free_return <- sapply(df$free_return, function(x) { return ( if (is.na(x)) { which(is.na(free_return_values)) } else { which(x == free_return_values) }) })
-
-#free_return_info_values <- df$free_return_info[!duplicated(df$free_return_info)]
-#df$free_return_info <- sapply(df$free_return_info, function(x) { return ( if (is.na(x)) { which(is.na(free_return_info_values)) } else { which(x == free_return_info_values) }) })
 
 # Also applied to Uruguay + Mexico.
 stored_installments <- df$num_installments
@@ -585,5 +593,3 @@ write_csv(df, date %>% paste("BluetoothHeadphones_Prod_Bra.csv", sep = ""))
 write_csv(seller_df, date %>% paste("BluetoothHeadphones_Sell_Bra.csv", sep = ""))
 
 print(Sys.time())
-
-#' 

@@ -375,20 +375,40 @@ for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
   
+  jumptonext <- TRUE
   tryCatch(
     {
       read_html <- read_html(as.character(link))
       jumptonext <- FALSE
     },
     error=function(cond) {
-      errorURLs <- paste("URL:", link)
-      errorURLs <- c(errorURLs, paste("Error message: ", cond, sep = ""))
+      errorURLs <- c("-----------------", paste("URL:", link))
+      errorURLs <- c(errorURLs, paste("The above link failed once with error: ", cond, sep = ""))
       writeLines(errorURLs, file_connection)
       jumptonext <- TRUE
     }
   )
   
   if (jumptonext) {
+    tryCatch(
+      {
+        errorURLs <- c("Running it again...")
+        read_html <- read_html(as.character(link))
+        jumptonext <- FALSE
+        errorURLs <- c(errorURLs, "It worked.")
+        writeLines(errorURLs, file_connection)
+      },
+      error=function(cond) {
+        errorURLs <- c(paste("Running it again...", "The above link failed twice.  Second error: ", cond, sep = ""))
+        writeLines(errorURLs, file_connection)
+        jumptonext <- TRUE
+      }
+    )
+  }
+  
+  if (jumptonext) {
+    errorURLs <- c("Failed, so skipping to next iteration.")
+    writeLines(errorURLs, file_connection)
     next()
   }
   

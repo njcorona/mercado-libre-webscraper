@@ -1,1 +1,0 @@
-Error: 'NA' does not exist in current working directory ('C:/Users/njcor/Documents/GitHub/mercado-libre/iPhone8PlusCases').
