@@ -1,0 +1,22 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: 
+The above link failed once with error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Running it again...The above link failed twice.  Second error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ELECTRONIC_SUNDRIES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/YOUR.MARKET
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
