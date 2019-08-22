@@ -140,10 +140,6 @@ units_of_time_operating_values <- units_of_time_operating_values[!is.na(units_of
 
 sell$units_of_time_operating <- sapply(sell$units_of_time_operating, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
-# These were commented out.  Why?
-# units_timeframe_of_amt_sold_values <- sell$units_timeframe_of_amt_sold[!duplicated(sell$units_timeframe_of_amt_sold)]
-# units_timeframe_of_amt_sold_values <- units_timeframe_of_amt_sold_values[!is.na(units_timeframe_of_amt_sold_values)]
-
 sell$units_timeframe_of_amt_sold <- sapply(sell$units_timeframe_of_amt_sold, function(x) { return ( if (is.na(x)) { NA } else { which(x == units_of_time_operating_values) }) })
 
 shipping_values <- prod$shipping[!duplicated(prod$shipping)]

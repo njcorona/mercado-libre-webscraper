@@ -1,0 +1,79 @@
+List of URLs that encountered errors and their errors:
+URL: https://perfil.mercadolivre.com.br/OUSH1142604
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/CLEAR+ACCOUNT
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/ZHANGFENG+2018
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/PEGMIX
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/VISUAL+FERRAMENTAS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/CAROLINETIYEME
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/RAINHADASVENDASS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/KANGGURU+SHOP
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/EVELYN+LYNN
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/DONGZHUOLIU
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/CAWE4698692
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/SMALLLOKMARIAS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+URL: https://perfil.mercadolivre.com.br/LOJAOLHOUCOMPROUMODAEELETRONIC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.

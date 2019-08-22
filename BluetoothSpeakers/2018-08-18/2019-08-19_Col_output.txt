@@ -1,0 +1,36 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: https://perfil.mercadolibre.com.co/ELECTRONIC_SUNDRIES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: NA
+The above link failed once with error: Error: 'NA' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothSpeakers').
+
+Running it again...The above link failed twice.  Second error: Error: 'NA' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothSpeakers').
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/JULIANQUIJANOBAUTISTA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TAURET.COMPUTADORES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SIGMA+IMPORTADORES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.

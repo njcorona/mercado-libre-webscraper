@@ -1,5 +1,0 @@
-prod$shipping[which(prod$shipping == "Envío a nivel nacional")] <- "Envío a todo el país"
-prod$shipping[which(prod$shipping == "Entrega a combinar com o vendedor")] <- "Entrega a acordar con el vendedor"
-prod$shipping[which(prod$shipping == "ChegarÃ¡ grÃ¡tis amanhÃ£")] <- "Llega gratis maÃ±ana" 
-prod$shipping[which(prod$shipping == "Frete grÃ¡tis")] <- "Envío gratis"
-prod$shipping[which(prod$shipping == "Envío gratis a nivel nacional")] <- "Envío gratis a todo el país"

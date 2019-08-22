@@ -1,0 +1,15 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: NA
+The above link failed once with error: Error: 'NA' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Running it again...The above link failed twice.  Second error: Error: 'NA' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.mx/COAN9846916
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.

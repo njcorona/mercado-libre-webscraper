@@ -359,20 +359,54 @@ write_csv(df, date %>% paste("ElectricRazors_Prod_Col_Raw.csv", sep = ""))
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-# list_of_seller_links <- list_of_seller_links[which(list_of_seller_links != "https://perfil.mercadolibre.com.co/PHONETIFYTIENDAONLINE")]
+list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
+file_connection <- file(paste(date, "Col_output.txt", sep = ""), open = "wt")
+writeLines(c("List of URLs that encountered errors and their errors:"), file_connection)
 
 # Iterates over all of the unique seller links to get their info.
 for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
-  invalid <- tryCatch(read_html(as.character(link)), error = function(e) {
-    print(link)
-    return(NULL)
-  })
-  if (is.null(invalid)) { next }
-  read_html <- read_html(as.character(link))
+  
+  jumptonext <- TRUE
+  tryCatch(
+    {
+      read_html <- read_html(as.character(link))
+      jumptonext <- FALSE
+    },
+    error=function(cond) {
+      errorURLs <- c("-----------------", paste("URL:", link))
+      errorURLs <- c(errorURLs, paste("The above link failed once with error: ", cond, sep = ""))
+      writeLines(errorURLs, file_connection)
+      jumptonext <- TRUE
+    }
+  )
+  
+  if (jumptonext) {
+    tryCatch(
+      {
+        errorURLs <- c("Running it again...")
+        read_html <- read_html(as.character(link))
+        jumptonext <- FALSE
+        errorURLs <- c(errorURLs, "It worked.")
+        writeLines(errorURLs, file_connection)
+      },
+      error=function(cond) {
+        errorURLs <- c(paste("Running it again...", "The above link failed twice.  Second error: ", cond, sep = ""))
+        writeLines(errorURLs, file_connection)
+        jumptonext <- TRUE
+      }
+    )
+  }
+  
+  if (jumptonext) {
+    errorURLs <- c("Failed, so skipping to next iteration.")
+    writeLines(errorURLs, file_connection)
+    next()
+  }
+  
   if (length(get_html_text(read_html, ".ui-empty-state__title")) > 0) {
     if (get_html_text(read_html, ".ui-empty-state__title") == "Â¡Ups! hubo un error") { 
       print("break")
@@ -421,6 +455,7 @@ for (i in 1:length(list_of_seller_links)) {
   seller_df1 <- tibble(seller_name, link, time_operating, units_of_time_operating, amt_sold, leader_status, top_descriptor1, top_descriptor2, num_reviews, num_neg_reviews, num_neutral_reviews, num_pos_reviews, location, timeframe_of_amt_sold)
   list_of_dfs[[i]] <- seller_df1
 }
+close(file_connection, type = "wt")
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
 write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Col_Raw.csv", sep = ""))
@@ -446,9 +481,9 @@ seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold,
 seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
-if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$timeframe_of_amt_sold <- "aÃ±os"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$units_timeframe_of_amt_sold <- 1
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
 }
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {

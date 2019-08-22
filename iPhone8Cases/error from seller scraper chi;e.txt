@@ -1,6 +1,0 @@
-Error in open.connection(x, "rb") : HTTP error 403.
-
-Warning message:
-In .Internal(match.call(definition, call, expand.dots, envir)) :
-  closing unused connection 3 (https://perfil.mercadolibre.cl/BUHOSTORE.COM)
-

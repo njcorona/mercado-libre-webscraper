@@ -135,11 +135,13 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
-      in_stock <- "1"
+    if (length(in_stock) != 0) {
+      if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
+        in_stock <- "1"
+      }
     }
   }
 
@@ -366,12 +368,51 @@ list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
 list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
+file_connection <- file(paste(date, "Chi_output.txt", sep = ""), open = "wt")
+writeLines(c("List of URLs that encountered errors and their errors:"), file_connection)
 
 # Iterates over all of the unique seller links to get their info.
 for (i in 1:length(list_of_seller_links)) {
   print(i)
   link <- list_of_seller_links[i]
-  read_html <- read_html(as.character(link))
+  
+  jumptonext <- TRUE
+  tryCatch(
+    {
+      read_html <- read_html(as.character(link))
+      jumptonext <- FALSE
+    },
+    error=function(cond) {
+      errorURLs <- c("-----------------", paste("URL:", link))
+      errorURLs <- c(errorURLs, paste("The above link failed once with error: ", cond, sep = ""))
+      writeLines(errorURLs, file_connection)
+      jumptonext <- TRUE
+    }
+  )
+  
+  if (jumptonext) {
+    tryCatch(
+      {
+        errorURLs <- c("Running it again...")
+        read_html <- read_html(as.character(link))
+        jumptonext <- FALSE
+        errorURLs <- c(errorURLs, "It worked.")
+        writeLines(errorURLs, file_connection)
+      },
+      error=function(cond) {
+        errorURLs <- c(paste("Running it again...", "The above link failed twice.  Second error: ", cond, sep = ""))
+        writeLines(errorURLs, file_connection)
+        jumptonext <- TRUE
+      }
+    )
+  }
+  
+  if (jumptonext) {
+    errorURLs <- c("Failed, so skipping to next iteration.")
+    writeLines(errorURLs, file_connection)
+    next()
+  }
+  
   seller_name <- get_html_text(read_html, "#store-info__name")
   if (length(seller_name) == 0) {
     seller_name <- get_html_text(read_html, "#brand")
@@ -414,6 +455,7 @@ for (i in 1:length(list_of_seller_links)) {
   seller_df1 <- tibble(seller_name, link, time_operating, units_of_time_operating, amt_sold, leader_status, top_descriptor1, top_descriptor2, num_reviews, num_neg_reviews, num_neutral_reviews, num_pos_reviews, location, timeframe_of_amt_sold)
   list_of_dfs[[i]] <- seller_df1
 }
+close(file_connection, type = "wt")
 seller_df <- bind_rows(list_of_dfs)
 backup_seller_df <- seller_df
 write_csv(seller_df, date %>% paste("ElectricRazors_Sell_Chi_Raw.csv", sep = ""))
@@ -439,9 +481,9 @@ seller_df$units_timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold,
 seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][1] })
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
-if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$timeframe_of_amt_sold <- "aÃ±os"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "aÃ±o"),]$units_timeframe_of_amt_sold <- 1
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
 }
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {
