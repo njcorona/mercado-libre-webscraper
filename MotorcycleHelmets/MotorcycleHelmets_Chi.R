@@ -135,11 +135,13 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
-      in_stock <- "1"
+    if (length(in_stock) != 0) {
+      if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
+        in_stock <- "1"
+      }
     }
   }
 
@@ -500,13 +502,13 @@ seller_df$amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strs
 seller_df$timeframe_of_amt_sold <- sapply(seller_df$timeframe_of_amt_sold, function(x) { strsplit(x, " ")[[1]][7] })
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
+  seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$timeframe_of_amt_sold <- "años"
+  seller_df[which(seller_df$units_timeframe_of_amt_sold == "año"),]$units_timeframe_of_amt_sold <- 1
 }
 
 if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$timeframe_of_amt_sold <- "meses"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$units_timeframe_of_amt_sold <- 1
+  seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$timeframe_of_amt_sold <- "meses"
+  seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]$units_timeframe_of_amt_sold <- 1
 }
 
 # timeframe_of_amt_sold_values <- seller_df$timeframe_of_amt_sold[!duplicated(seller_df$timeframe_of_amt_sold)]
@@ -514,13 +516,13 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mes"),]) > 0)
 
 # Extracts integers from num_sold data.
 anon <- function(x) {
-   t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (!is.na(t)) {
-   if (t == "Nuevo") {
-     return(0)
-   }
-   }
-   return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
+  t <- substr(gsub("[[:space:]]", "", x),1,1000)
+  if (!is.na(t)) {
+    if (t == "Nuevo") {
+      return(0)
+    }
+  }
+  return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
 df$num_sold <- sapply(df$num_sold, anon)
   

@@ -140,12 +140,12 @@ scrapeNodes <- function(test, search_position, name) {
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
     if (length(in_stock) != 0) {
-    if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
-      in_stock <- "1"
-    }
+      if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
+        in_stock <- "1"
+      }
     } else {
       in_stock <- NA
     }

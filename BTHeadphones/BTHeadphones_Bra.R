@@ -140,12 +140,12 @@ scrapeNodes <- function(test, search_position, name) {
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
     if (length(in_stock) != 0) {
-    if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
-      in_stock <- "1"
-    }
-    if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
-      in_stock <- "1"
-    }
+      if (gsub("[\t\n$]", "", in_stock) == "Último disponível!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "Único disponível!") {
+        in_stock <- "1"
+      }
     } else {
       in_stock <- NA
     }
@@ -507,20 +507,20 @@ if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "ano"),]) > 0)
     seller_df[which(seller_df$units_timeframe_of_amt_sold == "ano"),]$units_timeframe_of_amt_sold <- 1
 }
 
-if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mÃªs"),]) > 0) {
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mÃªs"),]$timeframe_of_amt_sold <- "meses"
-    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mÃªs"),]$units_timeframe_of_amt_sold <- 1
+if (nrow(seller_df[which(seller_df$units_timeframe_of_amt_sold == "mês"),]) > 0) {
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mês"),]$timeframe_of_amt_sold <- "meses"
+    seller_df[which(seller_df$units_timeframe_of_amt_sold == "mês"),]$units_timeframe_of_amt_sold <- 1
 }
 
 # Extracts integers from num_sold data.
 anon <- function(x) {
-   t <- substr(gsub("[[:space:]]", "", x),1,1000)
-   if (!is.na(t)) {
-   if (t == "Nuevo") {
-     return(0)
-   }
-   }
-   return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
+  t <- substr(gsub("[[:space:]]", "", x),1,1000)
+  if (!is.na(t)) {
+    if (t == "Nuevo") {
+      return(0)
+    }
+  }
+  return(as.numeric(str_extract_all(t, "[0-9]+")[[1]][1]))
 }
 df$num_sold <- sapply(df$num_sold, anon)
   

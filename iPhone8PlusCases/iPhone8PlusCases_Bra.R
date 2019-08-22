@@ -150,7 +150,7 @@ scrapeNodes <- function(test, search_position, name) {
       in_stock <- NA
     }
   }
-
+  
   num_installments <- get_html_text(read_html, ".free-installments")
   if (length(num_installments) == 0) {
     num_installments <- get_html_text(read_html, ".payment-installments")
@@ -370,7 +370,7 @@ write_csv(df, date %>% paste("iPh8PlCase_Prod_Bra_Raw.csv", sep = ""))
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
-# list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
+list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 file_connection <- file(paste(date, "Bra_output.txt", sep = ""), open = "wt")

@@ -137,12 +137,12 @@ scrapeNodes <- function(test, search_position, name) {
   if (length(in_stock) == 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
     if (length(in_stock) != 0) {
-        if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
-          in_stock <- "1"
-        }
-        if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
-          in_stock <- "1"
-        }
+      if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
+        in_stock <- "1"
+      }
+      if (gsub("[\t\n$]", "", in_stock) == "Último disponible!") {
+        in_stock <- "1"
+      }
     }
   }
 
@@ -370,6 +370,7 @@ write_csv(df, date %>% paste("iPhone8Cases_Prod_Mex_Raw.csv", sep = ""))
 # Some products have sellers in common.  This condenses all of the sellers into a list of unique, non-repeated URLs to their seller profiles.
 list_of_seller_links <- df$seller_link
 list_of_seller_links <- list_of_seller_links[!duplicated(list_of_seller_links)]
+list_of_seller_links <- list_of_seller_links[!is.na(list_of_seller_links)]
 list_of_dfs <- vector("list", 3000)
 seller_df <- NULL
 file_connection <- file(paste(date, "Mex_output.txt", sep = ""), open = "wt")
