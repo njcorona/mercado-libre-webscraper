@@ -6,7 +6,7 @@ For those interested in countries and products other than those listed above, th
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ Please feel welcome add an issue if you would need or want help scraping your ow
 
 ### Automating the scraper
 
-This was my ongoing struggle for a while.  I recommend AWS's Free Tier. 
+This was my ongoing struggle for a while.  I recommend AWS's Free Tier.  I am no longer regularly running the scraper - please contact me if you would like me to change that.
 
 ## Author
 
