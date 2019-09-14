@@ -1,0 +1,14 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: 
+The above link failed once with error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothSpeakers').
+
+Running it again...The above link failed twice.  Second error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BluetoothSpeakers').
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.mx/TAKUSRL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...
+It worked.

@@ -95,4 +95,3 @@ tryCatch({ source(paste(directory, "MotorcycleHelmets/MotorcycleHelmets_Per.R", 
 print(Sys.time())
 tryCatch({ source(paste(directory, "MotorcycleHelmets/MotorcycleHelmets_Uru.R", sep = "")) }, error = function(err) { print(err) ; print(Sys.time()) })
 print(Sys.time())
-

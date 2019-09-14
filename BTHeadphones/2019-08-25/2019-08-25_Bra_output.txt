@@ -1,0 +1,7 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: https://perfil.mercadolivre.com.br/VEM+C%C3%81
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 404.
+
+Running it again...
+It worked.

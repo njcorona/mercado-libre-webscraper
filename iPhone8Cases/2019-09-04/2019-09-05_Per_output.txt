@@ -1,0 +1,470 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: http://perfil.mercadolibre.com.pe/LUNA281192
+The above link failed once with error: Error in open.connection(x, "rb"): Timeout was reached: Connection timed out after 142162938 milliseconds
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/SANDRAFIORELLAVALDIVIAMANCO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/SENDS_VICTOR2010
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/SSYST
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/COMERCIOVIRTUAL+PER%C3%9A
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/CMARYLIN
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/SHOPCELLPER%C3%9A
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TECNUEVAERA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MOBILE+CONNECT
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/JHP+STORE...
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/LUCKIALANFERNANDEZSALCEDO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/GURUPERUANOSHOP
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MELISSABARTRA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ALMACENERO+08
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TRIPLESENDS
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ROSILLOHEBERTO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/BASEUSIMPORTLTD
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ROSE_2019
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/AYD+PERUPHONE
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/KINZESHOP
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/OSDA6454778
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MIGUELCALP
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/DISTRIBUIDORA+BELEN
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/DIGITALPARDO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/NILLKIN+PERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ROMCSR
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TECNO-ACCESORIOS-PERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ZABIVAKA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/JOSE+GOGOME
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MRL+IMPORT
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ACCESORIESSTORE+PER%C3%9A
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/HIPERCELLVENTASONLINE
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ELMER+ALFARO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ACCESORIOS+SB
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/VELBRO+PERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/CITYPHONESTORE
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/INNOVATRONIC+SAC
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ISABELGUERRAURIOSTE
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MARDINOVA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/IMPORT+PER%C3%9A
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/IMPORTADIRECTO+PERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/REDMOVILPERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/INNOVA+SMART
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/USASTOREPERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/EDUARDOVILCHEZCHAVEZ
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/CYSCORP
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ZONA+SMART
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TECJL
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/KF+IMPORT
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/CARLITOSFERRUA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TUNEA.TU.SMART
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ABFASHOP24
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/AKAESPERUSAC
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MARVINORDAYACHAMORRO
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ALBERTOBQ
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/BEEN919830
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/JOSRONALTORRESBANDA
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/SMARTPHONESPERUMIRAFLORES
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MR-ENTEL
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ONTRACK-PERU
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MEYLYNLUNG
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/CELL.MAGIC
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/QIA2
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/TELESOLUCIONES
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ELCUTA3
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/ROB4830
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.
+-----------------
+URL: http://perfil.mercadolibre.com.pe/MUNDO_MOBILES2007
+The above link failed once with error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): Could not resolve host: perfil.mercadolibre.com.pe
+
+Failed, so skipping to next iteration.

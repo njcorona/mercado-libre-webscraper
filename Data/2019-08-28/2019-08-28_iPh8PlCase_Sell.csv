@@ -1,0 +1,909 @@
+country,seller_name,link,time_operating,units_of_time_operating,amt_sold,leader_status,top_descriptor1,top_descriptor2,num_reviews,num_neg_reviews,num_neutral_reviews,num_pos_reviews,location,timeframe_of_amt_sold,units_timeframe_of_amt_sold
+ARG,REMOTODOMICILIO,https://perfil.mercadolibre.com.ar/REMOTODOMICILIO,3,1,4477,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1050,31,29,990,"Caballito, Capital Federal.",4,2
+ARG,GRUPO TTB.S.R.L.,https://perfil.mercadolibre.com.ar/GRUPO+TTB.S.R.L.,1,1,3258,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1067,17,23,1027,"Villa Crespo, Capital Federal.",4,2
+ARG,TIENDASHOPEALO,https://perfil.mercadolibre.com.ar/TIENDASHOPEALO,13,1,11773,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2552,40,33,2479,"Morón, Buenos Aires.",4,2
+ARG,TECHYOK,https://perfil.mercadolibre.com.ar/TECHYOK,3,1,2849,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1100,9,16,1075,"Microcentro, Capital Federal.",4,2
+ARG,NORCEL_CABA,https://perfil.mercadolibre.com.ar/NORCEL_CABA,14,1,9305,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2636,49,53,2534,"Palermo, Capital Federal.",4,2
+ARG,CRAZYSTATION,https://perfil.mercadolibre.com.ar/CRAZYSTATION,13,1,2571,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,641,19,23,599,"Floresta, Capital Federal.",4,2
+ARG,CLUBDELCELUOFICIAL,https://perfil.mercadolibre.com.ar/CLUBDELCELUOFICIAL,3,1,4695,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1281,19,16,1246,"Floresta, Capital Federal.",4,2
+ARG,COSASLINDAS-,https://perfil.mercadolibre.com.ar/COSASLINDAS-,15,1,6996,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2574,21,30,2523,"Congreso, Capital Federal.",4,2
+ARG,CELUGADGETS,https://perfil.mercadolibre.com.ar/CELUGADGETS,14,1,6987,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2154,40,42,2072,"Palermo, Capital Federal.",4,2
+ARG,NORCEL01,https://perfil.mercadolibre.com.ar/NORCEL01,4,1,10815,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2696,39,60,2597,"Olivos, Buenos Aires.",4,2
+ARG,WALDENSTORE,https://perfil.mercadolibre.com.ar/WALDENSTORE,19,1,628,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,214,0,1,213,"Recoleta, Capital Federal.",4,2
+ARG,SERVICIOSLINK,https://perfil.mercadolibre.com.ar/SERVICIOSLINK,11,1,4797,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1343,16,21,1306,"San justo, Buenos Aires.",4,2
+ARG,TEKHNETSHOP,https://perfil.mercadolibre.com.ar/TEKHNETSHOP,3,1,1489,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,553,6,9,538,"Capital Federal, Capital Federal.",4,2
+ARG,THEPHONE_BSAS,https://perfil.mercadolibre.com.ar/THEPHONE_BSAS,7,1,7011,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2033,40,65,1928,"San nicolas, Capital Federal.",4,2
+ARG,MIPEDIDOWEB2018,https://perfil.mercadolibre.com.ar/MIPEDIDOWEB2018,4,1,1560,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,564,5,22,537,"Microcentro, Capital Federal.",4,2
+ARG,TIENDASHOPEALOML,https://perfil.mercadolibre.com.ar/TIENDASHOPEALOML,2,1,7436,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1647,19,24,1604,"Morón, Buenos Aires.",4,2
+ARG,KA-MAS,https://perfil.mercadolibre.com.ar/KA-MAS,8,1,3249,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,989,22,34,933,"Villa Pueyrredón, Capital Federal.",4,2
+ARG,ILOVEPHONE.ARG,https://perfil.mercadolibre.com.ar/ILOVEPHONE.ARG,12,1,1634,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,476,5,4,467,"Buenos Aires, Capital Federal.",4,2
+ARG,TRISHOP2010,https://perfil.mercadolibre.com.ar/TRISHOP2010,6,1,4256,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,988,18,15,955,"ONCE, BALVANERA, Capital Federal.",4,2
+ARG,TIENDAEASYSHOPPING,https://perfil.mercadolibre.com.ar/TIENDAEASYSHOPPING,2,1,3429,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,883,9,19,855,"Villa Devoto, Capital Federal.",4,2
+ARG,MEGASTATIONSRL,https://perfil.mercadolibre.com.ar/MEGASTATIONSRL,5,1,6085,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,2195,40,72,2083,"Belgrano, Capital Federal.",4,2
+ARG,POLO CEL,https://perfil.mercadolibre.com.ar/POLO+CEL,6,1,9414,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2949,84,88,2777,"Villa Crespo, Capital Federal.",4,2
+ARG,TIENDA CONTROL,https://perfil.mercadolibre.com.ar/TIENDA+CONTROL,16,1,1722,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,835,3,18,814,"Microcentro, Capital Federal.",4,2
+ARG,PUNTO_ DIGITAL,https://perfil.mercadolibre.com.ar/PUNTO_+DIGITAL,1,1,8764,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2129,34,28,2067,"Martínez, Buenos Aires.",4,2
+ARG,MARTIN5LD,https://perfil.mercadolibre.com.ar/MARTIN5LD,4,1,328,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,104,3,0,101,"Cordoba, Córdoba.",4,2
+ARG,ELEVENTECH,https://perfil.mercadolibre.com.ar/ELEVENTECH,5,1,2975,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,1239,46,61,1132,"Balvanera, Capital Federal.",4,2
+ARG,CELLMALEON,https://perfil.mercadolibre.com.ar/CELLMALEON,2,1,2886,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,1043,21,35,987,"Belgrano, Capital Federal.",4,2
+ARG,ORIGINALCASE NET,https://perfil.mercadolibre.com.ar/ORIGINALCASE+NET,8,1,1372,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,374,2,1,371,"C.A.B.A., Capital Federal.",4,2
+ARG,KOKOLOCO4,https://perfil.mercadolibre.com.ar/KOKOLOCO4,13,1,102,NA,Brinda buena atención,Despacha sus productos a tiempo,46,1,0,45,"Martínez, Buenos Aires.",4,2
+ARG,BA ELECTRONICGROUP,https://perfil.mercadolibre.com.ar/BA+ELECTRONICGROUP,4,1,7825,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1831,41,47,1743,"Monserrat, Capital Federal.",4,2
+ARG,PEDIDOS_Y_ENCARGUES,https://perfil.mercadolibre.com.ar/PEDIDOS_Y_ENCARGUES,5,1,387,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,133,1,2,130,"Liniers, Capital Federal.",4,2
+ARG,GIOOCAMP,https://perfil.mercadolibre.com.ar/GIOOCAMP,3,1,111,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,57,4,1,52,"Avellaneda, Buenos Aires.",4,2
+ARG,COVERYOURCASES4,https://perfil.mercadolibre.com.ar/COVERYOURCASES4,1,1,995,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,426,4,4,418,"Villa Urquiza, Capital Federal.",4,2
+ARG,ACCESORIOSMOTOMO,https://perfil.mercadolibre.com.ar/ACCESORIOSMOTOMO,16,1,405,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,230,0,4,226,"Caballito, Capital Federal.",4,2
+ARG,DREAMSSTORE1,https://perfil.mercadolibre.com.ar/DREAMSSTORE1,3,1,2287,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,613,19,20,574,"San Nicolás, Capital Federal.",4,2
+ARG,PANDASHOP_ARG,https://perfil.mercadolibre.com.ar/PANDASHOP_ARG,2,1,12258,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,3100,126,153,2821,"Villa Crespo, Capital Federal.",4,2
+ARG,BAZAR_LATAM,https://perfil.mercadolibre.com.ar/BAZAR_LATAM,10,1,1591,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,494,4,7,483,"Paternal, Capital Federal.",4,2
+ARG,CROSSOVER.,https://perfil.mercadolibre.com.ar/CROSSOVER.,12,1,56,NA,Brinda buena atención,Despacha sus productos a tiempo,23,0,1,22,"Tigre, Buenos Aires.",4,2
+ARG,WEST-SHOP,https://perfil.mercadolibre.com.ar/WEST-SHOP,15,1,2903,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1125,19,16,1090,"Palermo, Capital Federal.",4,2
+ARG,TECNO-OUTLET,https://perfil.mercadolibre.com.ar/TECNO-OUTLET,20,1,1889,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,679,4,6,669,"Ciudad de Buenos Aires, Capital Federal.",4,2
+ARG,BG ELECTRONICA,https://perfil.mercadolibre.com.ar/BG+ELECTRONICA,17,1,3278,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1177,4,19,1154,"Caballito, Capital Federal.",4,2
+ARG,JPCOMPUTERSINSUMOS2020,https://perfil.mercadolibre.com.ar/JPCOMPUTERSINSUMOS2020,2,1,1863,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,610,14,14,582,"SAN JUSTO, Buenos Aires.",4,2
+ARG,PUNTONETWEB,https://perfil.mercadolibre.com.ar/PUNTONETWEB,9,1,1397,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,695,19,25,651,"Villa Devoto, Capital Federal.",4,2
+ARG,DRESSMYCELL.,https://perfil.mercadolibre.com.ar/DRESSMYCELL.,12,1,6457,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1997,35,40,1922,"Caballito, Capital Federal.",4,2
+ARG,PREMIUM_SHOP,https://perfil.mercadolibre.com.ar/PREMIUM_SHOP,3,1,2893,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,780,8,13,759,"Colegiales, Capital Federal.",4,2
+ARG,CUENTAML5LD,https://perfil.mercadolibre.com.ar/CUENTAML5LD,10,1,316,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,84,1,0,83,"Córdoba, Córdoba.",4,2
+ARG,RUDDERCEL,https://perfil.mercadolibre.com.ar/RUDDERCEL,4,1,4766,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,952,23,13,916,"Monte grande, Buenos Aires.",4,2
+ARG,TECNOESHOP_CBA,https://perfil.mercadolibre.com.ar/TECNOESHOP_CBA,12,1,2358,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,711,11,11,689,"Cordoba, Córdoba.",4,2
+ARG,MAS54MOBILESTORE,https://perfil.mercadolibre.com.ar/MAS54MOBILESTORE,11,2,163,NA,Brinda buena atención,Despacha sus productos a tiempo,79,0,1,78,"Avellaneda, Buenos Aires.",4,2
+ARG,PETROINCA,https://perfil.mercadolibre.com.ar/PETROINCA,5,1,5179,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1439,38,42,1359,"San Nicolás, Capital Federal.",4,2
+ARG,ACTIVACIONES CRESPO,https://perfil.mercadolibre.com.ar/ACTIVACIONES+CRESPO,7,1,1475,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,582,19,6,557,"Villa Crespo, Capital Federal.",4,2
+ARG,DLP.ACC,https://perfil.mercadolibre.com.ar/DLP.ACC,8,1,174,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,64,1,2,61,"Buenos Aires, Buenos Aires.",4,2
+ARG,DREAMDIGITAL,https://perfil.mercadolibre.com.ar/DREAMDIGITAL,2,1,1465,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,606,11,19,576,"Belgrano, Capital Federal.",4,2
+ARG,TECNO DB,https://perfil.mercadolibre.com.ar/TECNO+DB,10,1,1181,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,314,4,3,307,"Quilmes, Buenos Aires.",4,2
+ARG,FUNDAS-MERCURY,https://perfil.mercadolibre.com.ar/FUNDAS-MERCURY,10,1,441,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,149,1,3,145,"Once, Capital Federal.",4,2
+ARG,MACCESORIOS AR,https://perfil.mercadolibre.com.ar/MACCESORIOS+AR,8,1,2321,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,771,10,11,750,"Palermo, Capital Federal.",4,2
+ARG,GENERACIONUNO,https://perfil.mercadolibre.com.ar/GENERACIONUNO,11,1,5733,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2178,18,38,2122,"Microcentro - Obelisco, Capital Federal.",4,2
+ARG,IFANS,https://perfil.mercadolibre.com.ar/IFANS,16,1,757,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,263,7,6,250,"CABA, Capital Federal.",4,2
+ARG,CEROKELVIN.CASES16,https://perfil.mercadolibre.com.ar/CEROKELVIN.CASES16,2,1,489,NA,Brinda buena atención,Despacha sus productos a tiempo,339,2,3,334,"Palermo, Capital Federal.",2,1
+ARG,BSAS_TECNO,https://perfil.mercadolibre.com.ar/BSAS_TECNO,11,2,2903,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1392,4,12,1376,"San Nicolás, Capital Federal.",4,2
+ARG,MINNIONAGUSMAGNANO,https://perfil.mercadolibre.com.ar/MINNIONAGUSMAGNANO,4,1,93,NA,Brinda buena atención,Despacha sus productos a tiempo,48,0,4,44,"Villa Urquiza, Capital Federal.",4,2
+ARG,JPCOMPUTERSINSUMOS2015,https://perfil.mercadolibre.com.ar/JPCOMPUTERSINSUMOS2015,4,1,480,NA,Brinda buena atención,Despacha sus productos a tiempo,144,2,4,138,"SAN JUSTO, Buenos Aires.",4,2
+ARG,PILARELECTRONICSERVICIOTECNICO,https://perfil.mercadolibre.com.ar/PILARELECTRONICSERVICIOTECNICO,5,2,40,NA,Brinda buena atención,Despacha sus productos a tiempo,20,0,1,19,"Pilar, Buenos Aires.",5,2
+ARG,CYBER_BAIRES,https://perfil.mercadolibre.com.ar/CYBER_BAIRES,6,2,1965,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,587,11,9,567,"Almagro, Capital Federal.",4,2
+ARG,ANDROIDE AZUL,https://perfil.mercadolibre.com.ar/ANDROIDE+AZUL,10,1,1541,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,622,5,14,603,"Congreso, Capital Federal.",4,2
+ARG,JPINSUMOSCELULARES,https://perfil.mercadolibre.com.ar/JPINSUMOSCELULARES,2,1,101,NA,Brinda buena atención,Despacha sus productos a tiempo,41,1,3,37,"San Justo, Buenos Aires.",4,2
+ARG,EURO GSM,https://perfil.mercadolibre.com.ar/EURO+GSM,3,1,183,NA,Brinda buena atención,Despacha sus productos a tiempo,95,0,0,95,"Microcentro, Capital Federal.",4,2
+ARG,DH CISCO,https://perfil.mercadolibre.com.ar/DH+CISCO,9,1,995,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,327,0,1,326,"El Palomar, Buenos Aires.",4,2
+ARG,MITDAY,https://perfil.mercadolibre.com.ar/MITDAY,16,1,547,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,182,2,0,180,"Núñez, Capital Federal.",4,2
+ARG,BAIRES ONTECH,https://perfil.mercadolibre.com.ar/BAIRES+ONTECH,14,1,190,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,71,0,1,70,"CABA, Capital Federal.",4,2
+ARG,ESMRECARGABLE,https://perfil.mercadolibre.com.ar/ESMRECARGABLE,9,1,1100,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,381,6,4,371,"General San Martín, Buenos Aires.",4,2
+ARG,HYC DEPOT,https://perfil.mercadolibre.com.ar/HYC+DEPOT,10,1,1265,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,424,4,7,413,"Palermo, Capital Federal.",4,2
+ARG,SPINTECH,https://perfil.mercadolibre.com.ar/SPINTECH,5,1,92,NA,Brinda buena atención,Despacha sus productos a tiempo,39,0,0,39,"Rosario, Santa Fe.",4,2
+ARG,PHONE CASE,https://perfil.mercadolibre.com.ar/PHONE+CASE,14,1,59,NA,Brinda buena atención,Despacha sus productos a tiempo,15,0,0,15,"San Antonio De Padua, Buenos Aires.",4,2
+ARG,ONECLICKARG,https://perfil.mercadolibre.com.ar/ONECLICKARG,3,1,207,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,68,1,1,66,"Cañitas, Capital Federal.",4,2
+ARG,VIPA1953956,https://perfil.mercadolibre.com.ar/VIPA1953956,3,1,261,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,90,1,4,85,"San Cristóbal, Capital Federal.",4,2
+ARG,ACCESORIOSVIP,https://perfil.mercadolibre.com.ar/ACCESORIOSVIP,14,1,542,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,276,4,12,260,"Microcentro, Capital Federal.",4,2
+ARG,OSIRIS.FUNDAS,https://perfil.mercadolibre.com.ar/OSIRIS.FUNDAS,5,1,534,NA,Brinda buena atención,Despacha sus productos a tiempo,195,0,3,192,"Liniers, Capital Federal.",4,2
+ARG,VICTORIAWU79,https://perfil.mercadolibre.com.ar/VICTORIAWU79,9,1,304,NA,Brinda buena atención,Despacha sus productos a tiempo,184,0,1,183,"Almagro, Capital Federal.",5,1
+ARG,DBSTORE,https://perfil.mercadolibre.com.ar/DBSTORE,12,1,3132,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1197,12,21,1164,"Villa Urquiza, Capital Federal.",4,2
+ARG,JETSTOREACCESORIOS,https://perfil.mercadolibre.com.ar/JETSTOREACCESORIOS,1,1,114,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,69,1,0,68,"Olivos, Buenos Aires.",1,1
+ARG,COPYLINE ONLINE,https://perfil.mercadolibre.com.ar/COPYLINE+ONLINE,14,1,8843,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2073,30,55,1988,"Almagro, Capital Federal.",4,2
+ARG,NEWARRIVALS,https://perfil.mercadolibre.com.ar/NEWARRIVALS,10,1,771,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,130,8,2,120,"San Isidro, Buenos Aires.",4,2
+ARG,BILLY-S,https://perfil.mercadolibre.com.ar/BILLY-S,12,1,64,NA,Brinda buena atención,Despacha sus productos a tiempo,50,0,1,49,"La Plata, Buenos Aires.",4,2
+ARG,TIENDA SILOE,https://perfil.mercadolibre.com.ar/TIENDA+SILOE,13,1,4276,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1238,10,13,1215,"Ramos Mejía, Buenos Aires.",4,2
+ARG,NOTACELL,https://perfil.mercadolibre.com.ar/NOTACELL,2,1,1209,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,373,2,4,367,"Flores, Capital Federal.",4,2
+ARG,JPCOMPUTERSINSUMOS2019,https://perfil.mercadolibre.com.ar/JPCOMPUTERSINSUMOS2019,2,1,383,NA,Brinda buena atención,Despacha sus productos a tiempo,120,2,3,115,"San Justo, Buenos Aires.",4,2
+ARG,FEDERICOSCELFO,https://perfil.mercadolibre.com.ar/FEDERICOSCELFO,1,2,20,NA,Brinda buena atención,Despacha sus productos a tiempo,8,0,0,8,"Villa Luro, Capital Federal.",1,2
+ARG,TECNOSTREET785,https://perfil.mercadolibre.com.ar/TECNOSTREET785,3,1,531,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,194,0,4,190,"Berazategui, Buenos Aires.",4,2
+ARG,TECNOPEDIDO,https://perfil.mercadolibre.com.ar/TECNOPEDIDO,2,1,3269,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,855,9,19,827,"Colegiales, Capital Federal.",4,2
+ARG,IMPORT-ONLINE2013,https://perfil.mercadolibre.com.ar/IMPORT-ONLINE2013,6,1,183,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,65,1,5,59,"Palermo, Capital Federal.",4,2
+ARG,Griffin Tienda oficial,https://perfil.mercadolibre.com.ar/MACSTATION+TIENDAOFICIAL?brandId=1380,3,1,256,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,91,1,1,89,"Recoleta, Capital Federal.",4,2
+ARG,MACSTATION OFICIAL,https://perfil.mercadolibre.com.ar/MACSTATION+OFICIAL,3,1,256,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,75,1,1,73,"Recoleta, Capital Federal.",4,2
+ARG,ELECTRO GO,https://perfil.mercadolibre.com.ar/ELECTRO+GO,12,1,289,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,93,0,1,92,"Ciudad Autónoma de Buenos Aire, Capital Federal.",4,2
+ARG,ICLUB LOMAS,https://perfil.mercadolibre.com.ar/ICLUB+LOMAS,9,1,118,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,35,0,0,35,"Lomas De Zamora, Buenos Aires.",4,2
+ARG,FCOSTANZO99,https://perfil.mercadolibre.com.ar/FCOSTANZO99,4,1,99,NA,Brinda buena atención,Despacha sus productos a tiempo,91,0,1,90,"Liniers, Capital Federal.",4,1
+ARG,DATASOFT.,https://perfil.mercadolibre.com.ar/DATASOFT.,12,1,2849,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,962,12,23,927,"Microcentro, Capital Federal.",4,2
+ARG,TECBYAWC,https://perfil.mercadolibre.com.ar/TECBYAWC,10,1,80,NA,Brinda buena atención,Despacha sus productos a tiempo,18,0,1,17,"Nordelta, Buenos Aires.",4,2
+ARG,CLUB MONTMARTRE,https://perfil.mercadolibre.com.ar/CLUB+MONTMARTRE,2,1,1884,NA,Brinda buena atención,Despacha sus productos a tiempo,1203,0,10,1193,"Núñez, Capital Federal.",2,1
+ARG,GALAXY ESHOP,https://perfil.mercadolibre.com.ar/GALAXY+ESHOP,5,1,140,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,60,0,4,56,"Capitalfederal, Capital Federal.",4,2
+ARG,TCELULAR2010,https://perfil.mercadolibre.com.ar/TCELULAR2010,8,1,1499,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,529,3,11,515,"Microcentro, Capital Federal.",4,2
+ARG,CITY-CELL,https://perfil.mercadolibre.com.ar/CITY-CELL,2,1,224,NA,Brinda buena atención,Despacha sus productos a tiempo,64,0,0,64,"Almagro, Capital Federal.",4,2
+ARG,SYNASASYNA,https://perfil.mercadolibre.com.ar/SYNASASYNA,3,1,1384,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,323,4,12,307,"Córdoba, Córdoba.",4,2
+ARG,MUNDO GADGET,https://perfil.mercadolibre.com.ar/MUNDO+GADGET,8,1,952,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,194,0,1,193,"Villa Crespo, Capital Federal.",4,2
+ARG,FULL-ACTION,https://perfil.mercadolibre.com.ar/FULL-ACTION,11,1,380,NA,Brinda buena atención,Despacha sus productos a tiempo,165,1,5,159,"Palermo, Capital Federal.",4,2
+ARG,QUIEROESO YA,https://perfil.mercadolibre.com.ar/QUIEROESO+YA,1,1,11182,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,2823,81,86,2656,"Recoleta, Capital Federal.",4,2
+ARG,TECH-SERVICES2003,https://perfil.mercadolibre.com.ar/TECH-SERVICES2003,17,1,5034,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,1463,33,37,1393,"TRIBUNALES / SAN NICOLAS, Capital Federal.",4,2
+ARG,MANIA-ELECTRONIC,https://perfil.mercadolibre.com.ar/MANIA-ELECTRONIC,15,1,1811,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,449,5,5,439,"Buenos aires, Capital Federal.",4,2
+ARG,ITREND.SA,https://perfil.mercadolibre.com.ar/ITREND.SA,4,1,368,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,119,3,7,109,"Belgrano, Capital Federal.",4,2
+ARG,SKY PORTO,https://perfil.mercadolibre.com.ar/SKY+PORTO,14,1,1531,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,500,2,9,489,"Caba, Capital Federal.",4,2
+ARG,MOBILE-MANIA,https://perfil.mercadolibre.com.ar/MOBILE-MANIA,2,1,2516,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,1551,8,20,1523,"Palermo, Capital Federal.",2,1
+ARG,WESTLANDTECH,https://perfil.mercadolibre.com.ar/WESTLANDTECH,8,1,1093,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,347,3,6,338,"Villa Luzuriaga, Buenos Aires.",4,2
+ARG,NUCLEAR-SHOP,https://perfil.mercadolibre.com.ar/NUCLEAR-SHOP,4,1,588,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,192,3,2,187,"Villa Crespo, Capital Federal.",4,2
+ARG,ACCESSORIES4U,https://perfil.mercadolibre.com.ar/ACCESSORIES4U,7,1,1339,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,997,2,10,985,"PALERMO, Capital Federal.",5,1
+ARG,HISAN AUTOELEVADORES,https://perfil.mercadolibre.com.ar/HISAN+AUTOELEVADORES,14,1,419,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,126,1,3,122,"Florencio Varela, Buenos Aires.",4,2
+ARG,OSCH3808068,https://perfil.mercadolibre.com.ar/OSCH3808068,3,2,60,NA,Brinda buena atención,Despacha sus productos a tiempo,22,2,0,20,"Lomas de Zamora, Buenos Aires.",3,2
+ARG,RELOJERIALONDRES CABALLITO,https://perfil.mercadolibre.com.ar/RELOJERIALONDRES+CABALLITO,5,1,452,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,159,0,1,158,"Caballito, Capital Federal.",4,2
+ARG,TOTHEGAME,https://perfil.mercadolibre.com.ar/TOTHEGAME,5,1,1893,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,739,4,22,713,"Villa Crespo, Capital Federal.",4,2
+ARG,DIGITALDREAM15,https://perfil.mercadolibre.com.ar/DIGITALDREAM15,4,2,589,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,222,4,4,214,"Belgrano, Capital Federal.",4,2
+ARG,CLICKNBUY-AR,https://perfil.mercadolibre.com.ar/CLICKNBUY-AR,5,1,144,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,40,2,0,38,"Palermo Hollywood, Capital Federal.",4,2
+ARG,NEATHARD,https://perfil.mercadolibre.com.ar/NEATHARD,1,1,374,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,190,5,7,178,"Villa Elisa, La Plata, Buenos Aires.",1,1
+ARG,DETODOALCOSTO.COM,https://perfil.mercadolibre.com.ar/DETODOALCOSTO.COM,5,1,165,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,48,0,0,48,"Monte Grande, Buenos Aires.",4,2
+ARG,XETACOM,https://perfil.mercadolibre.com.ar/XETACOM,9,1,576,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,296,3,5,288,"ALTE BROWN, Buenos Aires.",5,1
+ARG,DELIA MUSIC,https://perfil.mercadolibre.com.ar/DELIA+MUSIC,4,2,188,NA,Brinda buena atención,Despacha sus productos a tiempo,99,0,0,99,"Lanús, Buenos Aires.",4,2
+ARG,MVODEARGENTINA,https://perfil.mercadolibre.com.ar/MVODEARGENTINA,8,1,125,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,51,2,0,49,"Floresta, Capital Federal.",4,2
+ARG,MATYRAIDER,https://perfil.mercadolibre.com.ar/MATYRAIDER,7,1,153,NA,Brinda buena atención,Despacha sus productos a tiempo,71,1,3,67,"Ituzaingo, Buenos Aires.",5,1
+ARG,INFO.PARTES,https://perfil.mercadolibre.com.ar/INFO.PARTES,7,1,1288,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,348,8,7,333,"Monserrat, Capital Federal.",4,2
+ARG,WUJI3944194,https://perfil.mercadolibre.com.ar/WUJI3944194,1,1,176,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,96,2,6,88,"Luján, Buenos Aires.",1,1
+ARG,MOYALUCIA123,https://perfil.mercadolibre.com.ar/MOYALUCIA123,7,2,18,NA,Brinda buena atención,Despacha sus productos a tiempo,4,0,0,4,"Morón, Buenos Aires.",7,2
+ARG,NGTECHSRL,https://perfil.mercadolibre.com.ar/NGTECHSRL,4,1,51,NA,Brinda buena atención,Despacha sus productos a tiempo,19,0,0,19,"Palermo, Capital Federal.",4,2
+ARG,CONTROLES TRIBUNALES,https://perfil.mercadolibre.com.ar/CONTROLES+TRIBUNALES,4,1,596,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,268,2,5,261,"Tribunales, Capital Federal.",4,2
+ARG,COMPRASEGURA26,https://perfil.mercadolibre.com.ar/COMPRASEGURA26,4,1,116,NA,Brinda buena atención,Despacha sus productos a tiempo,83,0,0,83,"Belgrano, Capital Federal.",4,1
+ARG,FIONADAN,https://perfil.mercadolibre.com.ar/FIONADAN,2,1,72,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,36,1,0,35,"Villa del Parque, Capital Federal.",4,2
+ARG,TODONCE,https://perfil.mercadolibre.com.ar/TODONCE,4,2,141,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,57,0,3,54,"Bs as, Capital Federal.",4,2
+ARG,REPUBLICALOVER1,https://perfil.mercadolibre.com.ar/REPUBLICALOVER1,3,1,92,NA,Brinda buena atención,Despacha sus productos a tiempo,61,0,2,59,"Hurlingham, Buenos Aires.",3,1
+ARG,FUNDASDECUERO,https://perfil.mercadolibre.com.ar/FUNDASDECUERO,8,1,145,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,76,0,0,76,"Villa Crespo, Capital Federal.",4,2
+ARG,ARMONIA_SHOWROOM,https://perfil.mercadolibre.com.ar/ARMONIA_SHOWROOM,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,2,0,0,2,"Barracas, Capital Federal.",NA,NA
+ARG,ACCESORIOSNET,https://perfil.mercadolibre.com.ar/ACCESORIOSNET,10,1,92,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,43,0,2,41,"Microcentro, Capital Federal.",4,2
+ARG,QUIERO LO QUE VEO,https://perfil.mercadolibre.com.ar/QUIERO+LO+QUE+VEO,18,1,1215,NA,Brinda buena atención,Despacha sus productos con demora,456,6,15,435,"Congreso, Capital Federal.",4,2
+ARG,MALABIA PILAS,https://perfil.mercadolibre.com.ar/MALABIA+PILAS,12,1,124,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,69,0,1,68,"Villa Crespo, Capital Federal.",4,2
+ARG,JJLGROUPSRLTODOCELULAR,https://perfil.mercadolibre.com.ar/JJLGROUPSRLTODOCELULAR,1,1,681,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,149,3,2,144,"Alta Gracia, Córdoba.",4,2
+ARG,ZAMUDIOCES2011,https://perfil.mercadolibre.com.ar/ZAMUDIOCES2011,8,1,29,NA,Brinda buena atención,Despacha sus productos a tiempo,18,0,0,18,"Belgrano, Capital Federal.",5,1
+ARG,SEATTLECH IMPORT,https://perfil.mercadolibre.com.ar/SEATTLECH+IMPORT,6,2,9,NA,Brinda buena atención,Despacha sus productos a tiempo,5,0,0,5,"Belgrano, Capital Federal.",6,2
+ARG,VIRTUAL DEPOT,https://perfil.mercadolibre.com.ar/VIRTUAL+DEPOT,2,1,223,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,182,1,0,181,"Castelar, Buenos Aires.",2,1
+ARG,SOUTHCELULARES.,https://perfil.mercadolibre.com.ar/SOUTHCELULARES.,4,2,69,NA,Brinda buena atención,Despacha sus productos a tiempo,21,0,0,21,"Quilmes, Buenos Aires.",4,2
+ARG,SILVIOSCARSINI,https://perfil.mercadolibre.com.ar/SILVIOSCARSINI,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,3,0,0,3,"Parque Patricios, Capital Federal.",NA,NA
+ARG,YEN_IMPORT.,https://perfil.mercadolibre.com.ar/YEN_IMPORT.,2,1,41,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,22,0,0,22,"Once, Capital Federal.",2,1
+ARG,ORANGESHOPARG,https://perfil.mercadolibre.com.ar/ORANGESHOPARG,3,1,192,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,131,0,0,131,"Villa Devoto, Capital Federal.",3,1
+ARG,EMILIA ROMANA,https://perfil.mercadolibre.com.ar/EMILIA+ROMANA,3,1,121,NA,Brinda buena atención,Despacha sus productos a tiempo,53,0,1,52,"Villa Carlos Paz, Córdoba.",3,1
+ARG,SCOCCARO,https://perfil.mercadolibre.com.ar/SCOCCARO,12,1,335,NA,Brinda buena atención,Despacha sus productos a tiempo,228,2,1,225,"Villa Urquiza, Capital Federal.",5,1
+ARG,MAPE TECNO2013,https://perfil.mercadolibre.com.ar/MAPE+TECNO2013,5,1,260,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,98,3,1,94,"San Telmo, Capital Federal.",4,2
+ARG,HOSPICELTV,https://perfil.mercadolibre.com.ar/HOSPICELTV,12,1,144,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,65,0,2,63,"Villa Luzuriaga, Buenos Aires.",4,2
+ARG,DANYTAG DESIGN,https://perfil.mercadolibre.com.ar/DANYTAG+DESIGN,5,1,700,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,450,3,6,441,"Villa Adelina, San Isidro, Buenos Aires.",5,1
+ARG,APC ACCESORIOSPARACELULARES,https://perfil.mercadolibre.com.ar/APC+ACCESORIOSPARACELULARES,6,1,96,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,12,0,0,12,"Esperanza, Santa Fe.",4,2
+ARG,TECHPHONE.CABALLITO,https://perfil.mercadolibre.com.ar/TECHPHONE.CABALLITO,1,1,145,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,111,0,2,109,"Caballito, Capital Federal.",1,1
+ARG,INSUMOSINFORMATICOSOESTE,https://perfil.mercadolibre.com.ar/INSUMOSINFORMATICOSOESTE,2,1,733,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,239,5,6,228,"La Matanza, Buenos Aires.",4,2
+ARG,TECH WAREHOUSE,https://perfil.mercadolibre.com.ar/TECH+WAREHOUSE,2,1,209,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,133,0,1,132,"Recoleta, Capital Federal.",4,2
+ARG,KIOSCASE,https://perfil.mercadolibre.com.ar/KIOSCASE,10,1,4367,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,3587,33,67,3487,"Colegiales, Capital Federal.",5,1
+ARG,NORACBA,https://perfil.mercadolibre.com.ar/NORACBA,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,4,0,0,4,"Córdoba, Córdoba.",NA,NA
+ARG,SMARTFIX.CASES,https://perfil.mercadolibre.com.ar/SMARTFIX.CASES,1,1,100,NA,Brinda buena atención,Despacha sus productos con demora,39,0,2,37,"Belgrano, Capital Federal.",1,1
+ARG,PEKE1319139,https://perfil.mercadolibre.com.ar/PEKE1319139,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,5,0,0,5,"San Nicolás, Capital Federal.",NA,NA
+ARG,TEKHNETSHOP01,https://perfil.mercadolibre.com.ar/TEKHNETSHOP01,1,1,92,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,39,2,0,37,"Capital Federal, Capital Federal.",4,2
+ARG,WEBFASTORE,https://perfil.mercadolibre.com.ar/WEBFASTORE,14,1,196,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,88,0,2,86,"Maipú, Mendoza.",5,1
+ARG,BASTORE.COM.AR,https://perfil.mercadolibre.com.ar/BASTORE.COM.AR,4,1,2195,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,1474,11,29,1434,"Paternal, Capital Federal.",4,1
+ARG,DIVNET,https://perfil.mercadolibre.com.ar/DIVNET,15,1,1363,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,308,0,5,303,"Córdoba, Córdoba.",4,2
+ARG,ELISHOPPINGBAG,https://perfil.mercadolibre.com.ar/ELISHOPPINGBAG,5,1,525,NA,Brinda buena atención,Despacha sus productos a tiempo,414,1,8,405,"CABA, Capital Federal.",5,1
+ARG,IAN.EZEQUIEL,https://perfil.mercadolibre.com.ar/IAN.EZEQUIEL,8,1,174,NA,Brinda buena atención,Despacha sus productos a tiempo,150,4,6,140,"Parque Chacabuco, Capital Federal.",5,1
+ARG,MB TELEFONIACELULAR,https://perfil.mercadolibre.com.ar/MB+TELEFONIACELULAR,1,1,235,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,149,3,3,143,"Morón, Buenos Aires.",4,2
+ARG,SINOPSYSSHOP,https://perfil.mercadolibre.com.ar/SINOPSYSSHOP,2,1,1486,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,432,4,7,421,"San Isidro, Buenos Aires.",4,2
+ARG,PAPIRUSO,https://perfil.mercadolibre.com.ar/PAPIRUSO,16,1,175,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,61,1,1,59,"Caseros, Buenos Aires.",4,2
+ARG,VESTITUCELU-RAMOSMEJIA,https://perfil.mercadolibre.com.ar/VESTITUCELU-RAMOSMEJIA,9,1,77,NA,Brinda buena atención,Despacha sus productos a tiempo,38,0,0,38,"Ramos mejia, Buenos Aires.",4,2
+ARG,MUNDOSILICONA,https://perfil.mercadolibre.com.ar/MUNDOSILICONA,7,1,224,NA,Brinda buena atención,Despacha sus productos a tiempo,80,0,0,80,"Caballito, Capital Federal.",4,2
+ARG,SIX-HANDS,https://perfil.mercadolibre.com.ar/SIX-HANDS,14,1,986,NA,Brinda buena atención,Despacha sus productos con demora,819,1,4,814,"Belgrano, Capital Federal.",5,1
+ARG,TQROJO,https://perfil.mercadolibre.com.ar/TQROJO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,3,0,1,2,"Monserrat, Capital Federal.",NA,NA
+ARG,SOMOS SHIFCELL,https://perfil.mercadolibre.com.ar/SOMOS+SHIFCELL,2,1,548,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,425,1,2,422,"CABA, Capital Federal.",2,1
+ARG,IPHONEX85,https://perfil.mercadolibre.com.ar/IPHONEX85,1,1,57,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,41,0,0,41,"Flores, Capital Federal.",1,1
+ARG,CRISCARP2,https://perfil.mercadolibre.com.ar/CRISCARP2,2,1,562,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,356,2,2,352,"Morón, Buenos Aires.",2,1
+ARG,SIMA4940251,https://perfil.mercadolibre.com.ar/SIMA4940251,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,4,1,0,3,"Santa Fe, Santa Fe.",NA,NA
+ARG,ACCESORIOS CELSTORE,https://perfil.mercadolibre.com.ar/ACCESORIOS+CELSTORE,6,1,373,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,309,4,8,297,"Tortuguitas - Malvinas Argenti, Buenos Aires.",5,1
+ARG,KARAELCANO,https://perfil.mercadolibre.com.ar/KARAELCANO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,2,0,0,2,"Ciudad Autónoma de Buenos Aire, Capital Federal.",NA,NA
+ARG,SOLOOVENTAAS,https://perfil.mercadolibre.com.ar/SOLOOVENTAAS,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,2,2,0,0,"Merlo, Buenos Aires.",NA,NA
+ARG,INKCASES,https://perfil.mercadolibre.com.ar/INKCASES,2,1,70,NA,Brinda buena atención,Despacha sus productos con demora,19,1,0,18,"Almagro, Capital Federal.",4,2
+ARG,AYOS4728567,https://perfil.mercadolibre.com.ar/AYOS4728567,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Berazategui, Buenos Aires.",NA,NA
+ARG,MOTO_OUTLET,https://perfil.mercadolibre.com.ar/MOTO_OUTLET,10,1,188,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,38,0,1,37,"Capital Federal, Capital Federal.",4,2
+ARG,SIMPLERSHOP,https://perfil.mercadolibre.com.ar/SIMPLERSHOP,4,1,245,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,66,0,1,65,"San Isidro, Buenos Aires.",4,2
+ARG,REIVAJG,https://perfil.mercadolibre.com.ar/REIVAJG,2,1,31,NA,Brinda buena atención,Despacha sus productos a tiempo,31,0,1,30,"Capital federal, Capital Federal.",2,1
+ARG,VENTAS.ID,https://perfil.mercadolibre.com.ar/VENTAS.ID,9,1,317,NA,Brinda buena atención,Despacha sus productos con demora,192,0,1,191,"Villa Urquiza, Capital Federal.",5,1
+ARG,TECH BOUTIQUE,https://perfil.mercadolibre.com.ar/TECH+BOUTIQUE,11,1,562,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,187,1,2,184,"Recoleta, Capital Federal.",4,2
+ARG,NOTEBOOK-CELL,https://perfil.mercadolibre.com.ar/NOTEBOOK-CELL,1,1,101,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,47,0,1,46,"Palermo Chico TIENDA FISICA, Capital Federal.",4,2
+ARG,PASE9543641,https://perfil.mercadolibre.com.ar/PASE9543641,5,1,52,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,30,2,1,27,"Beccar, Buenos Aires.",5,1
+ARG,SUBLIWEST1,https://perfil.mercadolibre.com.ar/SUBLIWEST1,10,1,502,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,115,3,2,110,"Merlo, Buenos Aires.",4,2
+ARG,JPEXELINSUMOS2017,https://perfil.mercadolibre.com.ar/JPEXELINSUMOS2017,1,1,84,NA,Brinda buena atención,Despacha sus productos a tiempo,27,1,1,25,"San Justo, Buenos Aires.",4,2
+ARG,MR-SHOPS,https://perfil.mercadolibre.com.ar/MR-SHOPS,13,1,12848,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,4077,33,91,3953,"CONGRESO BALVANERA CENTRO, Capital Federal.",4,2
+ARG,TEXCELLVENTAS,https://perfil.mercadolibre.com.ar/TEXCELLVENTAS,2,1,194,NA,Brinda buena atención,Despacha sus productos a tiempo,85,2,2,81,"Olivos, Buenos Aires.",4,2
+ARG,ROCIOTAR,https://perfil.mercadolibre.com.ar/ROCIOTAR,3,1,85,NA,Brinda buena atención,Despacha sus productos a tiempo,59,0,0,59,"Flores, Capital Federal.",3,1
+ARG,OCEANIMPORTMIAMI,https://perfil.mercadolibre.com.ar/OCEANIMPORTMIAMI,8,1,142,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,43,1,0,42,"Villa Luzuriaga, Buenos Aires.",4,2
+ARG,FABIRESI,https://perfil.mercadolibre.com.ar/FABIRESI,9,1,89,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,67,0,0,67,"Villa Crespo, Capital Federal.",5,1
+ARG,COMICS-AYRUCH,https://perfil.mercadolibre.com.ar/COMICS-AYRUCH,14,1,66,NA,Brinda buena atención,Despacha sus productos a tiempo,59,0,3,56,"Mataderos, Capital Federal.",5,1
+ARG,VTS-TECH,https://perfil.mercadolibre.com.ar/VTS-TECH,5,1,1584,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,257,1,0,256,"Berazategui, Buenos Aires.",4,2
+ARG,ROCKY.SHOP,https://perfil.mercadolibre.com.ar/ROCKY.SHOP,1,1,62,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,45,0,3,42,"Boedo, Capital Federal.",4,2
+ARG,C.A.M.,https://perfil.mercadolibre.com.ar/C.A.M.,10,1,23,NA,Brinda buena atención,Despacha sus productos a tiempo,20,0,1,19,"Buenos aires, Capital Federal.",5,1
+ARG,BRUGIATELLIRENZO,https://perfil.mercadolibre.com.ar/BRUGIATELLIRENZO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,4,0,0,4,"Florencio varela, Buenos Aires.",NA,NA
+ARG,CJCA2015,https://perfil.mercadolibre.com.ar/CJCA2015,4,1,679,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,242,0,2,240,"ROSARIO, Santa Fe.",4,2
+ARG,SILVAFLEXOK,https://perfil.mercadolibre.com.ar/SILVAFLEXOK,10,1,1052,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,293,1,4,288,"Villa Crespo, Capital Federal.",4,2
+ARG,2 MARGARITAS,https://perfil.mercadolibre.com.ar/2+MARGARITAS,11,1,211,NA,Brinda buena atención,Despacha sus productos con demora,70,1,0,69,"RAMOS MEJIA, Buenos Aires.",4,2
+ARG,LUWAISA,https://perfil.mercadolibre.com.ar/LUWAISA,3,1,699,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,257,3,13,241,"Belgrano, Capital Federal.",4,2
+ARG,LUNGHABA,https://perfil.mercadolibre.com.ar/LUNGHABA,2,1,74,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,18,0,0,18,"Palermo, Capital Federal.",4,2
+ARG,REMA6641345,https://perfil.mercadolibre.com.ar/REMA6641345,4,1,13,NA,Brinda buena atención,Despacha sus productos a tiempo,12,0,0,12,"Jose C. Paz, Buenos Aires.",4,1
+ARG,CREACIONESABU,https://perfil.mercadolibre.com.ar/CREACIONESABU,5,1,182,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,87,2,6,79,"Ciudad Madero, Buenos Aires.",5,1
+ARG,ALEM8028461,https://perfil.mercadolibre.com.ar/ALEM8028461,4,1,122,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,72,1,0,71,"Villa Crespo, Capital Federal.",4,1
+ARG,COMPUMAC-,https://perfil.mercadolibre.com.ar/COMPUMAC-,9,1,879,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,219,4,7,208,"San Isidro, Buenos Aires.",4,2
+ARG,GLOBALPARTS2015,https://perfil.mercadolibre.com.ar/GLOBALPARTS2015,4,1,495,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,140,0,2,138,"Munro, Buenos Aires.",4,2
+ARG,ABIANCALANA,https://perfil.mercadolibre.com.ar/ABIANCALANA,16,1,109,NA,Brinda buena atención,Despacha sus productos a tiempo,102,0,3,99,"Nuñez, Capital Federal.",5,1
+ARG,JAV_LEON2006,https://perfil.mercadolibre.com.ar/JAV_LEON2006,13,1,22,NA,Brinda buena atención,Despacha sus productos a tiempo,16,0,0,16,"Rosario, Santa Fe.",5,1
+ARG,GIOVGODO,https://perfil.mercadolibre.com.ar/GIOVGODO,12,1,56,NA,Brinda buena atención,Despacha sus productos a tiempo,47,0,2,45,"Caba, Capital Federal.",5,1
+ARG,MARJOLEIN BASTIN,https://perfil.mercadolibre.com.ar/MARJOLEIN+BASTIN,16,1,156,NA,Brinda buena atención,Despacha sus productos a tiempo,160,0,5,155,"Palermo, Capital Federal.",5,1
+ARG,TIN2818,https://perfil.mercadolibre.com.ar/TIN2818,2,1,45,NA,Brinda buena atención,Despacha sus productos a tiempo,36,1,1,34,"Martinez, Buenos Aires.",2,1
+ARG,SILBAUZADA,https://perfil.mercadolibre.com.ar/SILBAUZADA,9,1,320,NA,Brinda buena atención,Despacha sus productos a tiempo,265,0,1,264,"Caballito, Capital Federal.",5,1
+ARG,TOPCELCBA,https://perfil.mercadolibre.com.ar/TOPCELCBA,7,2,38,NA,Brinda buena atención,Despacha sus productos con demora,16,1,0,15,"Cordoba, Córdoba.",7,2
+ARG,PINKCELLSTORE,https://perfil.mercadolibre.com.ar/PINKCELLSTORE,4,1,228,NA,Brinda buena atención,Despacha sus productos a tiempo,128,2,1,125,"Recoleta, Capital Federal.",4,2
+ARG,BAREABARBARA,https://perfil.mercadolibre.com.ar/BAREABARBARA,4,1,27,NA,Brinda buena atención,Despacha sus productos a tiempo,13,0,0,13,"Tostado, Santa Fe.",4,1
+ARG,ROEM5652376,https://perfil.mercadolibre.com.ar/ROEM5652376,8,2,14,NA,Brinda buena atención,Despacha sus productos a tiempo,7,1,0,6,"Martínez, Buenos Aires.",8,2
+ARG,BARRANQUEROPAOLA,https://perfil.mercadolibre.com.ar/BARRANQUEROPAOLA,7,1,256,NA,Brinda buena atención,Despacha sus productos a tiempo,215,3,3,209,"Saavedra, Capital Federal.",5,1
+ARG,SMART-FIX,https://perfil.mercadolibre.com.ar/SMART-FIX,1,1,414,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,185,2,1,182,"Belgrano, Capital Federal.",4,2
+ARG,TODO-PARA-TU-CEL,https://perfil.mercadolibre.com.ar/TODO-PARA-TU-CEL,7,1,182,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,59,3,3,53,"Chacarita, Capital Federal.",4,2
+ARG,TUCHO_RC,https://perfil.mercadolibre.com.ar/TUCHO_RC,14,1,28,NA,Brinda buena atención,Despacha sus productos a tiempo,25,0,0,25,"Avellaneda, Buenos Aires.",5,1
+ARG,PETO33,https://perfil.mercadolibre.com.ar/PETO33,16,1,156,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,125,0,1,124,"Almagro, Capital Federal.",5,1
+ARG,MAPA1459856,https://perfil.mercadolibre.com.ar/MAPA1459856,2,1,9,NA,Brinda buena atención,Despacha sus productos a tiempo,4,1,0,3,"La Plata City Bell, Buenos Aires.",2,1
+ARG,TUTECNOLP,https://perfil.mercadolibre.com.ar/TUTECNOLP,5,1,31,NA,Brinda buena atención,Despacha sus productos a tiempo,26,0,0,26,"La Plata, Buenos Aires.",5,1
+ARG,ALEART_DESIGNS,https://perfil.mercadolibre.com.ar/ALEART_DESIGNS,1,1,276,NA,Brinda buena atención,Despacha sus productos a tiempo,197,1,3,193,"San Cristobal, Capital Federal.",1,1
+ARG,POLOTECNOALMAGRO,https://perfil.mercadolibre.com.ar/POLOTECNOALMAGRO,3,1,618,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,261,2,4,255,"Almagro, Capital Federal.",4,2
+ARG,POLOTECNO,https://perfil.mercadolibre.com.ar/POLOTECNO,18,1,994,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,423,1,3,419,"Almagro, Capital Federal.",4,2
+ARG,INTRO.B,https://perfil.mercadolibre.com.ar/INTRO.B,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,3,0,0,3,"Brandsen, Buenos Aires.",NA,NA
+ARG,SKINFACTORYAR,https://perfil.mercadolibre.com.ar/SKINFACTORYAR,6,1,523,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,158,0,0,158,"Vicente López, Buenos Aires.",4,2
+ARG,CRISCARP3,https://perfil.mercadolibre.com.ar/CRISCARP3,2,1,125,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,103,1,0,102,"Morón, Buenos Aires.",2,1
+ARG,MARCE1822,https://perfil.mercadolibre.com.ar/MARCE1822,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,1,0,0,"Josémarmol, Buenos Aires.",NA,NA
+ARG,APPLEDOOR,https://perfil.mercadolibre.com.ar/APPLEDOOR,11,1,1102,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,854,1,2,851,"ESCOBAR - MATHEU, Buenos Aires.",5,1
+ARG,NEWSVENTAS.,https://perfil.mercadolibre.com.ar/NEWSVENTAS.,13,1,527,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,225,3,0,222,"Flores, Capital Federal.",4,2
+ARG,INNOVATIONS CELL,https://perfil.mercadolibre.com.ar/INNOVATIONS+CELL,4,2,96,NA,Brinda buena atención,Despacha sus productos a tiempo,32,1,0,31,"Parque Avellaneda, Capital Federal.",4,2
+ARG,PAOZAIATZ,https://perfil.mercadolibre.com.ar/PAOZAIATZ,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"Caballito, Capital Federal.",NA,NA
+ARG,RETRY,https://perfil.mercadolibre.com.ar/RETRY,16,1,169,NA,Brinda buena atención,Despacha sus productos a tiempo,100,0,3,97,"Rosario, Santa Fe.",5,1
+ARG,VEJU5785099,https://perfil.mercadolibre.com.ar/VEJU5785099,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Córdoba, Córdoba.",NA,NA
+ARG,ESPACIOSVERDES2006,https://perfil.mercadolibre.com.ar/ESPACIOSVERDES2006,13,1,19,NA,Brinda buena atención,Despacha sus productos a tiempo,15,0,1,14,"Urquiza, Capital Federal.",5,1
+ARG,MEBPS78,https://perfil.mercadolibre.com.ar/MEBPS78,3,1,32,NA,Brinda buena atención,Despacha sus productos a tiempo,20,1,0,19,"Carlos Casares, Buenos Aires.",3,1
+ARG,SOCAL.SHOP,https://perfil.mercadolibre.com.ar/SOCAL.SHOP,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,4,0,0,4,"Devoto, Capital Federal.",NA,NA
+ARG,TECNOCOMPRO.,https://perfil.mercadolibre.com.ar/TECNOCOMPRO.,3,1,293,NA,Brinda buena atención,Despacha sus productos a tiempo,166,2,7,157,"Barracas, Capital Federal.",4,2
+ARG,DAVIDTEC17,https://perfil.mercadolibre.com.ar/DAVIDTEC17,4,1,32,NA,Brinda buena atención,Despacha sus productos a tiempo,21,0,0,21,"Zapala, Neuquén.",4,1
+ARG,GOGOCAM,https://perfil.mercadolibre.com.ar/GOGOCAM,13,1,90,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,45,1,1,43,"CAPITAL FEDERAL, Capital Federal.",5,1
+ARG,JPINSUMOSLAMATANZA,https://perfil.mercadolibre.com.ar/JPINSUMOSLAMATANZA,2,1,66,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,47,2,4,41,"San Justo, Buenos Aires.",4,2
+ARG,YJALIL,https://perfil.mercadolibre.com.ar/YJALIL,12,1,625,NA,Brinda buena atención,Despacha sus productos con demora,555,2,14,539,"Almagro, Capital Federal.",5,1
+ARG,CEEV8289030,https://perfil.mercadolibre.com.ar/CEEV8289030,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"San Fernando, Buenos Aires.",NA,NA
+ARG,ELISEOBEST,https://perfil.mercadolibre.com.ar/ELISEOBEST,3,1,346,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,215,1,2,212,"Ituzaingo, Buenos Aires.",3,1
+ARG,HUMOFFEROSAAMELIA,https://perfil.mercadolibre.com.ar/HUMOFFEROSAAMELIA,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"Caba, Capital Federal.",NA,NA
+ARG,SARABHUYAN,https://perfil.mercadolibre.com.ar/SARABHUYAN,1,1,19,NA,Brinda buena atención,Despacha sus productos a tiempo,7,1,0,6,"CONGRESO, Capital Federal.",1,1
+ARG,PARKITO 2014,https://perfil.mercadolibre.com.ar/PARKITO+2014,7,1,208,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,94,2,2,90,"Ciudad Autonoma de Buenos Aire, Capital Federal.",4,2
+ARG,HARD-DIGITALPILAR,https://perfil.mercadolibre.com.ar/HARD-DIGITALPILAR,4,1,377,NA,Brinda buena atención,Despacha sus productos a tiempo,140,2,0,138,"Pilar, Buenos Aires.",4,2
+ARG,PRILUX,https://perfil.mercadolibre.com.ar/PRILUX,4,1,255,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,204,0,3,201,"Capital federal, Capital Federal.",4,1
+ARG,MBS INFORMATICA,https://perfil.mercadolibre.com.ar/MBS+INFORMATICA,1,1,71,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,36,0,0,36,"Rosario, Santa Fe.",4,2
+ARG,TECNO-SUR23,https://perfil.mercadolibre.com.ar/TECNO-SUR23,6,1,31,NA,Brinda buena atención,Despacha sus productos con demora,22,0,0,22,"Longchamps, Buenos Aires.",5,1
+ARG,LUMA1590876,https://perfil.mercadolibre.com.ar/LUMA1590876,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"RUFINO, Santa Fe.",NA,NA
+ARG,IRBIT.STORE,https://perfil.mercadolibre.com.ar/IRBIT.STORE,3,1,557,NA,Brinda buena atención,Despacha sus productos a tiempo,397,0,2,395,"Belgrano, Capital Federal.",3,1
+ARG,NYCMOBILE,https://perfil.mercadolibre.com.ar/NYCMOBILE,5,1,1077,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,321,3,8,310,"Córdoba, Córdoba.",4,2
+ARG,MIAMISTORE-17,https://perfil.mercadolibre.com.ar/MIAMISTORE-17,11,1,389,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,116,0,0,116,"Liniers, Capital Federal.",4,2
+ARG,ROM_NOE,https://perfil.mercadolibre.com.ar/ROM_NOE,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,2,0,1,1,"Paraná, Entre Ríos.",NA,NA
+ARG,ACCESORIOSESPECIALES1,https://perfil.mercadolibre.com.ar/ACCESORIOSESPECIALES1,11,1,1290,NA,Brinda buena atención,Despacha sus productos a tiempo,1001,4,23,974,"Ciudad jardin, palomar, Buenos Aires.",5,1
+ARG,KEVIN_CABARA,https://perfil.mercadolibre.com.ar/KEVIN_CABARA,3,1,22,NA,Brinda buena atención,Despacha sus productos a tiempo,11,1,0,10,"Villa Martelli, Buenos Aires.",3,1
+ARG,ANOUSKA2007,https://perfil.mercadolibre.com.ar/ANOUSKA2007,12,1,59,NA,Brinda buena atención,Despacha sus productos a tiempo,40,0,0,40,"Vicente López, Buenos Aires.",5,1
+ARG,OHMYCASEACCESORIOS,https://perfil.mercadolibre.com.ar/OHMYCASEACCESORIOS,2,1,249,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,116,0,1,115,"Villa Carlos Paz, Córdoba.",2,1
+ARG,CHAMITA 23,https://perfil.mercadolibre.com.ar/CHAMITA+23,5,1,31,NA,Brinda buena atención,Despacha sus productos a tiempo,22,0,0,22,"José León suarez, Buenos Aires.",5,1
+ARG,ALTERNATIVAS ONLINE,https://perfil.mercadolibre.com.ar/ALTERNATIVAS+ONLINE,7,1,403,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,162,3,3,156,"Lanús, Buenos Aires.",4,2
+ARG,MARTUSTABI,https://perfil.mercadolibre.com.ar/MARTUSTABI,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Avellaneda, Buenos Aires.",NA,NA
+ARG,FERREYRAPATRICIOFACUNDO,https://perfil.mercadolibre.com.ar/FERREYRAPATRICIOFACUNDO,3,1,143,NA,Brinda buena atención,Despacha sus productos a tiempo,101,0,2,99,"Moreno, Buenos Aires.",3,1
+ARG,ELECTRONETSTORE01,https://perfil.mercadolibre.com.ar/ELECTRONETSTORE01,2,1,138,NA,Brinda buena atención,Despacha sus productos a tiempo,60,0,0,60,"Recoleta, Capital Federal.",4,2
+ARG,ATHENASALARM,https://perfil.mercadolibre.com.ar/ATHENASALARM,15,1,36,NA,Brinda buena atención,Despacha sus productos a tiempo,15,0,0,15,"Berisso, Buenos Aires.",5,1
+ARG,LEIRA VC,https://perfil.mercadolibre.com.ar/LEIRA+VC,5,1,57,NA,Brinda buena atención,Despacha sus productos a tiempo,38,0,0,38,"Monte Castro, Capital Federal.",4,2
+ARG,WTR-32,https://perfil.mercadolibre.com.ar/WTR-32,13,1,21,NA,Brinda buena atención,Despacha sus productos a tiempo,18,0,0,18,"San Cristobal, Capital Federal.",5,1
+ARG,THIAGOSMARTS,https://perfil.mercadolibre.com.ar/THIAGOSMARTS,9,2,224,NA,Brinda buena atención,Despacha sus productos a tiempo,135,2,2,131,"Abasto, Capital Federal.",4,2
+ARG,VALEBUCE,https://perfil.mercadolibre.com.ar/VALEBUCE,12,1,53,NA,Brinda buena atención,Despacha sus productos a tiempo,27,0,0,27,"Floresta, Capital Federal.",4,2
+ARG,CELLPIC LAPLATA,https://perfil.mercadolibre.com.ar/CELLPIC+LAPLATA,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,5,0,1,4,"La Plata, Buenos Aires.",NA,NA
+ARG,ROSITA2804,https://perfil.mercadolibre.com.ar/ROSITA2804,12,1,17,NA,Brinda buena atención,Despacha sus productos a tiempo,16,0,0,16,"Capital Federal, Capital Federal.",5,1
+ARG,TECBOX,https://perfil.mercadolibre.com.ar/TECBOX,2,1,197,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,135,2,1,132,"Palermo, Capital Federal.",2,1
+ARG,DIGITALNIWAL,https://perfil.mercadolibre.com.ar/DIGITALNIWAL,2,1,77,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,32,0,1,31,"Villa Urquiza, Capital Federal.",4,2
+ARG,MAGALI.SOTELO,https://perfil.mercadolibre.com.ar/MAGALI.SOTELO,8,1,15,NA,Brinda buena atención,Despacha sus productos a tiempo,9,0,0,9,"Acassuso, Buenos Aires.",5,1
+ARG,87.VEROC,https://perfil.mercadolibre.com.ar/87.VEROC,6,1,37,NA,Brinda buena atención,Despacha sus productos a tiempo,30,0,1,29,"San Cristobal, Capital Federal.",5,1
+ARG,GROSNEYRI,https://perfil.mercadolibre.com.ar/GROSNEYRI,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Ciudad Autónoma de Buenos Aire, Capital Federal.",NA,NA
+ARG,VENTASSMARTTECHNO,https://perfil.mercadolibre.com.ar/VENTASSMARTTECHNO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Balvanera, Capital Federal.",NA,NA
+ARG,VIV5,https://perfil.mercadolibre.com.ar/VIV5,13,1,137,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,118,0,5,113,"CAPITAL FEDERAL, Capital Federal.",5,1
+ARG,RICHY 14,https://perfil.mercadolibre.com.ar/RICHY+14,16,1,120,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,97,1,3,93,"Caballito, Capital Federal.",5,1
+ARG,CAMILALUCIA91,https://perfil.mercadolibre.com.ar/CAMILALUCIA91,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Microcentro, Capital Federal.",NA,NA
+ARG,LUCASVENUTOLO,https://perfil.mercadolibre.com.ar/LUCASVENUTOLO,5,1,72,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,46,1,0,45,"Martínez, Buenos Aires.",5,1
+ARG,AKSHOP BSAS,https://perfil.mercadolibre.com.ar/AKSHOP+BSAS,2,1,478,NA,Brinda buena atención,Despacha sus productos a tiempo,310,1,3,306,"Paternal, Capital Federal.",2,1
+ARG,GRUPO_GB,https://perfil.mercadolibre.com.ar/GRUPO_GB,13,1,131,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,66,2,1,63,"Ciudad Autonoma de Buenos Aire, Capital Federal.",4,2
+ARG,NNV PRODUCTOS,https://perfil.mercadolibre.com.ar/NNV+PRODUCTOS,11,1,287,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,150,2,4,144,"CABA, Capital Federal.",4,2
+ARG,CAFL9558158,https://perfil.mercadolibre.com.ar/CAFL9558158,5,1,65,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,56,0,0,56,"Río Grande, Tierra del Fuego.",5,1
+ARG,CINNAMONTECH,https://perfil.mercadolibre.com.ar/CINNAMONTECH,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,5,3,0,2,"Almagro, Capital Federal.",NA,NA
+ARG,PONELEPRECIO,https://perfil.mercadolibre.com.ar/PONELEPRECIO,10,1,340,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,130,4,5,121,"Villa Urquiza, Capital Federal.",4,2
+ARG,SADI1231634,https://perfil.mercadolibre.com.ar/SADI1231634,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,3,0,0,3,"Palermo, Capital Federal.",NA,NA
+ARG,MONFORTEMARCELO,https://perfil.mercadolibre.com.ar/MONFORTEMARCELO,11,1,198,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,141,0,1,140,"San Antonio De Padua, Buenos Aires.",5,1
+ARG,FIX.STATION,https://perfil.mercadolibre.com.ar/FIX.STATION,1,1,53,NA,Brinda buena atención,Despacha sus productos con demora,25,0,1,24,"Belgrano, Capital Federal.",4,2
+ARG,AGUSTINCANTOU,https://perfil.mercadolibre.com.ar/AGUSTINCANTOU,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"Avellaneda, Buenos Aires.",NA,NA
+ARG,TORDIJULIETA,https://perfil.mercadolibre.com.ar/TORDIJULIETA,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Belgrano, Capital Federal.",NA,NA
+ARG,ONCELULAR-AR,https://perfil.mercadolibre.com.ar/ONCELULAR-AR,10,1,201,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,99,2,3,94,"San Nicolás, Capital Federal.",4,2
+ARG,MWG,https://perfil.mercadolibre.com.ar/MWG,16,1,36,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,32,0,4,28,"Puerto Madero, Capital Federal.",5,1
+ARG,PALU6534685,https://perfil.mercadolibre.com.ar/PALU6534685,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,7,0,0,7,"Zona Oeste, Buenos Aires.",NA,NA
+ARG,TONE7257979,https://perfil.mercadolibre.com.ar/TONE7257979,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Villa Urquiza, Capital Federal.",NA,NA
+ARG,JENN_JJB,https://perfil.mercadolibre.com.ar/JENN_JJB,8,1,68,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,41,2,0,39,"Palermo, Capital Federal.",5,1
+ARG,NEWPOINTSTORE,https://perfil.mercadolibre.com.ar/NEWPOINTSTORE,2,1,150,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,101,0,0,101,"Núñez, Capital Federal.",2,1
+ARG,COMPUMACPC,https://perfil.mercadolibre.com.ar/COMPUMACPC,7,1,857,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,209,8,7,194,"San Isidro, Buenos Aires.",4,2
+ARG,CUCA74,https://perfil.mercadolibre.com.ar/CUCA74,13,1,46,NA,Brinda buena atención,Despacha sus productos a tiempo,34,0,1,33,"Ciudad de Buenos Aires, Capital Federal.",5,1
+ARG,PATASGAMES,https://perfil.mercadolibre.com.ar/PATASGAMES,1,1,154,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,76,1,0,75,"Villa del Parque, Capital Federal.",4,2
+ARG,ELPAI2005,https://perfil.mercadolibre.com.ar/ELPAI2005,14,1,104,NA,Brinda buena atención,Despacha sus productos a tiempo,47,1,0,46,"ALMAGRO, Capital Federal.",4,2
+ARG,REPUESTOSRENAULT SF,https://perfil.mercadolibre.com.ar/REPUESTOSRENAULT+SF,4,1,50,NA,Brinda buena atención,Despacha sus productos con demora,21,0,0,21,"San Fernando, Buenos Aires.",4,2
+ARG,BARBIE SAMRA,https://perfil.mercadolibre.com.ar/BARBIE+SAMRA,13,1,77,NA,Brinda buena atención,Despacha sus productos a tiempo,55,0,1,54,"Villa Crespo, Capital Federal.",5,1
+ARG,BANDELCASES,https://perfil.mercadolibre.com.ar/BANDELCASES,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"La Plata, Buenos Aires.",NA,NA
+ARG,CLAUDIA.FABBRO1,https://perfil.mercadolibre.com.ar/CLAUDIA.FABBRO1,3,2,20,NA,Brinda buena atención,Despacha sus productos a tiempo,15,0,1,14,"Longchamps, Buenos Aires.",3,2
+ARG,DIGITALWAREHOUSEAR,https://perfil.mercadolibre.com.ar/DIGITALWAREHOUSEAR,1,1,759,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Despacha sus productos a tiempo,121,4,3,114,Estados Unidos.,4,2
+ARG,BLACKCELLBELGRANO,https://perfil.mercadolibre.com.ar/BLACKCELLBELGRANO,1,1,19,NA,Brinda buena atención,Despacha sus productos a tiempo,10,0,2,8,"Ciudad Autónoma de Buenos Aire, Capital Federal.",1,1
+ARG,TECNO_VIAMONTE,https://perfil.mercadolibre.com.ar/TECNO_VIAMONTE,3,1,100,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,67,1,0,66,"San Nicolás, Capital Federal.",4,2
+ARG,LOVEMYNEWCASE,https://perfil.mercadolibre.com.ar/LOVEMYNEWCASE,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"El Palomar, Buenos Aires.",NA,NA
+ARG,MLDA2009,https://perfil.mercadolibre.com.ar/MLDA2009,10,1,94,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,79,2,1,76,"Capital federal, Capital Federal.",5,1
+ARG,HARDSOFTPCAR,https://perfil.mercadolibre.com.ar/HARDSOFTPCAR,3,1,45,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,29,1,0,28,"Villa Devoto, Capital Federal.",3,1
+ARG,VJ ACCESORIOS-CELULARES,https://perfil.mercadolibre.com.ar/VJ+ACCESORIOS-CELULARES,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"CABA, Capital Federal.",NA,NA
+ARG,ACCESORIOSAPPLEGONNET,https://perfil.mercadolibre.com.ar/ACCESORIOSAPPLEGONNET,3,1,52,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,44,1,0,43,"La Plata, Buenos Aires.",3,1
+ARG,MATIASEBRI,https://perfil.mercadolibre.com.ar/MATIASEBRI,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Palermo, Buenos Aires.",NA,NA
+ARG,FONO-TIENDA,https://perfil.mercadolibre.com.ar/FONO-TIENDA,14,1,709,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,569,2,10,557,"Ituzaingo, Buenos Aires.",5,1
+ARG,PLANETAMOVIL VILLAMARIA,https://perfil.mercadolibre.com.ar/PLANETAMOVIL+VILLAMARIA,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,0,0,0,0,"Villa María, Córdoba.",NA,NA
+ARG,SC.PRODUCTOS,https://perfil.mercadolibre.com.ar/SC.PRODUCTOS,4,1,65,NA,Brinda buena atención,Despacha sus productos con demora,40,0,0,40,"VillaCrespo, Capital Federal.",4,1
+ARG,MIDIGITALSTORE,https://perfil.mercadolibre.com.ar/MIDIGITALSTORE,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"Pinamar, Buenos Aires.",NA,NA
+ARG,JUANPABLOMORALESML,https://perfil.mercadolibre.com.ar/JUANPABLOMORALESML,11,2,94,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,39,3,2,34,"Almagro, Capital Federal.",11,2
+ARG,ALUCION,https://perfil.mercadolibre.com.ar/ALUCION,12,1,355,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,278,2,5,271,"Villa Urquiza, Capital Federal.",5,1
+ARG,VENTAS-ONLINE-LANUS,https://perfil.mercadolibre.com.ar/VENTAS-ONLINE-LANUS,1,1,100,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,52,0,1,51,"Lanús oeste, Buenos Aires.",4,2
+ARG,JUANJOMARTI,https://perfil.mercadolibre.com.ar/JUANJOMARTI,13,1,62,NA,Tuvo problemas en sus ventas,Despacha sus productos a tiempo,33,0,0,33,"Mar del Plata, Buenos Aires.",5,1
+ARG,MOVILMAR,https://perfil.mercadolibre.com.ar/MOVILMAR,12,1,107,NA,Brinda buena atención,Despacha sus productos con demora,48,0,0,48,"La Boca, Capital Federal.",4,2
+ARG,TOMERO2000,https://perfil.mercadolibre.com.ar/TOMERO2000,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo en despachar sus productos,1,0,0,1,"Devoto, Capital Federal.",NA,NA
+ARG,COMPLEMENTOS.DEPORTIVOS,https://perfil.mercadolibre.com.ar/COMPLEMENTOS.DEPORTIVOS,1,1,199,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,80,3,1,76,"San Fernando, Buenos Aires.",1,1
+ARG,FERJISALESMAN,https://perfil.mercadolibre.com.ar/FERJISALESMAN,10,1,311,NA,Tuvo problemas en sus ventas,Despacha sus productos con demora,265,3,9,253,"San Antonio De Padua, Buenos Aires.",5,1
+COL,APRECIOSDEREMATE,https://perfil.mercadolibre.com.co/APRECIOSDEREMATE,15,1,1572,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,322,9,9,304,"Floridablanca, Santander.",4,2
+COL,BACKUPSTORECOL,https://perfil.mercadolibre.com.co/BACKUPSTORECOL,5,1,336,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,93,2,2,89,"Chapinero, Bogotá D.C..",4,2
+COL,MLOKEDO,https://perfil.mercadolibre.com.co/MLOKEDO,1,1,287,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,69,0,0,69,"Ibagué, Tolima.",4,2
+COL,TELEPRODUCTOS BOGOTA,https://perfil.mercadolibre.com.co/TELEPRODUCTOS+BOGOTA,2,1,254,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,40,2,0,38,"Bogotá, Bogotá D.C..",4,2
+COL,NEXOSGROUP2010,https://perfil.mercadolibre.com.co/NEXOSGROUP2010,9,1,410,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,92,0,3,89,"Envigado, Antioquia.",4,2
+COL,AKARGO COLOMBIA,https://perfil.mercadolibre.com.co/AKARGO+COLOMBIA,6,1,3651,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,2094,36,83,1975,"Bogotá, Bogotá D.C..",4,2
+COL,SEBASTEANO,https://perfil.mercadolibre.com.co/SEBASTEANO,5,1,151,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,24,0,0,24,"Soacha, Cundinamarca.",4,2
+COL,TEKNINN,https://perfil.mercadolibre.com.co/TEKNINN,8,2,224,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,56,0,0,56,"Medellín, Antioquia.",4,2
+COL,PHONETIFYTIENDAONLINE,https://perfil.mercadolibre.com.co/PHONETIFYTIENDAONLINE,1,1,464,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,117,5,4,108,"Medellín, Antioquia.",4,2
+COL,WEBCASTERSHOP,https://perfil.mercadolibre.com.co/WEBCASTERSHOP,7,1,256,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,55,2,0,53,"Kennedy, Bogotá D.C..",4,2
+COL,KLIDAD OFICIAL,https://perfil.mercadolibre.com.co/KLIDAD+OFICIAL,2,1,1923,NA,Brinda buena atención,Entrega sus productos a tiempo,839,11,14,814,"TUNPQ1BFUmMwMjJk, Risaralda.",2,1
+COL,ANROHEZ,https://perfil.mercadolibre.com.co/ANROHEZ,7,1,263,NA,Brinda buena atención,Entrega sus productos a tiempo,132,0,1,131,"Puente Aranda, Bogotá D.C..",5,1
+COL,OLOGHY,https://perfil.mercadolibre.com.co/OLOGHY,4,2,193,NA,Brinda buena atención,Entrega sus productos a tiempo,58,0,0,58,"Barrios Unidos, Bogotá D.C..",4,2
+COL,SEENONIMPORTACIONES,https://perfil.mercadolibre.com.co/SEENONIMPORTACIONES,6,2,818,NA,Brinda buena atención,Entrega sus productos a tiempo,226,9,7,210,"Kennedy, Bogotá D.C..",4,2
+COL,IPHONESHOP_BQ,https://perfil.mercadolibre.com.co/IPHONESHOP_BQ,8,1,165,NA,Brinda buena atención,Entrega sus productos a tiempo,90,0,1,89,"Barranquilla, Atlantico.",5,1
+COL,TIENDANOSTRA.COM,https://perfil.mercadolibre.com.co/TIENDANOSTRA.COM,6,1,493,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,118,6,5,107,"Bogotá, Bogotá D.C..",4,2
+COL,CAROLINA.CASTRO68,https://perfil.mercadolibre.com.co/CAROLINA.CASTRO68,8,1,97,NA,Brinda buena atención,Entrega sus productos a tiempo,17,1,1,15,"Bogotá, Bogotá D.C..",4,2
+COL,URBAN TECHNO,https://perfil.mercadolibre.com.co/URBAN+TECHNO,5,1,126,NA,Brinda buena atención,Entrega sus productos a tiempo,29,0,2,27,"Medellín, Antioquia.",4,2
+COL,JIS IMPORTACIONES,https://perfil.mercadolibre.com.co/JIS+IMPORTACIONES,1,1,1207,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,326,10,16,300,"Bogotá, Bogotá D.C..",4,2
+COL,TECNO.GADGETS.CO,https://perfil.mercadolibre.com.co/TECNO.GADGETS.CO,3,1,114,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,35,0,0,35,"Bogotá, Bogotá D.C..",4,2
+COL,MIKE PARRA,https://perfil.mercadolibre.com.co/MIKE+PARRA,7,1,33,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,0,20,"Bogotá, Bogotá D.C..",5,1
+COL,FLOREZJOSE08,https://perfil.mercadolibre.com.co/FLOREZJOSE08,6,1,392,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,103,0,1,102,"Kennedy, Bogotá D.C..",4,2
+COL,BZ GP,https://perfil.mercadolibre.com.co/BZ+GP,3,1,80,NA,Brinda buena atención,Entrega sus productos a tiempo,39,0,0,39,"Bogotá, Bogotá D.C..",3,1
+COL,SIJ DISTRIBUCIONES,https://perfil.mercadolibre.com.co/SIJ+DISTRIBUCIONES,4,1,2768,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,652,20,21,611,"Bogotá, Bogotá D.C..",4,2
+COL,CALLE DEL.COMERCIO,https://perfil.mercadolibre.com.co/CALLE+DEL.COMERCIO,12,1,643,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,185,0,0,185,"Neiva, Huila.",4,2
+COL,AFICIONADOS ALOSRELOJES,https://perfil.mercadolibre.com.co/AFICIONADOS+ALOSRELOJES,14,1,1562,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,784,5,24,755,"Bogotá, Bogotá D.C..",4,2
+COL,EDISONLEGUIZSMO,https://perfil.mercadolibre.com.co/EDISONLEGUIZSMO,1,1,15,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"Bogotá, Bogotá D.C..",1,1
+COL,SKYJOB,https://perfil.mercadolibre.com.co/SKYJOB,12,1,962,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,373,3,6,364,"Bogotá, Bogotá D.C..",4,2
+COL,DELIVERYSASUSAME,https://perfil.mercadolibre.com.co/DELIVERYSASUSAME,1,1,216,NA,Brinda buena atención,Entrega sus productos a tiempo,114,3,10,101,"Bogotá, Bogotá D.C..",4,2
+COL,LA TIENDADELCLIC,https://perfil.mercadolibre.com.co/LA+TIENDADELCLIC,1,1,1191,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,531,29,21,481,"Bogotá, Bogotá D.C..",4,2
+COL,WAAW10,https://perfil.mercadolibre.com.co/WAAW10,7,1,135,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,72,1,2,69,"Aguachica, Cesar.",4,2
+COL,PROVEEDORES CISY,https://perfil.mercadolibre.com.co/PROVEEDORES+CISY,8,2,126,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,42,0,0,42,"Bogotá, Bogotá D.C..",4,2
+COL,AKAESCOLOMBIASAS,https://perfil.mercadolibre.com.co/AKAESCOLOMBIASAS,10,2,602,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,119,8,12,99,"Usaquén, Bogotá D.C..",4,2
+COL,CONTAINERVIRTUAL 235,https://perfil.mercadolibre.com.co/CONTAINERVIRTUAL+235,5,1,888,NA,Brinda buena atención,Entrega sus productos a tiempo,698,2,6,690,"Piedecuesta, Santander.",5,1
+COL,CEROAN.,https://perfil.mercadolibre.com.co/CEROAN.,2,1,83,NA,Brinda buena atención,Entrega sus productos con demora,27,1,1,25,"Bogotá, Bogotá D.C..",4,2
+COL,TATI4318703,https://perfil.mercadolibre.com.co/TATI4318703,1,1,170,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,52,5,1,46,"Cali, Valle Del Cauca.",1,1
+COL,MIPUNTONLINE,https://perfil.mercadolibre.com.co/MIPUNTONLINE,8,1,200,NA,Brinda buena atención,Entrega sus productos con demora,73,3,2,68,"Cali, Valle Del Cauca.",4,2
+COL,LUISMIGUELGELVEZ,https://perfil.mercadolibre.com.co/LUISMIGUELGELVEZ,5,1,83,NA,Brinda buena atención,Entrega sus productos a tiempo,14,0,0,14,"Aguachica, Cesar.",4,2
+COL,EURO_TECH,https://perfil.mercadolibre.com.co/EURO_TECH,1,1,98,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,42,1,1,40,"Bogotá, Bogotá D.C..",1,1
+COL,VILLADALUIS59,https://perfil.mercadolibre.com.co/VILLADALUIS59,7,1,15,NA,Brinda buena atención,Entrega sus productos a tiempo,0,0,0,0,"Bogotá, Bogotá D.C..",5,1
+COL,VOMEXPRESS,https://perfil.mercadolibre.com.co/VOMEXPRESS,7,1,269,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,96,1,0,95,"Bogotá, Bogotá D.C..",4,2
+COL,NIKKO90,https://perfil.mercadolibre.com.co/NIKKO90,15,1,81,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,37,1,0,36,"Buenaventura, Valle Del Cauca.",5,1
+COL,ESTACIONELECTRONICA,https://perfil.mercadolibre.com.co/ESTACIONELECTRONICA,11,1,228,NA,Brinda buena atención,Entrega sus productos a tiempo,43,3,2,38,"Medellín, Antioquia.",4,2
+COL,NIKOMAR.NET,https://perfil.mercadolibre.com.co/NIKOMAR.NET,9,1,277,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,57,0,1,56,"Chía, Cundinamarca.",4,2
+COL,APRECIOSDREMATE,https://perfil.mercadolibre.com.co/APRECIOSDREMATE,12,1,2053,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,430,7,12,411,"Bogotá, Bogotá D.C..",4,2
+COL,JOSEANTONIOMOCLETON,https://perfil.mercadolibre.com.co/JOSEANTONIOMOCLETON,1,1,6424,NA,Brinda buena atención,Entrega sus productos a tiempo,1250,47,30,1173,"Bogotá, Bogotá D.C..",4,2
+COL,C.D.C COMPRAS,https://perfil.mercadolibre.com.co/C.D.C+COMPRAS,5,1,31,NA,Brinda buena atención,Entrega sus productos a tiempo,1,0,0,1,"Aguachica, Cesar.",5,1
+COL,QUEEN.BEE.,https://perfil.mercadolibre.com.co/QUEEN.BEE.,3,1,1272,NA,Brinda buena atención,Entrega sus productos a tiempo,314,11,5,298,"Barrios Unidos, Bogotá D.C..",4,2
+COL,SEKAI EXPRESS,https://perfil.mercadolibre.com.co/SEKAI+EXPRESS,1,1,2094,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,433,23,27,383,"Medellín, Antioquia.",4,2
+COL,LATINPORT,https://perfil.mercadolibre.com.co/LATINPORT,2,1,1892,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,501,27,30,444,"Bogotá, Bogotá D.C..",4,2
+COL,YEINYQUINTEROQUINTERO,https://perfil.mercadolibre.com.co/YEINYQUINTEROQUINTERO,4,1,156,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,64,0,2,62,"Bogotá, Bogotá D.C..",4,2
+COL,IKIRA.CO,https://perfil.mercadolibre.com.co/IKIRA.CO,3,1,423,NA,Brinda buena atención,Entrega sus productos a tiempo,183,0,2,181,"Cali, Valle Del Cauca.",3,1
+COL,TIENDA MALU,https://perfil.mercadolibre.com.co/TIENDA+MALU,7,1,1576,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,537,8,24,505,"Bogotá, Bogotá D.C..",4,2
+COL,ENCUENTRALO.COM,https://perfil.mercadolibre.com.co/ENCUENTRALO.COM,13,1,501,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,166,0,1,165,"Bogotá, Bogotá D.C..",4,2
+COL,KALAVIKACO,https://perfil.mercadolibre.com.co/KALAVIKACO,1,1,119,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,19,1,1,17,China.,1,1
+COL,AUNCLICKSTORE,https://perfil.mercadolibre.com.co/AUNCLICKSTORE,5,1,440,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,100,1,0,99,"Puente Aranda, Bogotá D.C..",4,2
+COL,DISRUPTIVOS,https://perfil.mercadolibre.com.co/DISRUPTIVOS,2,1,476,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,153,0,1,152,"Bogotá, Bogotá D.C..",4,2
+COL,IMPORTWISHES,https://perfil.mercadolibre.com.co/IMPORTWISHES,4,2,107,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,49,0,0,49,"Medellín, Antioquia.",4,2
+COL,MAUJA.STORE,https://perfil.mercadolibre.com.co/MAUJA.STORE,1,1,653,NA,Brinda buena atención,Entrega sus productos a tiempo,181,3,2,176,"Bogotá, Bogotá D.C..",4,2
+COL,GLOBAL BOX,https://perfil.mercadolibre.com.co/GLOBAL+BOX,6,2,625,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,184,2,3,179,"Bogotá, Bogotá D.C..",4,2
+COL,NIKOMAR2,https://perfil.mercadolibre.com.co/NIKOMAR2,5,1,146,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,38,0,0,38,"Mosquera, Cundinamarca.",4,2
+COL,FELIPE TOBON,https://perfil.mercadolibre.com.co/FELIPE+TOBON,9,1,1466,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,716,5,20,691,"Bogotá, Bogotá D.C..",4,2
+COL,DISTRIBUYELO-2,https://perfil.mercadolibre.com.co/DISTRIBUYELO-2,5,1,4232,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,762,48,36,678,"Bogotá, Bogotá D.C..",4,2
+COL,POSADAFERNANDO51,https://perfil.mercadolibre.com.co/POSADAFERNANDO51,8,1,7,NA,Brinda buena atención,Entrega sus productos a tiempo,4,0,0,4,"Bogotá, Bogotá D.C..",5,1
+COL,MENSAJEROS USA,https://perfil.mercadolibre.com.co/MENSAJEROS+USA,5,2,564,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,262,1,11,250,"Engativá, Bogotá D.C..",4,2
+COL,CONEXION_DE_ORO,https://perfil.mercadolibre.com.co/CONEXION_DE_ORO,9,1,560,NA,Brinda buena atención,Entrega sus productos a tiempo,363,13,35,315,"Cali, Valle Del Cauca.",5,1
+COL,ENKSAONLINE.COM,https://perfil.mercadolibre.com.co/ENKSAONLINE.COM,2,1,263,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,53,0,0,53,"Bogotá, Bogotá D.C..",4,2
+COL,AIRSEAFREIGHT,https://perfil.mercadolibre.com.co/AIRSEAFREIGHT,2,1,131,NA,Brinda buena atención,Entrega sus productos a tiempo,51,0,1,50,"Bogotá, Bogotá D.C..",2,1
+COL,ARTELECTRONICOS,https://perfil.mercadolibre.com.co/ARTELECTRONICOS,13,1,617,NA,Brinda buena atención,Entrega sus productos a tiempo,208,9,12,187,"Rionegro, Antioquia.",4,2
+COL,UNIONMYD,https://perfil.mercadolibre.com.co/UNIONMYD,8,1,197,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,44,4,2,38,"Bogotá, Bogotá D.C..",4,2
+COL,CAMAZA2018,https://perfil.mercadolibre.com.co/CAMAZA2018,8,1,161,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,34,0,0,34,"Mosquera, Cundinamarca.",4,2
+COL,LUZKARDY,https://perfil.mercadolibre.com.co/LUZKARDY,7,1,20,NA,Brinda buena atención,Entrega sus productos a tiempo,4,0,0,4,"Mosquera, Cundinamarca.",5,1
+COL,IMPPERA,https://perfil.mercadolibre.com.co/IMPPERA,3,1,1398,NA,Brinda buena atención,Entrega sus productos a tiempo,293,0,0,293,"Bogotá, Bogotá D.C..",4,2
+COL,TODOENCARGO-CO,https://perfil.mercadolibre.com.co/TODOENCARGO-CO,7,1,3335,NA,Brinda buena atención,Entrega sus productos a tiempo,653,24,26,603,"Bogotá, Bogotá D.C..",4,2
+COL,GETTING.,https://perfil.mercadolibre.com.co/GETTING.,1,1,530,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,116,0,1,115,"Bucaramanga, Santander.",4,2
+COL,MULTISERVICIOS SOE,https://perfil.mercadolibre.com.co/MULTISERVICIOS+SOE,1,1,182,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,31,4,0,27,"Bogotá, Bogotá D.C..",4,2
+COL,E-TAG,https://perfil.mercadolibre.com.co/E-TAG,9,1,513,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,118,2,1,115,"Medellín, Antioquia.",4,2
+COL,AJ.ONLINE,https://perfil.mercadolibre.com.co/AJ.ONLINE,1,1,2088,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,501,23,20,458,"Suba, Bogotá D.C..",4,2
+COL,LETS BUY19,https://perfil.mercadolibre.com.co/LETS+BUY19,5,1,36,NA,Brinda buena atención,Entrega sus productos a tiempo,3,0,0,3,"Itaguí, Antioquia.",5,1
+COL,ZONAFRANCACAT,https://perfil.mercadolibre.com.co/ZONAFRANCACAT,2,2,796,NA,Brinda buena atención,Entrega sus productos a tiempo,131,6,4,121,"Bogotá, Bogotá D.C..",2,2
+COL,WEXLAID,https://perfil.mercadolibre.com.co/WEXLAID,5,1,103,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,26,0,1,25,"Bogotá, Bogotá D.C..",4,2
+COL,KAISCAMA,https://perfil.mercadolibre.com.co/KAISCAMA,1,1,500,NA,Brinda buena atención,Entrega sus productos a tiempo,235,4,7,224,"Bogotá, Bogotá D.C..",1,1
+COL,LATIENDAXPRESS,https://perfil.mercadolibre.com.co/LATIENDAXPRESS,11,2,81,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,0,20,"Bogotá, Bogotá D.C..",11,2
+COL,DAVALA IMPORTS,https://perfil.mercadolibre.com.co/DAVALA+IMPORTS,14,1,110,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,17,1,0,16,"Bogotá, Bogotá D.C..",4,2
+COL,TIENDAVIRAL,https://perfil.mercadolibre.com.co/TIENDAVIRAL,4,2,78,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,35,0,0,35,"Bogotá, Bogotá D.C..",4,2
+COL,AKAESCOLOMBIA,https://perfil.mercadolibre.com.co/AKAESCOLOMBIA,14,1,486,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,120,12,8,100,"Usaquén, Bogotá D.C..",4,2
+COL,LEONREYESJULIOCESAR,https://perfil.mercadolibre.com.co/LEONREYESJULIOCESAR,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,2,0,0,2,"Medellín, Antioquia.",NA,NA
+COL,SANTIESTEBANNORIEGAFONTALVO,https://perfil.mercadolibre.com.co/SANTIESTEBANNORIEGAFONTALVO,3,1,25,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,13,1,0,12,"Aguachica, Cesar.",3,1
+COL,GHORA INC,https://perfil.mercadolibre.com.co/GHORA+INC,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Chapinero, Bogotá D.C..",NA,NA
+COL,ENLACEDIGITAL.CO,https://perfil.mercadolibre.com.co/ENLACEDIGITAL.CO,11,1,23,NA,Brinda buena atención,Entrega sus productos a tiempo,10,0,0,10,"Bogotá, Bogotá D.C..",5,1
+COL,BARU0.5,https://perfil.mercadolibre.com.co/BARU0.5,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Usaquén, Bogotá D.C..",NA,NA
+COL,HELLO BOUTIQUE,https://perfil.mercadolibre.com.co/HELLO+BOUTIQUE,4,1,120,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,21,1,0,20,"Medellín, Antioquia.",4,2
+COL,COMPRASYVENDES2015,https://perfil.mercadolibre.com.co/COMPRASYVENDES2015,4,1,316,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,85,17,9,59,"Bogotá, Bogotá D.C..",4,2
+COL,NINA O.E,https://perfil.mercadolibre.com.co/NINA+O.E,3,1,22,NA,Brinda buena atención,Entrega sus productos a tiempo,4,1,0,3,"Bogotá, Bogotá D.C..",3,1
+COL,COMERCIALIZADORAMEJÍAYMEJÍA,https://perfil.mercadolibre.com.co/COMERCIALIZADORAMEJ%C3%8DAYMEJ%C3%8DA,11,1,308,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,39,2,2,35,"Bogotá, Bogotá D.C..",4,2
+COL,ITGLOBALSAS,https://perfil.mercadolibre.com.co/ITGLOBALSAS,3,1,708,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,233,15,15,203,"Usaquén, Bogotá D.C..",4,2
+COL,AMERICAN.SHOP.,https://perfil.mercadolibre.com.co/AMERICAN.SHOP.,2,1,759,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,124,7,4,113,"Villavicencio, Meta.",4,2
+COL,TIENDA_NEW_TECH,https://perfil.mercadolibre.com.co/TIENDA_NEW_TECH,1,1,136,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,57,11,3,43,"Aguachica, Cesar.",4,2
+COL,MOLA9734319,https://perfil.mercadolibre.com.co/MOLA9734319,10,2,75,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,13,3,0,10,"Zipaquirá, Cundinamarca.",4,2
+COL,TIENDAROCI,https://perfil.mercadolibre.com.co/TIENDAROCI,3,2,707,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,235,9,11,215,"Bogotá, Bogotá D.C..",3,2
+COL,CAPRACIOROSANAIS,https://perfil.mercadolibre.com.co/CAPRACIOROSANAIS,2,1,20,NA,Brinda buena atención,Entrega sus productos con demora,14,0,1,13,"Cúcuta, Norte De Santander.",2,1
+COL,LEAL.IMPORTACIONES,https://perfil.mercadolibre.com.co/LEAL.IMPORTACIONES,4,1,19,NA,Brinda buena atención,Entrega sus productos con demora,3,0,0,3,"Copacabana, Antioquia.",4,1
+COL,RURUSTORE,https://perfil.mercadolibre.com.co/RURUSTORE,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Buga, Valle Del Cauca.",NA,NA
+COL,I-GRAPHS-STORE,https://perfil.mercadolibre.com.co/I-GRAPHS-STORE,6,1,22,NA,Brinda buena atención,Entrega sus productos a tiempo,12,0,0,12,"Medellín, Antioquia.",5,1
+COL,MAURICIO GARAVITO,https://perfil.mercadolibre.com.co/MAURICIO+GARAVITO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Bogotá, Bogotá D.C..",NA,NA
+COL,MAPETITE_BOUTIQUE,https://perfil.mercadolibre.com.co/MAPETITE_BOUTIQUE,2,1,136,NA,Brinda buena atención,Entrega sus productos a tiempo,14,0,0,14,"Bogotá, Bogotá D.C..",4,2
+COL,URSA7854519,https://perfil.mercadolibre.com.co/URSA7854519,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Medellín, Antioquia.",NA,NA
+COL,GUZMANQUINTEROQUINTERO2,https://perfil.mercadolibre.com.co/GUZMANQUINTEROQUINTERO2,5,1,73,NA,Brinda buena atención,Entrega sus productos a tiempo,10,0,0,10,"Bogotá, Bogotá D.C..",4,2
+COL,DR.STEVEN23,https://perfil.mercadolibre.com.co/DR.STEVEN23,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Engativá, Bogotá D.C..",NA,NA
+COL,YOURMARKETSTOYS,https://perfil.mercadolibre.com.co/YOURMARKETSTOYS,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Bogotá, Bogotá D.C..",NA,NA
+COL,BLUESHOP IMPORTACIONES,https://perfil.mercadolibre.com.co/BLUESHOP+IMPORTACIONES,6,2,44,NA,Brinda buena atención,Entrega sus productos a tiempo,28,0,0,28,"Bogotá, Bogotá D.C..",6,2
+COL,HAROLDORTEGAMAZZILLI,https://perfil.mercadolibre.com.co/HAROLDORTEGAMAZZILLI,2,1,97,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,25,4,2,19,"Kennedy, Bogotá D.C..",4,2
+COL,YAXACHINA,https://perfil.mercadolibre.com.co/YAXACHINA,3,1,649,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,186,41,22,123,"Bogotá, Bogotá D.C..",4,2
+COL,OSFA8731241,https://perfil.mercadolibre.com.co/OSFA8731241,1,1,122,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,43,5,2,36,"Zipaquirá, Cundinamarca.",1,1
+COL,MOFE7232919,https://perfil.mercadolibre.com.co/MOFE7232919,1,1,155,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,55,14,8,33,"Usaquén, Bogotá D.C..",1,1
+COL,EVERPRINTBOGOTA,https://perfil.mercadolibre.com.co/EVERPRINTBOGOTA,4,1,1614,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,1072,63,99,910,"Bogotá, Bogotá D.C..",4,1
+COL,BUYNOWCOLOMBIA,https://perfil.mercadolibre.com.co/BUYNOWCOLOMBIA,1,1,28,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,18,1,0,17,"Fontibón, Bogotá D.C..",1,1
+COL,VIVO SHOP,https://perfil.mercadolibre.com.co/VIVO+SHOP,1,1,214,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,88,19,7,62,"Bogotá, Bogotá D.C..",1,1
+COL,ELPALACIOONLINE,https://perfil.mercadolibre.com.co/ELPALACIOONLINE,2,1,13,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,7,0,1,6,"Barranquilla, Atlantico.",2,1
+COL,JEIMYVALDERRMA,https://perfil.mercadolibre.com.co/JEIMYVALDERRMA,11,2,145,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,58,13,3,42,"Medellín, Antioquia.",4,2
+COL,VENTAS.COLOMBIA72,https://perfil.mercadolibre.com.co/VENTAS.COLOMBIA72,2,1,278,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,108,30,31,47,"Medellín, Antioquia.",2,1
+COL,OHMYMY,https://perfil.mercadolibre.com.co/OHMYMY,9,2,35,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,13,2,2,9,"Zipaquirá, Cundinamarca.",9,2
+COL,PELU7053736,https://perfil.mercadolibre.com.co/PELU7053736,10,2,12,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,1,0,0,1,"Chía, Cundinamarca.",10,2
+COL,ABBYSTORE,https://perfil.mercadolibre.com.co/ABBYSTORE,1,1,61,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,7,0,0,7,"Villavicencio, Meta.",1,1
+COL,TIENDA-ME-LO-LLEVO,https://perfil.mercadolibre.com.co/TIENDA-ME-LO-LLEVO,1,1,473,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,243,12,18,213,"Medellín, Antioquia.",4,2
+COL,PREL2608612,https://perfil.mercadolibre.com.co/PREL2608612,1,1,69,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,13,4,1,8,"Zipaquirá, Cundinamarca.",1,1
+COL,CABRALESCARDENASSAMIR,https://perfil.mercadolibre.com.co/CABRALESCARDENASSAMIR,3,2,187,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,80,8,7,65,"Usme, Bogotá D.C..",3,2
+MEX,BROXYMEXICO,https://perfil.mercadolibre.com.mx/BROXYMEXICO,2,1,4771,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,437,6,6,425,"Iztapalapa, Distrito Federal.",4,2
+MEX,ROBERT CG8,https://perfil.mercadolibre.com.mx/ROBERT+CG8,3,1,4103,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,407,11,13,383,"Chihuahua, Chihuahua.",4,2
+MEX,LH ACCESORIOS,https://perfil.mercadolibre.com.mx/LH+ACCESORIOS,7,1,14082,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1270,2,23,1245,"Hermosillo, Sonora.",4,2
+MEX,CELLKING21,https://perfil.mercadolibre.com.mx/CELLKING21,5,1,1542,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,141,4,4,133,"Chihuahua, Chihuahua.",4,2
+MEX,TEKKNOSHOP,https://perfil.mercadolibre.com.mx/TEKKNOSHOP,10,1,12911,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1268,50,38,1180,"Chihuahua, Chihuahua.",4,2
+MEX,VIGU ACCESORIOS,https://perfil.mercadolibre.com.mx/VIGU+ACCESORIOS,6,1,638,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,55,1,2,52,"Victoria, Tamaulipas.",4,2
+MEX,PANDARA MX,https://perfil.mercadolibre.com.mx/PANDARA+MX,7,1,4123,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,335,0,1,334,"Toluca, Estado De México.",4,2
+MEX,MR.CHISPA SHOP,https://perfil.mercadolibre.com.mx/MR.CHISPA+SHOP,4,1,3904,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,335,15,20,300,"Cuautitlan Izcalli, Estado De México.",4,2
+MEX,K-SES,https://perfil.mercadolibre.com.mx/K-SES,3,1,10858,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1855,28,35,1792,"Los Cabos, Baja California Sur.",4,2
+MEX,CELULARCENTERMEXICO,https://perfil.mercadolibre.com.mx/CELULARCENTERMEXICO,9,1,11895,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1387,40,38,1309,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,NETONBOX,https://perfil.mercadolibre.com.mx/NETONBOX,9,1,4466,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,452,13,11,428,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,ONE-CLICK,https://perfil.mercadolibre.com.mx/ONE-CLICK,10,1,10046,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,939,31,46,862,"Coyoacán, Distrito Federal.",4,2
+MEX,HE HU,https://perfil.mercadolibre.com.mx/HE+HU,3,2,4861,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,331,13,5,313,"Cuauhtémoc, Distrito Federal.",3,2
+MEX,IMPOR.MEX,https://perfil.mercadolibre.com.mx/IMPOR.MEX,5,1,3212,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,285,6,9,270,"Oaxaca De Juárez, Oaxaca.",4,2
+MEX,IPHONE MX,https://perfil.mercadolibre.com.mx/IPHONE+MX,1,1,11035,NA,Brinda buena atención,Entrega sus productos a tiempo,761,6,10,745,"Monterrey, Nuevo León.",4,2
+MEX,IMPORTNOVALZC,https://perfil.mercadolibre.com.mx/IMPORTNOVALZC,12,1,1530,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,183,3,6,174,"Lázaro Cárdenas, Michoacán.",4,2
+MEX,IBUMPER VERACRUZ,https://perfil.mercadolibre.com.mx/IBUMPER+VERACRUZ,7,1,4732,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,466,19,21,426,"Veracruz, Veracruz.",4,2
+MEX,MLMSHOP,https://perfil.mercadolibre.com.mx/MLMSHOP,6,1,7389,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,972,21,34,917,"Tarimbaro, Michoacán.",4,2
+MEX,SHOP_ORIGINALS,https://perfil.mercadolibre.com.mx/SHOP_ORIGINALS,6,1,3606,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,412,4,5,403,"Venustiano Carranza, Distrito Federal.",4,2
+MEX,ACCESORIOS-YM,https://perfil.mercadolibre.com.mx/ACCESORIOS-YM,6,2,446,NA,Brinda buena atención,Entrega sus productos a tiempo,38,0,1,37,"San Francisco Del Rincón, Guanajuato.",4,2
+MEX,PROTECH LR,https://perfil.mercadolibre.com.mx/PROTECH+LR,2,1,1602,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,182,3,4,175,"Monterrey, Nuevo León.",4,2
+MEX,LAPLATADISEÑOS,https://perfil.mercadolibre.com.mx/LAPLATADISE%C3%91OS,10,1,3632,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,314,4,14,296,"Gómez Palacio, Durango.",4,2
+MEX,DIGITALTECHSHOP,https://perfil.mercadolibre.com.mx/DIGITALTECHSHOP,2,1,1231,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,137,6,3,128,"Aguascalientes, Aguascalientes.",4,2
+MEX,TECNO INSIDE,https://perfil.mercadolibre.com.mx/TECNO+INSIDE,11,1,13364,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1520,21,32,1467,"Guadalajara, Jalisco.",4,2
+MEX,IMPORTALL MEXICO,https://perfil.mercadolibre.com.mx/IMPORTALL+MEXICO,5,1,3402,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,329,11,10,308,"Tepic, Nayarit.",4,2
+MEX,UNIVERSO.EN.LINEA,https://perfil.mercadolibre.com.mx/UNIVERSO.EN.LINEA,7,1,33983,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,2033,4,6,2023,"Monterrey, Nuevo León.",4,2
+MEX,PISITOU TEAM,https://perfil.mercadolibre.com.mx/PISITOU+TEAM,6,1,1593,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,166,7,6,153,"Coyoacán, Distrito Federal.",4,2
+MEX,ZACKMART,https://perfil.mercadolibre.com.mx/ZACKMART,11,1,960,NA,Brinda buena atención,Entrega sus productos a tiempo,48,1,3,44,"Guadalajara, Jalisco.",4,2
+MEX,LIDERT,https://perfil.mercadolibre.com.mx/LIDERT,6,1,6845,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,645,9,12,624,"Guadalajara, Jalisco.",4,2
+MEX,EGOTRADINGSADECV,https://perfil.mercadolibre.com.mx/EGOTRADINGSADECV,7,1,5083,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,580,19,15,546,"Benito juárez, Distrito Federal.",4,2
+MEX,VENTASEHMX,https://perfil.mercadolibre.com.mx/VENTASEHMX,1,1,1422,NA,Brinda buena atención,Entrega sus productos a tiempo,157,7,3,147,"Naucalpan, Estado De México.",4,2
+MEX,TKPARTES,https://perfil.mercadolibre.com.mx/TKPARTES,13,1,17493,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1757,39,42,1676,"Guadalajara, Jalisco.",4,2
+MEX,MX WH,https://perfil.mercadolibre.com.mx/MX+WH,1,1,4101,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,447,21,26,400,"Hermosillo, Sonora.",4,2
+MEX,PILILASTEAM,https://perfil.mercadolibre.com.mx/PILILASTEAM,6,1,1245,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,156,2,4,150,"Iztapalapa, Distrito Federal.",4,2
+MEX,VENKSR,https://perfil.mercadolibre.com.mx/VENKSR,1,1,970,NA,Brinda buena atención,Entrega sus productos a tiempo,124,0,1,123,"Iztacalco, Distrito Federal.",4,2
+MEX,STRONG ACCESORIES,https://perfil.mercadolibre.com.mx/STRONG+ACCESORIES,4,1,2945,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,265,7,8,250,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,IVANTRA,https://perfil.mercadolibre.com.mx/IVANTRA,6,1,779,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,101,1,0,100,"Iztapalapa, Distrito Federal.",4,2
+MEX,PROSU ELECTRONICOS,https://perfil.mercadolibre.com.mx/PROSU+ELECTRONICOS,2,1,12405,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,803,27,14,762,"Guadalupe, Nuevo León.",4,2
+MEX,GADXE COM,https://perfil.mercadolibre.com.mx/GADXE+COM,13,1,3776,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,400,8,6,386,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,TECSED FIXEALO,https://perfil.mercadolibre.com.mx/TECSED+FIXEALO,13,1,13144,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1721,44,47,1630,"Zapopan, Jalisco.",4,2
+MEX,ASSISCELL TLAX,https://perfil.mercadolibre.com.mx/ASSISCELL+TLAX,4,1,31907,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,3590,1,23,3566,"Apizaco, Tlaxcala.",4,2
+MEX,BRANDTRENDY,https://perfil.mercadolibre.com.mx/BRANDTRENDY,7,1,1962,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,162,4,6,152,"Azcapotzalco, Distrito Federal.",4,2
+MEX,CELLSHOP.COM.MX,https://perfil.mercadolibre.com.mx/CELLSHOP.COM.MX,3,1,1886,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,181,3,6,172,"Zapopan, Jalisco.",4,2
+MEX,LEONTIEFF2010,https://perfil.mercadolibre.com.mx/LEONTIEFF2010,9,1,4906,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,460,19,9,432,"Tlalpan, Distrito Federal.",4,2
+MEX,Ventronic Tienda oficial,https://perfil.mercadolibre.com.mx/VENTRONIC_GDL?brandId=1714,12,1,36914,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,2527,71,55,2401,"Guadalajara, Jalisco.",4,2
+MEX,PALGRIM,https://perfil.mercadolibre.com.mx/PALGRIM,8,1,456,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,50,1,1,48,"Matehuala, San Luis Potosí.",4,2
+MEX,BIG MOMO,https://perfil.mercadolibre.com.mx/BIG+MOMO,3,1,5837,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,659,18,15,626,"Guadalupe, Nuevo León.",4,2
+MEX,PRONOVASHOP,https://perfil.mercadolibre.com.mx/PRONOVASHOP,12,1,369,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,49,0,2,47,"Monterrey, Nuevo León.",4,2
+MEX,DISTRIBUIDORASILVER,https://perfil.mercadolibre.com.mx/DISTRIBUIDORASILVER,1,1,1457,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,152,4,3,145,"León, Guanajuato.",4,2
+MEX,COOL SMART,https://perfil.mercadolibre.com.mx/COOL+SMART,7,1,961,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,119,0,2,117,"Naucalpan, Estado De México.",4,2
+MEX,ARTCASES_CO,https://perfil.mercadolibre.com.mx/ARTCASES_CO,4,1,714,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,115,4,4,107,"Guadalajara, Jalisco.",4,2
+MEX,TRICHE BOUTIQUE,https://perfil.mercadolibre.com.mx/TRICHE+BOUTIQUE,2,1,4352,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,539,1,2,536,"San Pedro Cholula, Puebla.",4,2
+MEX,APPLENEXT,https://perfil.mercadolibre.com.mx/APPLENEXT,2,1,1003,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,142,3,2,137,"San Andrés Cholula, Puebla.",4,2
+MEX,ACC3SORIOS,https://perfil.mercadolibre.com.mx/ACC3SORIOS,1,1,5411,NA,Brinda buena atención,Entrega sus productos a tiempo,630,24,24,582,"Hermosillo, Sonora.",4,2
+MEX,ALDEAPRINT,https://perfil.mercadolibre.com.mx/ALDEAPRINT,8,1,13049,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1082,43,38,1001,"Saltillo, Coahuila.",4,2
+MEX,MXSUPCASEANDIBLASONOFFICIA,https://perfil.mercadolibre.com.mx/MXSUPCASEANDIBLASONOFFICIA,8,2,1817,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,187,2,1,184,"Cuautitlan Izcalli, Estado De México.",4,2
+MEX,TIANGUISITO PUNTOCOM,https://perfil.mercadolibre.com.mx/TIANGUISITO+PUNTOCOM,10,1,596,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,78,0,1,77,"Naucalpan, Estado De México.",4,2
+MEX,Aurum Tienda oficial,https://perfil.mercadolibre.com.mx/AURUM+79?brandId=2277,4,1,6782,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,840,6,20,814,"Mérida, Yucatán.",4,2
+MEX,ZITROJMOL,https://perfil.mercadolibre.com.mx/ZITROJMOL,18,1,2843,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,260,13,3,244,"Coyoacán, Distrito Federal.",4,2
+MEX,ISTORE-GDL,https://perfil.mercadolibre.com.mx/ISTORE-GDL,1,1,5446,NA,Brinda buena atención,Entrega sus productos a tiempo,588,10,10,568,"Guadalajara, Jalisco.",4,2
+MEX,DASHAPER,https://perfil.mercadolibre.com.mx/DASHAPER,1,1,810,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,87,5,3,79,"Iztapalapa, Distrito Federal.",4,2
+MEX,EKIOSCO,https://perfil.mercadolibre.com.mx/EKIOSCO,14,1,316,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,30,0,1,29,"Mérida, Yucatán.",4,2
+MEX,ISRAELEDII,https://perfil.mercadolibre.com.mx/ISRAELEDII,17,1,585,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,78,0,2,76,"Alvaro Obregón, Distrito Federal.",4,2
+MEX,Ringke Tienda oficial,https://perfil.mercadolibre.com.mx/RINGKE.MX?brandId=873,3,1,3238,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,462,6,5,451,"Monterrey, Nuevo León.",4,2
+MEX,ALICIAGALVEZMORAN,https://perfil.mercadolibre.com.mx/ALICIAGALVEZMORAN,5,1,2633,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,255,20,11,224,"Hermosillo, Sonora.",4,2
+MEX,BNJAMING,https://perfil.mercadolibre.com.mx/BNJAMING,6,1,541,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,75,0,0,75,"Puebla, Puebla.",4,2
+MEX,PHONE--MART,https://perfil.mercadolibre.com.mx/PHONE--MART,8,1,1132,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,145,1,5,139,"General Escobedo, Nuevo León.",4,2
+MEX,ISAIAS-4110,https://perfil.mercadolibre.com.mx/ISAIAS-4110,2,1,3298,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,244,10,11,223,"Tampico, Tamaulipas.",4,2
+MEX,PIMENTELRAUL82,https://perfil.mercadolibre.com.mx/PIMENTELRAUL82,6,1,432,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,62,0,2,60,"Guadalajara, Jalisco.",4,2
+MEX,VRS Design Tienda oficial,https://perfil.mercadolibre.com.mx/GOGO+ELECTRONICS?brandId=1136,16,1,971,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,70,0,4,66,"Monterrey, Nuevo León.",4,2
+MEX,Ventronic Tienda oficial,https://perfil.mercadolibre.com.mx/VENTRONIC_T.O?brandId=1714,4,1,162782,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,12854,398,280,12176,"Guadalajara, Jalisco.",4,2
+MEX,TECSOLUTIONS MERIDA,https://perfil.mercadolibre.com.mx/TECSOLUTIONS+MERIDA,5,1,166,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,21,0,1,20,"Mérida, Yucatán.",4,2
+MEX,ROMOEDGAR73,https://perfil.mercadolibre.com.mx/ROMOEDGAR73,7,1,2848,NA,Brinda buena atención,Entrega sus productos a tiempo,485,4,6,475,"Monterrey, Nuevo León.",4,2
+MEX,XX454,https://perfil.mercadolibre.com.mx/XX454,7,1,5708,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,484,6,6,472,"Culiacán, Sinaloa.",4,2
+MEX,SMARTRONICSIMPORTS,https://perfil.mercadolibre.com.mx/SMARTRONICSIMPORTS,2,1,1077,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,110,1,6,103,"Guadalajara, Jalisco.",4,2
+MEX,TODO FUNDA,https://perfil.mercadolibre.com.mx/TODO+FUNDA,2,1,5643,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,840,15,14,811,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,MOSSMOBILE,https://perfil.mercadolibre.com.mx/MOSSMOBILE,15,1,12464,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1285,27,22,1236,"Monterrey, Nuevo León.",4,2
+MEX,GAMA4661833,https://perfil.mercadolibre.com.mx/GAMA4661833,1,1,468,NA,Brinda buena atención,Entrega sus productos a tiempo,55,5,3,47,"Tonala, Jalisco.",4,2
+MEX,LATINOAMERICANAVENTASDF,https://perfil.mercadolibre.com.mx/LATINOAMERICANAVENTASDF,7,1,14071,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1135,64,43,1028,"Alvaro Obregón, Distrito Federal.",4,2
+MEX,GADGETLAND.GDL,https://perfil.mercadolibre.com.mx/GADGETLAND.GDL,5,1,4159,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,718,5,5,708,"Naucalpan, Estado De México.",4,2
+MEX,FORWARDTIENDAOFICIAL,https://perfil.mercadolibre.com.mx/FORWARDTIENDAOFICIAL,2,1,645,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,112,1,3,108,"Naucalpan, Estado De México.",4,2
+MEX,RD-SHOP,https://perfil.mercadolibre.com.mx/RD-SHOP,5,1,4436,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,634,33,27,574,"Oaxaca De Juárez, Oaxaca.",4,2
+MEX,MEXI COSITAS,https://perfil.mercadolibre.com.mx/MEXI+COSITAS,11,1,936,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,60,2,2,56,"Atlixco, Puebla.",4,2
+MEX,TONER-SHOP,https://perfil.mercadolibre.com.mx/TONER-SHOP,10,1,2764,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,324,3,4,317,"Matamoros, Tamaulipas.",4,2
+MEX,VANGUARDIAIMPORTS,https://perfil.mercadolibre.com.mx/VANGUARDIAIMPORTS,12,1,2017,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,272,5,7,260,"Irapuato, Guanajuato.",4,2
+MEX,NEUGOOD,https://perfil.mercadolibre.com.mx/NEUGOOD,13,1,3710,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,364,6,6,352,"Monterrey, Nuevo León.",4,2
+MEX,HOPEMOB,https://perfil.mercadolibre.com.mx/HOPEMOB,10,1,9520,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,911,25,20,866,"Culiacán, Sinaloa.",4,2
+MEX,MOVIL_SOL22,https://perfil.mercadolibre.com.mx/MOVIL_SOL22,9,1,6547,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,755,12,24,719,"Zempoala, Hidalgo.",4,2
+MEX,Love Mei Tienda oficial,https://perfil.mercadolibre.com.mx/DEWESI_OFICIALES?brandId=1898,3,1,17866,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1767,47,46,1674,"La Magdalena Contreras, Distrito Federal.",4,2
+MEX,IDENMEX,https://perfil.mercadolibre.com.mx/IDENMEX,9,1,1752,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,180,1,2,177,"Guadalupe, Nuevo León.",4,2
+MEX,BBADJIM1,https://perfil.mercadolibre.com.mx/BBADJIM1,9,1,618,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,73,8,3,62,"San Julián, Jalisco.",4,2
+MEX,VENTASMLJIMCAS,https://perfil.mercadolibre.com.mx/VENTASMLJIMCAS,3,1,2483,NA,Brinda buena atención,Entrega sus productos a tiempo,218,14,8,196,"Iztapalapa, Distrito Federal.",4,2
+MEX,V SHOPP,https://perfil.mercadolibre.com.mx/V+SHOPP,1,1,9023,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,506,9,12,485,"Tepic, Nayarit.",4,2
+MEX,HOME.AND.ELECTRONICS,https://perfil.mercadolibre.com.mx/HOME.AND.ELECTRONICS,12,1,6845,NA,Brinda buena atención,Entrega sus productos a tiempo,767,18,32,717,"Benito juárez, Distrito Federal.",4,2
+MEX,INSIGNIUS MEXICO,https://perfil.mercadolibre.com.mx/INSIGNIUS+MEXICO,6,1,489,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,88,0,1,87,"Mérida, Yucatán.",4,2
+MEX,GADGETME2002,https://perfil.mercadolibre.com.mx/GADGETME2002,17,1,1529,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,190,7,3,180,"Iztapalapa, Distrito Federal.",4,2
+MEX,SHOPEAME,https://perfil.mercadolibre.com.mx/SHOPEAME,12,1,15449,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1720,42,53,1625,"Zapopan, Jalisco.",4,2
+MEX,XYZTOUCH,https://perfil.mercadolibre.com.mx/XYZTOUCH,11,1,6499,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,903,13,12,878,"Mérida, Yucatán.",4,2
+MEX,FUNDASBUGA,https://perfil.mercadolibre.com.mx/FUNDASBUGA,9,1,3199,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,407,16,10,381,"Tlalpan, Distrito Federal.",4,2
+MEX,ALF_VARELA2019,https://perfil.mercadolibre.com.mx/ALF_VARELA2019,9,1,139,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,0,20,"Durango, Durango.",4,2
+MEX,GAMI2281961,https://perfil.mercadolibre.com.mx/GAMI2281961,3,1,92,NA,Brinda buena atención,Entrega sus productos a tiempo,17,0,0,17,"Reynosa, Tamaulipas.",4,2
+MEX,ROSAS CASES,https://perfil.mercadolibre.com.mx/ROSAS+CASES,1,1,174,NA,Brinda buena atención,Entrega sus productos a tiempo,24,0,1,23,"Coyoacán, Distrito Federal.",4,2
+MEX,PUNTOAZULDELSURESTE,https://perfil.mercadolibre.com.mx/PUNTOAZULDELSURESTE,10,1,3763,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,260,5,8,247,"Tuxtla Gutiérrez, Chiapas.",4,2
+MEX,LASHESANDFUN,https://perfil.mercadolibre.com.mx/LASHESANDFUN,6,1,255,NA,Brinda buena atención,Entrega sus productos a tiempo,26,0,1,25,"Gustavo A. Madero, Distrito Federal.",4,2
+MEX,XUEHUANG,https://perfil.mercadolibre.com.mx/XUEHUANG,2,1,903,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,93,3,6,84,"Torreón, Coahuila.",4,2
+MEX,ILIOS INNOVA,https://perfil.mercadolibre.com.mx/ILIOS+INNOVA,3,1,7552,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,826,15,31,780,"Azcapotzalco, Distrito Federal.",4,2
+MEX,NEGOCELL_MX,https://perfil.mercadolibre.com.mx/NEGOCELL_MX,3,1,4039,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,438,20,18,400,"Hermosillo, Sonora.",4,2
+MEX,CITYCELMX,https://perfil.mercadolibre.com.mx/CITYCELMX,1,1,273,NA,Brinda buena atención,Entrega sus productos a tiempo,49,3,0,46,"Ecatepec de Morelos, Estado De México.",4,2
+MEX,SILKIMX,https://perfil.mercadolibre.com.mx/SILKIMX,3,1,307,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,33,1,0,32,"Cancún/Benito Juárez, Quintana Roo.",4,2
+MEX,ACCESORIOS FIXEALO,https://perfil.mercadolibre.com.mx/ACCESORIOS+FIXEALO,2,1,9236,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1236,35,37,1164,"Zapopan, Jalisco.",4,2
+MEX,ISTOREMTY,https://perfil.mercadolibre.com.mx/ISTOREMTY,4,1,1649,NA,Brinda buena atención,Entrega sus productos a tiempo,630,4,16,610,"San Nicolás De Los Garza, Nuevo León.",4,1
+MEX,ACRO COMERCIO,https://perfil.mercadolibre.com.mx/ACRO+COMERCIO,15,1,457,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,54,1,1,52,"Mérida, Yucatán.",4,2
+MEX,IDEAS DIGITALESS,https://perfil.mercadolibre.com.mx/IDEAS+DIGITALESS,7,1,827,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,115,2,2,111,"General Escobedo, Nuevo León.",4,2
+MEX,SCIMMIAINC,https://perfil.mercadolibre.com.mx/SCIMMIAINC,4,1,1407,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,202,5,2,195,"Cuautitlan, Estado De México.",4,2
+MEX,MOAR7004535,https://perfil.mercadolibre.com.mx/MOAR7004535,1,1,369,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,32,1,2,29,"Tlalpan, Distrito Federal.",4,2
+MEX,CARLEX CORP,https://perfil.mercadolibre.com.mx/CARLEX+CORP,2,1,2306,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,295,3,7,285,"Tlajomulco De Zúñiga, Jalisco.",4,2
+MEX,DENZARNET,https://perfil.mercadolibre.com.mx/DENZARNET,15,1,1198,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,217,5,2,210,"Miguel Hidalgo, Distrito Federal.",4,2
+MEX,TAXIDIAMX,https://perfil.mercadolibre.com.mx/TAXIDIAMX,11,1,1791,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,235,0,2,233,"León, Guanajuato.",4,2
+MEX,BENNY2711,https://perfil.mercadolibre.com.mx/BENNY2711,4,1,10118,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1519,41,63,1415,"Tlalpan, Distrito Federal.",4,2
+MEX,GEEK MRL,https://perfil.mercadolibre.com.mx/GEEK+MRL,1,1,577,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,86,1,4,81,"Morelia, Michoacán.",4,2
+MEX,RIBO PRODUCTS,https://perfil.mercadolibre.com.mx/RIBO+PRODUCTS,8,1,158,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,2,18,"Nogales, Sonora.",4,2
+MEX,GUTIERREZMORELOSMARCOANTONIO,https://perfil.mercadolibre.com.mx/GUTIERREZMORELOSMARCOANTONIO,4,1,285,NA,Brinda buena atención,Entrega sus productos a tiempo,28,2,1,25,"Iztapalapa, Distrito Federal.",4,2
+MEX,SLIM_COMPANY,https://perfil.mercadolibre.com.mx/SLIM_COMPANY,12,1,195644,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,13733,542,359,12832,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,QULA1809457,https://perfil.mercadolibre.com.mx/QULA1809457,4,1,48,NA,Brinda buena atención,Entrega sus productos a tiempo,10,0,0,10,"Gustavo A. Madero, Distrito Federal.",4,1
+MEX,BBS EVOLUTION,https://perfil.mercadolibre.com.mx/BBS+EVOLUTION,15,1,21557,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,2455,139,69,2247,"Gómez Palacio, Durango.",4,2
+MEX,MOBILELIFEMX,https://perfil.mercadolibre.com.mx/MOBILELIFEMX,5,1,55,NA,Brinda buena atención,Entrega sus productos a tiempo,8,1,0,7,"Reynosa, Tamaulipas.",4,2
+MEX,PROTECTTIO,https://perfil.mercadolibre.com.mx/PROTECTTIO,2,1,95,NA,Brinda buena atención,Entrega sus productos a tiempo,12,0,0,12,"Benito Juárez, Distrito Federal.",4,2
+MEX,GOCA116413,https://perfil.mercadolibre.com.mx/GOCA116413,6,2,504,NA,Brinda buena atención,Entrega sus productos a tiempo,19,0,1,18,"Tonala, Jalisco.",4,2
+MEX,Venom Armor Tienda oficial,https://perfil.mercadolibre.com.mx/VENOM_ARMOR?brandId=197,4,1,1075,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,125,1,2,122,"Monterrey, Nuevo León.",4,2
+MEX,DAESPI17,https://perfil.mercadolibre.com.mx/DAESPI17,6,1,82,NA,Brinda buena atención,Entrega sus productos a tiempo,15,0,0,15,"Zapopan, Jalisco.",5,1
+MEX,ACAN5118141,https://perfil.mercadolibre.com.mx/ACAN5118141,5,2,538,NA,Brinda buena atención,Entrega sus productos a tiempo,75,4,3,68,"Ecatepec de Morelos, Estado De México.",4,2
+MEX,BOLNEYTRONICS,https://perfil.mercadolibre.com.mx/BOLNEYTRONICS,4,1,1196,NA,Brinda buena atención,Entrega sus productos a tiempo,164,4,1,159,"Benito juárez, Distrito Federal.",4,2
+MEX,ONEMEMORY,https://perfil.mercadolibre.com.mx/ONEMEMORY,2,1,1570,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,142,6,5,131,"Guadalajara, Jalisco.",4,2
+MEX,RYSCOM,https://perfil.mercadolibre.com.mx/RYSCOM,12,1,1475,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,127,5,8,114,"Jiutepec, Morelos.",4,2
+MEX,CAYUYA_SHOP,https://perfil.mercadolibre.com.mx/CAYUYA_SHOP,4,1,1998,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,224,19,13,192,"Gustavo A. Madero, Distrito Federal.",4,2
+MEX,CLUBMAC97,https://perfil.mercadolibre.com.mx/CLUBMAC97,4,1,508,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,110,1,1,108,"Huixquilucan, Estado De México.",4,2
+MEX,STOREAYN,https://perfil.mercadolibre.com.mx/STOREAYN,1,1,172,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,25,0,1,24,"Iztapalapa, Distrito Federal.",4,2
+MEX,MIRAQUI OAXACA,https://perfil.mercadolibre.com.mx/MIRAQUI+OAXACA,9,1,1619,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,298,0,5,293,"Oaxaca De Juárez, Oaxaca.",4,2
+MEX,GADTECH MEXICO,https://perfil.mercadolibre.com.mx/GADTECH+MEXICO,12,1,696,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,94,0,0,94,"General Escobedo, Nuevo León.",4,2
+MEX,VERALY.MX,https://perfil.mercadolibre.com.mx/VERALY.MX,5,1,16088,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1067,10,5,1052,"Monterrey, Nuevo León.",4,2
+MEX,Ebay Tienda oficial,https://perfil.mercadolibre.com.mx/EBAY_TIENDA_OFICIAL_MEXICO?brandId=1353,3,1,1261,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,219,27,8,184,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,ZONA-DEL-TIEMPO,https://perfil.mercadolibre.com.mx/ZONA-DEL-TIEMPO,9,1,4821,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,598,14,12,572,"Monterrey, Nuevo León.",4,2
+MEX,EMANUELMLSMEZ,https://perfil.mercadolibre.com.mx/EMANUELMLSMEZ,7,1,1998,NA,Brinda buena atención,Entrega sus productos a tiempo,282,8,4,270,"Coyoacán, Distrito Federal.",4,2
+MEX,QUIBAM,https://perfil.mercadolibre.com.mx/QUIBAM,8,1,574,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,71,5,4,62,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,GILCELMTY,https://perfil.mercadolibre.com.mx/GILCELMTY,4,1,444,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,55,2,0,53,"Monterrey, Nuevo León.",4,2
+MEX,KUNSTLER ARTISTS.TOOLS,https://perfil.mercadolibre.com.mx/KUNSTLER+ARTISTS.TOOLS,3,1,967,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,91,2,3,86,"Benito Juárez, Distrito Federal.",4,2
+MEX,ZAJO2015430,https://perfil.mercadolibre.com.mx/ZAJO2015430,2,1,24,NA,Brinda buena atención,Entrega sus productos a tiempo,7,1,0,6,"Gustavo A. Madero, Distrito Federal.",2,1
+MEX,Survivor Tienda oficial,https://perfil.mercadolibre.com.mx/PREETAIL?brandId=238,7,1,7527,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1782,19,16,1747,"Alvaro Obregón, Distrito Federal.",4,2
+MEX,WWW.BLAKELEY.COM.MX,https://perfil.mercadolibre.com.mx/WWW.BLAKELEY.COM.MX,3,1,573,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,92,3,3,86,"Tampico, Tamaulipas.",4,2
+MEX,EG MEXICO,https://perfil.mercadolibre.com.mx/EG+MEXICO,11,2,2154,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,241,8,1,232,"León, Guanajuato.",4,2
+MEX,Spigen Tienda oficial,https://perfil.mercadolibre.com.mx/SPIGEN+MX?brandId=645,3,1,4493,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1132,16,35,1081,"Monterrey, Nuevo León.",4,2
+MEX,CAHU3674086,https://perfil.mercadolibre.com.mx/CAHU3674086,11,2,540,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,74,3,2,69,"Cuauhtémoc, Chihuahua.",4,2
+MEX,MANGUO,https://perfil.mercadolibre.com.mx/MANGUO,1,1,7107,NA,Brinda buena atención,Entrega sus productos a tiempo,1001,10,16,975,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,LOPEZERICMX2005,https://perfil.mercadolibre.com.mx/LOPEZERICMX2005,13,1,4306,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,549,24,14,511,"Benito juárez, Distrito Federal.",4,2
+MEX,COMPRA-SHOP ML,https://perfil.mercadolibre.com.mx/COMPRA-SHOP+ML,1,1,368,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,42,0,2,40,"Zapopan, Jalisco.",4,2
+MEX,FLAN2764162,https://perfil.mercadolibre.com.mx/FLAN2764162,4,1,410,NA,Brinda buena atención,Entrega sus productos a tiempo,280,1,9,270,"Naucalpan, Estado De México.",4,1
+MEX,TECHMEL,https://perfil.mercadolibre.com.mx/TECHMEL,6,1,2787,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,353,3,14,336,"Querétaro, Querétaro.",4,2
+MEX,TECNOCOVA,https://perfil.mercadolibre.com.mx/TECNOCOVA,12,1,8418,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,697,34,21,642,"Torreón, Coahuila.",4,2
+MEX,ORANTECH,https://perfil.mercadolibre.com.mx/ORANTECH,3,1,324,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,50,0,1,49,"Tuxtla Gutiérrez, Chiapas.",4,2
+MEX,JEANMART2000,https://perfil.mercadolibre.com.mx/JEANMART2000,7,1,49,NA,Brinda buena atención,Entrega sus productos a tiempo,6,0,0,6,"Gómez Palacio, Durango.",4,2
+MEX,DSHOPMEXICO,https://perfil.mercadolibre.com.mx/DSHOPMEXICO,6,1,3683,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,351,22,8,321,"Chalco, Estado De México.",4,2
+MEX,ALFA COMERCIAL,https://perfil.mercadolibre.com.mx/ALFA+COMERCIAL,16,1,35,NA,Brinda buena atención,Entrega sus productos a tiempo,7,1,0,6,"Tlajomulco De Zúñiga, Jalisco.",5,1
+MEX,Nillkin Tienda oficial,https://perfil.mercadolibre.com.mx/DEWESI_OFICIALES?brandId=938,3,1,17866,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1769,47,46,1676,"La Magdalena Contreras, Distrito Federal.",4,2
+MEX,TECNOCENTROA35,https://perfil.mercadolibre.com.mx/TECNOCENTROA35,10,1,4020,NA,Brinda buena atención,Entrega sus productos a tiempo,409,20,26,363,"Tlaquepaque, Jalisco.",4,2
+MEX,CASESPMX,https://perfil.mercadolibre.com.mx/CASESPMX,9,1,215,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,42,2,0,40,"Mérida, Yucatán.",4,2
+MEX,CELULARFIX INT,https://perfil.mercadolibre.com.mx/CELULARFIX+INT,4,1,1151,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,153,3,4,146,"Guadalajara, Jalisco.",4,2
+MEX,ASESOR_MTY,https://perfil.mercadolibre.com.mx/ASESOR_MTY,3,1,234,NA,Brinda buena atención,Entrega sus productos a tiempo,32,0,1,31,"Monterrey, Nuevo León.",4,2
+MEX,MARO9375199,https://perfil.mercadolibre.com.mx/MARO9375199,1,1,248,NA,Brinda buena atención,Entrega sus productos a tiempo,30,0,0,30,"Venustiano Carranza, Distrito Federal.",4,2
+MEX,GREAT CASES,https://perfil.mercadolibre.com.mx/GREAT+CASES,5,1,80,NA,Brinda buena atención,Entrega sus productos a tiempo,8,0,0,8,"Reynosa, Tamaulipas.",4,2
+MEX,GRUPO MULTIMODAL,https://perfil.mercadolibre.com.mx/GRUPO+MULTIMODAL,7,1,1193,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,176,2,2,172,"Lázaro Cárdenas, Michoacán.",4,2
+MEX,ARMOR-X,https://perfil.mercadolibre.com.mx/ARMOR-X,3,1,432,NA,Brinda buena atención,Entrega sus productos a tiempo,198,0,0,198,"Guadalajara, Jalisco.",3,1
+MEX,TECNOSHOPPPING,https://perfil.mercadolibre.com.mx/TECNOSHOPPPING,3,1,51,NA,Brinda buena atención,Entrega sus productos a tiempo,7,0,0,7,"Gustavo A. Madero, Distrito Federal.",3,1
+MEX,VENTAMTY_56,https://perfil.mercadolibre.com.mx/VENTAMTY_56,4,1,1495,NA,Brinda buena atención,Entrega sus productos a tiempo,412,5,12,395,"Monterrey, Nuevo León.",4,1
+MEX,GEEKCORNER,https://perfil.mercadolibre.com.mx/GEEKCORNER,9,1,3042,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,292,2,2,288,"Puebla, Puebla.",4,2
+MEX,COMERCIALIZADORA KEVICOM,https://perfil.mercadolibre.com.mx/COMERCIALIZADORA+KEVICOM,3,1,8076,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,861,60,39,762,"Monterrey, Nuevo León.",4,2
+MEX,SHOP-TECHLIFE,https://perfil.mercadolibre.com.mx/SHOP-TECHLIFE,1,1,169,NA,Brinda buena atención,Entrega sus productos a tiempo,34,0,2,32,"Atizapán De Zaragoza, Estado De México.",4,2
+MEX,MXGADGETSTRC,https://perfil.mercadolibre.com.mx/MXGADGETSTRC,5,1,1925,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,323,5,6,312,"Torreón, Coahuila.",4,2
+MEX,PROTECMANIA,https://perfil.mercadolibre.com.mx/PROTECMANIA,5,1,256,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,49,0,0,49,"Cajeme, Sonora.",4,2
+MEX,GADGET COLLECTION,https://perfil.mercadolibre.com.mx/GADGET+COLLECTION,8,1,5749,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,438,10,8,420,"León, Guanajuato.",4,2
+MEX,CORAMEX,https://perfil.mercadolibre.com.mx/CORAMEX,1,1,94,NA,Brinda buena atención,Entrega sus productos a tiempo,8,1,1,6,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,JUAR2374152,https://perfil.mercadolibre.com.mx/JUAR2374152,7,2,1179,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,149,5,2,142,"Iguala De La Independencia, Guerrero.",4,2
+MEX,VENTDEPOT 1,https://perfil.mercadolibre.com.mx/VENTDEPOT+1,8,1,2388,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,311,7,9,295,"Atizapán De Zaragoza, Estado De México.",4,2
+MEX,CEDIS PC,https://perfil.mercadolibre.com.mx/CEDIS+PC,6,1,1704,NA,Brinda buena atención,Entrega sus productos a tiempo,252,2,6,244,"Zapopan, Jalisco.",4,2
+MEX,JCARLOSVILOP,https://perfil.mercadolibre.com.mx/JCARLOSVILOP,3,1,318,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,57,5,0,52,"Tecamac, Estado De México.",4,2
+MEX,ASESORES_MTY,https://perfil.mercadolibre.com.mx/ASESORES_MTY,3,1,208,NA,Brinda buena atención,Entrega sus productos a tiempo,29,1,0,28,"Monterrey, Nuevo León.",4,2
+MEX,VENTAS_ONLINE12,https://perfil.mercadolibre.com.mx/VENTAS_ONLINE12,2,1,805,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,131,1,0,130,"Iztapalapa, Distrito Federal.",4,2
+MEX,ELECTRONICSHOUSE,https://perfil.mercadolibre.com.mx/ELECTRONICSHOUSE,6,1,1215,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,558,7,12,539,"Naucalpan, Estado De México.",5,1
+MEX,PROTECT-IT,https://perfil.mercadolibre.com.mx/PROTECT-IT,3,1,153,NA,Brinda buena atención,Entrega sus productos a tiempo,46,0,0,46,"Tampico, Tamaulipas.",3,1
+MEX,TERA MX,https://perfil.mercadolibre.com.mx/TERA+MX,12,1,177,NA,Brinda buena atención,Entrega sus productos a tiempo,27,1,2,24,"Puebla, Puebla.",4,2
+MEX,MEXICO ONLINE!,https://perfil.mercadolibre.com.mx/MEXICO+ONLINE%21,8,1,89,NA,Brinda buena atención,Entrega sus productos a tiempo,16,1,0,15,"Iztacalco, Distrito Federal.",4,2
+MEX,MXMERCH.BLOGSPOT,https://perfil.mercadolibre.com.mx/MXMERCH.BLOGSPOT,6,1,9,NA,Brinda buena atención,Entrega sus productos a tiempo,2,0,0,2,"Acuña, Coahuila.",5,1
+MEX,E-GLOBALSHOP,https://perfil.mercadolibre.com.mx/E-GLOBALSHOP,2,1,18094,NA,Brinda buena atención,Entrega sus productos a tiempo,2743,256,76,2411,"Mazatlán, Sinaloa.",4,2
+MEX,BYCTXS,https://perfil.mercadolibre.com.mx/BYCTXS,16,1,5719,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,572,45,19,508,"Guadalajara, Jalisco.",4,2
+MEX,BASEUS MX,https://perfil.mercadolibre.com.mx/BASEUS+MX,4,1,1172,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,189,6,8,175,"Chiautempan, Tlaxcala.",4,2
+MEX,GADGETLAND.MX,https://perfil.mercadolibre.com.mx/GADGETLAND.MX,9,1,645,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,81,1,3,77,"Naucalpan, Estado De México.",4,2
+MEX,MOGUTECH,https://perfil.mercadolibre.com.mx/MOGUTECH,1,1,52,NA,Brinda buena atención,Entrega sus productos a tiempo,0,0,0,0,"San Pedro Garza García, Nuevo León.",4,2
+MEX,FCOBN,https://perfil.mercadolibre.com.mx/FCOBN,1,1,616,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,85,2,1,82,"Tlalnepantla de Baz, Estado De México.",4,2
+MEX,ASIADELUXEIMPORTS,https://perfil.mercadolibre.com.mx/ASIADELUXEIMPORTS,6,1,2058,NA,Brinda buena atención,Entrega sus productos a tiempo,252,0,5,247,"Tlalnepantla de Baz, Estado De México.",4,2
+MEX,ONME9713628,https://perfil.mercadolibre.com.mx/ONME9713628,1,1,208,NA,Brinda buena atención,Entrega sus productos a tiempo,43,0,1,42,"Cuauhtémoc, Distrito Federal.",1,1
+MEX,VENTASSANTIMTY,https://perfil.mercadolibre.com.mx/VENTASSANTIMTY,6,1,6041,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,627,21,18,588,"Monterrey, Nuevo León.",4,2
+MEX,HEALPLUSMX,https://perfil.mercadolibre.com.mx/HEALPLUSMX,5,1,124,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,16,0,0,16,"Monterrey, Nuevo León.",4,2
+MEX,REGALOSJUGUETES,https://perfil.mercadolibre.com.mx/REGALOSJUGUETES,1,1,3673,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,437,10,9,418,"Apizaco, Tlaxcala.",4,2
+MEX,FAQT,https://perfil.mercadolibre.com.mx/FAQT,9,1,864,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,77,5,3,69,"Culiacán, Sinaloa.",4,2
+MEX,ROGE1IOMOR3NO,https://perfil.mercadolibre.com.mx/ROGE1IOMOR3NO,5,1,237,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,45,0,1,44,"Ahome, Sinaloa.",4,2
+MEX,IMOBILE MEXICO,https://perfil.mercadolibre.com.mx/IMOBILE+MEXICO,3,1,12899,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1004,14,8,982,"Cuajimalpa De Morelos, Distrito Federal.",4,2
+MEX,CIBERPLUS_2009,https://perfil.mercadolibre.com.mx/CIBERPLUS_2009,10,1,348,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,39,1,2,36,"Acuña, Coahuila.",4,2
+MEX,-BARBYPINK-,https://perfil.mercadolibre.com.mx/-BARBYPINK-,3,1,32055,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1666,152,75,1439,"Iztacalco, Distrito Federal.",4,2
+MEX,DADERK.SHOP,https://perfil.mercadolibre.com.mx/DADERK.SHOP,2,1,386,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,75,3,3,69,"Hueyapan De Ocampo, Veracruz.",4,2
+MEX,CASENCASE,https://perfil.mercadolibre.com.mx/CASENCASE,4,1,379,NA,Brinda buena atención,Entrega sus productos a tiempo,55,0,0,55,"Zacatepec, Morelos.",4,2
+MEX,COMERCIALIZADORA MAIZ,https://perfil.mercadolibre.com.mx/COMERCIALIZADORA+MAIZ,1,1,658,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,91,3,3,85,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,JORDANGARZA,https://perfil.mercadolibre.com.mx/JORDANGARZA,6,1,893,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,115,1,4,110,"Monclova, Coahuila.",4,2
+MEX,TANGRAM.SHOP,https://perfil.mercadolibre.com.mx/TANGRAM.SHOP,4,1,2103,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,452,7,21,424,"León, Guanajuato.",4,2
+MEX,CSSHOP.MX,https://perfil.mercadolibre.com.mx/CSSHOP.MX,2,1,946,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,265,0,4,261,"San Nicolás De Los Garza, Nuevo León.",2,1
+MEX,ANDYHDZ05,https://perfil.mercadolibre.com.mx/ANDYHDZ05,14,1,48,NA,Brinda buena atención,Entrega sus productos a tiempo,5,0,0,5,"Benito Juárez, Distrito Federal.",4,2
+MEX,DORESHOP,https://perfil.mercadolibre.com.mx/DORESHOP,2,1,153,NA,Brinda buena atención,Entrega sus productos a tiempo,60,0,2,58,"Morelia, Michoacán.",2,1
+MEX,BGT MEX,https://perfil.mercadolibre.com.mx/BGT+MEX,5,1,263,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,38,1,1,36,"Alvaro Obregón, Distrito Federal.",4,2
+MEX,STAR10GT,https://perfil.mercadolibre.com.mx/STAR10GT,3,1,59,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"Chalco, Estado De México.",4,2
+MEX,GEERUK,https://perfil.mercadolibre.com.mx/GEERUK,6,1,1832,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,120,2,3,115,"Capulhuac, Estado De México.",4,2
+MEX,HEIV8909058,https://perfil.mercadolibre.com.mx/HEIV8909058,3,1,171,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,12,1,0,11,"Querétaro, Querétaro.",4,2
+MEX,MXCMART,https://perfil.mercadolibre.com.mx/MXCMART,1,1,917,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,100,4,2,94,China.,4,2
+MEX,LIZBLANCAS,https://perfil.mercadolibre.com.mx/LIZBLANCAS,7,1,31,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"Puebla, Puebla.",5,1
+MEX,BLACKSTOREMEX,https://perfil.mercadolibre.com.mx/BLACKSTOREMEX,9,1,358,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,57,0,0,57,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,BARO6976855,https://perfil.mercadolibre.com.mx/BARO6976855,1,1,157,NA,Brinda buena atención,Entrega sus productos a tiempo,24,0,0,24,"Huixquilucan, Estado De México.",4,2
+MEX,LIVETECHMX,https://perfil.mercadolibre.com.mx/LIVETECHMX,4,1,138,NA,Brinda buena atención,Entrega sus productos a tiempo,12,0,0,12,"Guadalupe, Nuevo León.",4,2
+MEX,GRUPO IIMOTION,https://perfil.mercadolibre.com.mx/GRUPO+IIMOTION,14,1,262,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,27,3,0,24,"Benito Juárez, Distrito Federal.",4,2
+MEX,TODOPARASMARTPHONES,https://perfil.mercadolibre.com.mx/TODOPARASMARTPHONES,17,1,440,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,73,3,1,69,"San Pedro Garza García, Nuevo León.",4,2
+MEX,MARIAMMOHAMMED,https://perfil.mercadolibre.com.mx/MARIAMMOHAMMED,3,2,1459,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,94,6,2,86,"Cuauhtémoc, Distrito Federal.",3,2
+MEX,MULTI-COMERCIO,https://perfil.mercadolibre.com.mx/MULTI-COMERCIO,7,1,172,NA,Brinda buena atención,Entrega sus productos a tiempo,39,0,0,39,"Torreón, Coahuila.",4,2
+MEX,ALVI9520664,https://perfil.mercadolibre.com.mx/ALVI9520664,10,2,44,NA,Brinda buena atención,Entrega sus productos a tiempo,5,0,0,5,"Ixtapaluca, Estado De México.",10,2
+MEX,LOCR8358428,https://perfil.mercadolibre.com.mx/LOCR8358428,2,1,60,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,0,20,"Miguel Hidalgo, Distrito Federal.",2,1
+MEX,CORTAZA E-SHOP,https://perfil.mercadolibre.com.mx/CORTAZA+E-SHOP,9,1,93,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,13,0,1,12,"Ciudad Madero, Tamaulipas.",4,2
+MEX,GALVTECH,https://perfil.mercadolibre.com.mx/GALVTECH,1,1,77,NA,Brinda buena atención,Entrega sus productos a tiempo,8,0,0,8,"San Nicolás De Los Garza, Nuevo León.",4,2
+MEX,SHOP GIFTS,https://perfil.mercadolibre.com.mx/SHOP+GIFTS,2,1,113,NA,Brinda buena atención,Entrega sus productos a tiempo,20,0,0,20,"Valle De Chalco Solidaridad, Estado De México.",4,2
+MEX,DUX-MX,https://perfil.mercadolibre.com.mx/DUX-MX,19,1,103,NA,Brinda buena atención,Entrega sus productos a tiempo,26,0,2,24,"Cuernavaca, Morelos.",4,2
+MEX,212 FITCLUB,https://perfil.mercadolibre.com.mx/212+FITCLUB,6,1,1305,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,211,2,4,205,"Azcapotzalco, Distrito Federal.",4,2
+MEX,CHANGOLEON18,https://perfil.mercadolibre.com.mx/CHANGOLEON18,14,1,142,NA,Brinda buena atención,Entrega sus productos a tiempo,33,0,0,33,"Jiutepec, Morelos.",5,1
+MEX,CTSHOPPINGMX,https://perfil.mercadolibre.com.mx/CTSHOPPINGMX,1,1,263,NA,Brinda buena atención,Entrega sus productos a tiempo,34,0,2,32,China.,4,2
+MEX,CHINA FACTORY,https://perfil.mercadolibre.com.mx/CHINA+FACTORY,1,1,752,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,31,0,0,31,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,SINERGIA_SHOP,https://perfil.mercadolibre.com.mx/SINERGIA_SHOP,9,1,804,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,64,2,3,59,"Guadalupe, Nuevo León.",4,2
+MEX,GUIMEONOW,https://perfil.mercadolibre.com.mx/GUIMEONOW,2,1,560,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,41,0,1,40,"Acapulco, Guerrero.",4,2
+MEX,GALBEMX,https://perfil.mercadolibre.com.mx/GALBEMX,8,2,28,NA,Brinda buena atención,Entrega sus productos a tiempo,5,0,1,4,"Culiacán, Sinaloa.",8,2
+MEX,BRAVALE,https://perfil.mercadolibre.com.mx/BRAVALE,8,1,47,NA,Brinda buena atención,Entrega sus productos a tiempo,9,0,1,8,"San Nicolás De Los Garza, Nuevo León.",4,2
+MEX,CREATIVA PRINT,https://perfil.mercadolibre.com.mx/CREATIVA+PRINT,3,1,67,NA,Brinda buena atención,Entrega sus productos a tiempo,9,0,0,9,"Nuevo Laredo, Tamaulipas.",3,1
+MEX,NEXT-STEP,https://perfil.mercadolibre.com.mx/NEXT-STEP,13,1,184,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,31,1,0,30,"Miguel Hidalgo, Distrito Federal.",4,2
+MEX,GRANNYSSTORE,https://perfil.mercadolibre.com.mx/GRANNYSSTORE,10,1,1696,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,196,2,7,187,"Gustavo A. Madero, Distrito Federal.",4,2
+MEX,LUZALEJANDRALOPEZGONZALEZ,https://perfil.mercadolibre.com.mx/LUZALEJANDRALOPEZGONZALEZ,2,1,42,NA,Brinda buena atención,Entrega sus productos a tiempo,5,0,0,5,"Zapopan, Jalisco.",4,2
+MEX,SC MOBILE,https://perfil.mercadolibre.com.mx/SC+MOBILE,1,1,1347,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,192,1,7,184,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,GOMAEL,https://perfil.mercadolibre.com.mx/GOMAEL,2,1,70,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"Cuernavaca, Morelos.",4,2
+MEX,COMPUBONSAI,https://perfil.mercadolibre.com.mx/COMPUBONSAI,14,1,6472,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,1225,12,13,1200,"Metepec, Estado De México.",4,2
+MEX,FASTESTDROPS_MX,https://perfil.mercadolibre.com.mx/FASTESTDROPS_MX,12,1,2900,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,286,4,10,272,"Tampico, Tamaulipas.",4,2
+MEX,GLOBA_CORP,https://perfil.mercadolibre.com.mx/GLOBA_CORP,7,1,3361,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,282,9,11,262,"Tepic, Nayarit.",4,2
+MEX,VERSACE2505,https://perfil.mercadolibre.com.mx/VERSACE2505,1,1,33,NA,Brinda buena atención,Entrega sus productos a tiempo,12,1,0,11,"Nezahualcoyotl, Estado De México.",1,1
+MEX,ACCESORIOS-TOTAL,https://perfil.mercadolibre.com.mx/ACCESORIOS-TOTAL,1,1,436,NA,Brinda buena atención,Entrega sus productos a tiempo,59,1,2,56,"Benito juárez, Distrito Federal.",4,2
+MEX,TEKNET.TECH,https://perfil.mercadolibre.com.mx/TEKNET.TECH,19,1,931,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,151,4,2,145,"Toluca, Estado De México.",4,2
+MEX,ACUARIO_TE,https://perfil.mercadolibre.com.mx/ACUARIO_TE,1,1,97,NA,Brinda buena atención,Entrega sus productos a tiempo,13,1,1,11,"Monterrey, Nuevo León.",4,2
+MEX,QUIBAM_YBH,https://perfil.mercadolibre.com.mx/QUIBAM_YBH,8,1,1789,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,232,11,7,214,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,ANNGELOOG,https://perfil.mercadolibre.com.mx/ANNGELOOG,4,1,654,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,220,2,6,212,"Ecatepec de Morelos, Estado De México.",4,1
+MEX,ERMOINT,https://perfil.mercadolibre.com.mx/ERMOINT,4,1,135,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,16,0,0,16,"León, Guanajuato.",4,2
+MEX,ALAISALAZAR,https://perfil.mercadolibre.com.mx/ALAISALAZAR,5,1,446,MercadoLíder Gold¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,57,4,1,52,"Tuxtla Gutiérrez, Chiapas.",4,2
+MEX,GEMINIS_MON,https://perfil.mercadolibre.com.mx/GEMINIS_MON,1,1,174,NA,Brinda buena atención,Entrega sus productos a tiempo,23,1,0,22,"Monterrey, Nuevo León.",4,2
+MEX,JORGE81606,https://perfil.mercadolibre.com.mx/JORGE81606,6,1,591,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,67,3,2,62,"Jacona, Michoacán.",4,2
+MEX,SHOPINNOVATECH,https://perfil.mercadolibre.com.mx/SHOPINNOVATECH,2,1,238,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,15,2,0,13,"Puebla, Puebla.",4,2
+MEX,GABBY ARNV,https://perfil.mercadolibre.com.mx/GABBY+ARNV,5,2,392,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,26,0,1,25,"Morelia, Michoacán.",4,2
+MEX,CHUPAPRECIOS,https://perfil.mercadolibre.com.mx/CHUPAPRECIOS,14,1,8431,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,918,37,30,851,"Tijuana, Baja California.",4,2
+MEX,COMPUPRICE,https://perfil.mercadolibre.com.mx/COMPUPRICE,15,1,26639,MercadoLíder Platinum¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,3598,108,73,3417,"Huichapan, Hidalgo.",4,2
+MEX,Ibushak  Tienda oficial,https://perfil.mercadolibre.com.mx/IBUSHAK+OFICIALES?brandId=822,5,1,126167,NA,Brinda buena atención,Entrega sus productos a tiempo,18747,1009,874,16864,"Cuautitlan Izcalli, Estado De México.",4,2
+MEX,GERMX00,https://perfil.mercadolibre.com.mx/GERMX00,10,1,160,NA,Brinda buena atención,Entrega sus productos a tiempo,20,1,0,19,"Monterrey, Nuevo León.",4,2
+MEX,PROTECMARK,https://perfil.mercadolibre.com.mx/PROTECMARK,2,1,106,NA,Brinda buena atención,Entrega sus productos a tiempo,15,0,0,15,"Ecatepec de Morelos, Estado De México.",4,2
+MEX,FUNDASMTYNL,https://perfil.mercadolibre.com.mx/FUNDASMTYNL,7,1,375,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,117,0,2,115,"Monterrey, Nuevo León.",5,1
+MEX,CASE_IPHONE_XALAPA,https://perfil.mercadolibre.com.mx/CASE_IPHONE_XALAPA,2,1,87,NA,Brinda buena atención,Entrega sus productos a tiempo,13,0,0,13,"Xalapa, Veracruz.",2,1
+MEX,VORTYCEL,https://perfil.mercadolibre.com.mx/VORTYCEL,15,1,499,NA,Brinda buena atención,Entrega sus productos a tiempo,63,0,2,61,"Nezahualcoyotl, Estado De México.",4,2
+MEX,AVIS6853883,https://perfil.mercadolibre.com.mx/AVIS6853883,6,2,38,NA,Brinda buena atención,Entrega sus productos a tiempo,1,0,0,1,"Iztapalapa, Distrito Federal.",6,2
+MEX,SOLO CALIDAD1,https://perfil.mercadolibre.com.mx/SOLO+CALIDAD1,2,1,668,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,399,1,3,395,"El Salto, Jalisco.",2,1
+MEX,JAVIERGAEC,https://perfil.mercadolibre.com.mx/JAVIERGAEC,11,1,86,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,16,0,0,16,"Iztapalapa, Distrito Federal.",4,2
+MEX,FAYLINN MANUALIDADES,https://perfil.mercadolibre.com.mx/FAYLINN+MANUALIDADES,7,2,61,NA,Brinda buena atención,Entrega sus productos a tiempo,6,0,0,6,"Venustiano Carranza, Distrito Federal.",4,2
+MEX,BETOBETINVILCHIS,https://perfil.mercadolibre.com.mx/BETOBETINVILCHIS,11,1,38,NA,Brinda buena atención,Entrega sus productos a tiempo,9,0,0,9,"Alvaro Obregón, Distrito Federal.",5,1
+MEX,MATT07LP,https://perfil.mercadolibre.com.mx/MATT07LP,5,1,33,NA,Brinda buena atención,Entrega sus productos a tiempo,7,0,0,7,"Toluca, Estado De México.",5,1
+MEX,MIGUEL0912,https://perfil.mercadolibre.com.mx/MIGUEL0912,6,1,476,NA,Brinda buena atención,Entrega sus productos a tiempo,46,0,0,46,"San Luis Potosí, San Luis Potosí.",4,2
+MEX,LOVESHOPINK,https://perfil.mercadolibre.com.mx/LOVESHOPINK,5,1,71,NA,Brinda buena atención,Entrega sus productos a tiempo,5,0,0,5,"La Antigua, Veracruz.",4,2
+MEX,FERLICEA,https://perfil.mercadolibre.com.mx/FERLICEA,19,1,143,NA,Brinda buena atención,Entrega sus productos a tiempo,44,0,0,44,"Nezahualcoyotl, Estado De México.",4,2
+MEX,JSMANSHOP,https://perfil.mercadolibre.com.mx/JSMANSHOP,7,2,6320,NA,Brinda buena atención,Entrega sus productos a tiempo,740,59,29,652,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,AMOROBI,https://perfil.mercadolibre.com.mx/AMOROBI,10,1,553,NA,Brinda buena atención,Entrega sus productos a tiempo,62,0,1,61,"Querétaro, Querétaro.",4,2
+MEX,CATYPM,https://perfil.mercadolibre.com.mx/CATYPM,6,1,134,NA,Brinda buena atención,Entrega sus productos a tiempo,15,0,1,14,"Guadalajara, Jalisco.",4,2
+MEX,ROOM MTY,https://perfil.mercadolibre.com.mx/ROOM+MTY,11,1,168,NA,Brinda buena atención,Entrega sus productos con demora,104,0,2,102,"Monterrey, Nuevo León.",5,1
+MEX,SECTORIASHOP,https://perfil.mercadolibre.com.mx/SECTORIASHOP,3,1,89,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,ALAN25000,https://perfil.mercadolibre.com.mx/ALAN25000,9,1,250,NA,Brinda buena atención,Entrega sus productos a tiempo,30,0,1,29,"Culiacán, Sinaloa.",4,2
+MEX,THE-BEST-GADGETS,https://perfil.mercadolibre.com.mx/THE-BEST-GADGETS,7,1,746,NA,Brinda buena atención,Entrega sus productos a tiempo,97,2,2,93,"Milpa Alta, Distrito Federal.",4,2
+MEX,WAWI STORE,https://perfil.mercadolibre.com.mx/WAWI+STORE,3,1,122,NA,Brinda buena atención,Entrega sus productos a tiempo,20,1,1,18,"Tuxtla Gutiérrez, Chiapas.",4,2
+MEX,GMOVIL21,https://perfil.mercadolibre.com.mx/GMOVIL21,10,2,51,NA,Brinda buena atención,Entrega sus productos a tiempo,17,0,1,16,"Zapopan, Jalisco.",10,2
+MEX,SHOPAVENUE,https://perfil.mercadolibre.com.mx/SHOPAVENUE,7,1,64,NA,Brinda buena atención,Entrega sus productos a tiempo,4,0,0,4,"Huixquilucan, Estado De México.",4,2
+MEX,RAULR.A4,https://perfil.mercadolibre.com.mx/RAULR.A4,6,1,899,NA,Brinda buena atención,Entrega sus productos a tiempo,76,4,4,68,"Tepoztlan, Morelos.",4,2
+MEX,ESQUIVELD4740,https://perfil.mercadolibre.com.mx/ESQUIVELD4740,8,1,381,NA,Brinda buena atención,Entrega sus productos a tiempo,118,1,0,117,"León, Guanajuato.",5,1
+MEX,GADGETCASES MX,https://perfil.mercadolibre.com.mx/GADGETCASES+MX,6,1,891,NA,Brinda buena atención,Entrega sus productos a tiempo,340,2,6,332,"Venustiano Carranza, Distrito Federal.",5,1
+MEX,TEC.DAY,https://perfil.mercadolibre.com.mx/TEC.DAY,1,1,225,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,56,0,1,55,"Gustavo A. Madero, Distrito Federal.",1,1
+MEX,ENFUNDADOS,https://perfil.mercadolibre.com.mx/ENFUNDADOS,7,1,57,NA,Brinda buena atención,Entrega sus productos con demora,8,0,0,8,"Tlalpan, Distrito Federal.",4,2
+MEX,IMPOREX MÉXICO,https://perfil.mercadolibre.com.mx/IMPOREX+M%C3%89XICO,9,1,185,MercadoLíder¡Es uno de los mejores del sitio!,Brinda buena atención,Entrega sus productos a tiempo,74,1,3,70,"Zapopan, Jalisco.",4,2
+MEX,MERCATOTOAL,https://perfil.mercadolibre.com.mx/MERCATOTOAL,3,1,80,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,37,1,0,36,"Guadalajara, Jalisco.",3,1
+MEX,NADA1026345,https://perfil.mercadolibre.com.mx/NADA1026345,4,1,366,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,43,2,1,40,"Guadalupe, Zacatecas.",4,2
+MEX,VEGE1106879,https://perfil.mercadolibre.com.mx/VEGE1106879,2,1,11,NA,Brinda buena atención,Entrega sus productos a tiempo,9,0,0,9,"Xochimilco, Distrito Federal.",2,1
+MEX,VERSALITYPREMIUM,https://perfil.mercadolibre.com.mx/VERSALITYPREMIUM,4,1,89,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,10,0,1,9,"Benito juárez, Distrito Federal.",4,2
+MEX,AVENT-URA SHOP,https://perfil.mercadolibre.com.mx/AVENT-URA+SHOP,7,1,35,NA,Brinda buena atención,Entrega sus productos a tiempo,11,0,0,11,"San Nicolás De Los Garza, Nuevo León.",5,1
+MEX,NANDYGC,https://perfil.mercadolibre.com.mx/NANDYGC,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,3,0,0,3,"Atizapán De Zaragoza, Estado De México.",NA,NA
+MEX,MYGACCESORIOS,https://perfil.mercadolibre.com.mx/MYGACCESORIOS,1,1,146,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,37,0,0,37,"Ciudad Madero, Tamaulipas.",1,1
+MEX,ELECTRONICS4THMEXICO,https://perfil.mercadolibre.com.mx/ELECTRONICS4THMEXICO,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,1,0,0,1,"Mérida, Yucatán.",NA,NA
+MEX,GENRUCO,https://perfil.mercadolibre.com.mx/GENRUCO,1,1,76,NA,Brinda buena atención,Entrega sus productos a tiempo,6,0,0,6,"Benito Juárez, Distrito Federal.",4,2
+MEX,GLOBAL GAMER,https://perfil.mercadolibre.com.mx/GLOBAL+GAMER,9,2,3639,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,318,17,12,289,"Mazatlán, Sinaloa.",4,2
+MEX,PEPR8371055,https://perfil.mercadolibre.com.mx/PEPR8371055,4,1,98,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,21,1,1,19,"Aguascalientes, Aguascalientes.",4,2
+MEX,PPETORO12009,https://perfil.mercadolibre.com.mx/PPETORO12009,11,1,125,NA,Brinda buena atención,Entrega sus productos con demora,30,0,0,30,"Ameca, Jalisco.",4,2
+MEX,BESTDEALSTJ,https://perfil.mercadolibre.com.mx/BESTDEALSTJ,2,1,849,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,265,1,5,259,"Tijuana, Baja California.",2,1
+MEX,LUISYAIRLUNANUEZ,https://perfil.mercadolibre.com.mx/LUISYAIRLUNANUEZ,9,2,411,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,60,5,3,52,"Cuauhtémoc, Distrito Federal.",4,2
+MEX,MIKLOU,https://perfil.mercadolibre.com.mx/MIKLOU,4,1,170,NA,Tuvo problemas en sus ventas,Entrega sus productos con demora,24,0,3,21,"Puebla, Puebla.",4,2
+MEX,RAAN8351026,https://perfil.mercadolibre.com.mx/RAAN8351026,1,1,273,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,40,2,2,36,"Los Cabos, Baja California Sur.",4,2
+MEX,CAVAZOS2013,https://perfil.mercadolibre.com.mx/CAVAZOS2013,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,0,0,0,0,"Guadalupe, Nuevo León.",NA,NA
+MEX,GOVINDAMX,https://perfil.mercadolibre.com.mx/GOVINDAMX,7,1,132,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,23,0,0,23,"Cuautitlan, Estado De México.",4,2
+MEX,CAFE1797119,https://perfil.mercadolibre.com.mx/CAFE1797119,3,1,87,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,20,0,1,19,"Zapopan, Jalisco.",3,1
+MEX,OCMI4863590,https://perfil.mercadolibre.com.mx/OCMI4863590,NA,NA,NA,NA,Atención brindada a sus compradores,Tiempo de entrega de sus productos,2,0,0,2,"Orizaba, Veracruz.",NA,NA
+MEX,FASTIMPORTUSAMX,https://perfil.mercadolibre.com.mx/FASTIMPORTUSAMX,2,1,697,NA,Brinda buena atención,Entrega sus productos a tiempo,77,3,1,73,Estados Unidos.,4,2
+MEX,BERESM,https://perfil.mercadolibre.com.mx/BERESM,5,1,17,NA,Brinda buena atención,Entrega sus productos a tiempo,7,0,0,7,"Gustavo A. Madero, Distrito Federal.",5,1
+MEX,TECHNO-MEX,https://perfil.mercadolibre.com.mx/TECHNO-MEX,4,1,43,NA,Tuvo problemas en sus ventas,Entrega sus productos a tiempo,5,0,0,5,"Oaxaca De Juárez, Oaxaca.",4,2
+PER,PASAJECENTRALSAC,http://perfil.mercadolibre.com.pe/PASAJECENTRALSAC,1,1,1320,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,764,0,2,762,"Lima, Lima.",1,1
+PER,JAPIMPORTA,http://perfil.mercadolibre.com.pe/JAPIMPORTA,7,1,1774,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,1082,3,34,1045,"Lima, Lima.",7,1
+PER,GLOBAL CELS,http://perfil.mercadolibre.com.pe/GLOBAL+CELS,6,1,2445,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,1404,5,41,1358,"Lima, Lima.",6,1
+PER,CSHOP1,http://perfil.mercadolibre.com.pe/CSHOP1,12,1,654,NA,NA,NA,419,0,3,416,"Lima, Lima.",12,1
+PER,CASEMOTIONS.PE,http://perfil.mercadolibre.com.pe/CASEMOTIONS.PE,4,1,4486,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,2667,0,12,2655,"Lima, Lima.",4,1
+PER,GHINEXS,http://perfil.mercadolibre.com.pe/GHINEXS,7,1,12,NA,NA,NA,36,1,8,27,"Lima, Lima.",7,1
+PER,MALUPHONE,http://perfil.mercadolibre.com.pe/MALUPHONE,3,1,860,NA,NA,NA,575,1,2,572,"Lima, Lima.",3,1
+PER,RODRI STORE01,http://perfil.mercadolibre.com.pe/RODRI+STORE01,1,1,452,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,220,0,1,219,"Lima, Lima.",1,1
+PER,TIENDAEXPRESS.PE,http://perfil.mercadolibre.com.pe/TIENDAEXPRESS.PE,2,1,650,NA,NA,NA,381,0,0,381,"Lima, Lima.",2,1
+PER,NEGOCIOS DANTE1920,http://perfil.mercadolibre.com.pe/NEGOCIOS+DANTE1920,1,1,215,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,116,0,2,114,"Lima, Lima.",1,1
+PER,ALBERTOPP75,http://perfil.mercadolibre.com.pe/ALBERTOPP75,10,1,538,NA,NA,NA,311,2,9,300,"Piura, Piura.",10,1
+PER,ZONAMOVILPERU1,http://perfil.mercadolibre.com.pe/ZONAMOVILPERU1,1,1,685,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,451,2,8,441,"Lima, Lima.",1,1
+PER,SERGIOAMARANTOPEREA,http://perfil.mercadolibre.com.pe/SERGIOAMARANTOPEREA,5,1,22,NA,NA,NA,9,0,2,7,"Lima, Lima.",5,1
+PER,MVH STORE,http://perfil.mercadolibre.com.pe/MVH+STORE,2,1,405,NA,NA,NA,183,4,7,172,"Lima, Lima.",2,1
+PER,MERKA.G,http://perfil.mercadolibre.com.pe/MERKA.G,2,1,655,NA,NA,NA,446,0,2,444,"Lima, Lima.",2,1
+PER,DASTORE PERU,http://perfil.mercadolibre.com.pe/DASTORE+PERU,9,1,114,NA,NA,NA,74,0,10,64,"Lima, Lima.",9,1
+PER,ASMOBILEACCESORIES,http://perfil.mercadolibre.com.pe/ASMOBILEACCESORIES,3,1,909,NA,NA,NA,493,1,16,476,"Lima, Lima.",3,1
+PER,DASTOREPUNTOPE,http://perfil.mercadolibre.com.pe/DASTOREPUNTOPE,5,1,3883,NA,NA,NA,1953,10,126,1817,"Lima, Lima.",5,1
+PER,BTPERU_VENTAS,http://perfil.mercadolibre.com.pe/BTPERU_VENTAS,13,1,16983,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,23183,361,3510,19312,"Lima, Lima.",13,1
+PER,YAJOMATECH,http://perfil.mercadolibre.com.pe/YAJOMATECH,3,1,313,NA,NA,NA,164,0,4,160,"Lima, Lima.",3,1
+PER,AZTILEYRODRIGUEZ,http://perfil.mercadolibre.com.pe/AZTILEYRODRIGUEZ,10,2,21,NA,NA,NA,18,0,0,18,"Lima, Lima.",10,2
+PER,REVOLUTION.STAR,http://perfil.mercadolibre.com.pe/REVOLUTION.STAR,4,1,389,NA,NA,NA,266,3,15,248,"Lima, Lima.",4,1
+PER,MOBITECH.PE,http://perfil.mercadolibre.com.pe/MOBITECH.PE,5,1,333,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,250,4,9,237,"Lima, Lima.",5,1
+PER,TEVEN255,http://perfil.mercadolibre.com.pe/TEVEN255,4,1,848,NA,NA,NA,522,1,6,515,"Lima, Lima.",4,1
+PER,DETALLESMYAPE,http://perfil.mercadolibre.com.pe/DETALLESMYAPE,6,1,1804,NA,NA,NA,552,7,42,503,"Lima, Lima.",6,1
+PER,MACMELLOWMIRAFLORES,http://perfil.mercadolibre.com.pe/MACMELLOWMIRAFLORES,8,1,1348,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,1588,48,228,1312,"Lima, Lima.",8,1
+PER,MAOMATACASTILLO,http://perfil.mercadolibre.com.pe/MAOMATACASTILLO,6,1,220,NA,NA,NA,100,2,6,92,"Lima, Lima.",6,1
+PER,SABO520433,http://perfil.mercadolibre.com.pe/SABO520433,2,1,123,NA,NA,NA,94,0,5,89,"Lima, Lima.",2,1
+PER,921489126,http://perfil.mercadolibre.com.pe/921489126,3,1,28,NA,NA,NA,22,0,0,22,"Lima, Lima.",3,1
+PER,JARRIETAA,http://perfil.mercadolibre.com.pe/JARRIETAA,7,1,166,NA,NA,NA,140,1,5,134,"Lima, Lima.",7,1
+PER,HAROLD25X,http://perfil.mercadolibre.com.pe/HAROLD25X,1,1,51,NA,NA,NA,34,0,0,34,"Lima, Lima.",1,1
+PER,EL TALLER.DE.CHARLY,http://perfil.mercadolibre.com.pe/EL+TALLER.DE.CHARLY,1,1,66,NA,NA,NA,57,0,3,54,"Lima, Lima.",1,1
+PER,CRUIZ145,http://perfil.mercadolibre.com.pe/CRUIZ145,2,1,333,NA,NA,NA,214,0,0,214,"Lima, Lima.",2,1
+PER,DASTOREPERUCASE,http://perfil.mercadolibre.com.pe/DASTOREPERUCASE,6,1,1043,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,469,1,36,432,"Lima, Lima.",6,1
+PER,TECHNOCELENSUNPERU,http://perfil.mercadolibre.com.pe/TECHNOCELENSUNPERU,1,1,22,NA,NA,NA,16,0,2,14,"Lima, Lima.",1,1
+PER,ISTORETEC,http://perfil.mercadolibre.com.pe/ISTORETEC,3,1,2594,NA,NA,NA,1582,1,5,1576,"Lima, Lima.",3,1
+PER,ENERGYZONE_MIRAFLORES,http://perfil.mercadolibre.com.pe/ENERGYZONE_MIRAFLORES,9,1,3922,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,1564,11,115,1438,"Lima, Lima.",9,1
+PER,SENDS_VICTOR2010,http://perfil.mercadolibre.com.pe/SENDS_VICTOR2010,10,1,1956,NA,NA,NA,2960,67,684,2209,"Lima, Lima.",10,1
+PER,LUNA281192,http://perfil.mercadolibre.com.pe/LUNA281192,NA,NA,NA,NA,NA,NA,78,5,32,41,"Lima, Lima.",NA,NA
+PER,NDMSTORE,http://perfil.mercadolibre.com.pe/NDMSTORE,NA,NA,NA,NA,NA,NA,291,6,8,277,"Chiclayo, Lambayeque.",NA,NA
+PER,LINESSTORE,http://perfil.mercadolibre.com.pe/LINESSTORE,8,1,502,NA,NA,NA,336,4,38,294,"Trujillo, La Libertad.",8,1
+PER,TECNUEVAERA,http://perfil.mercadolibre.com.pe/TECNUEVAERA,8,1,3976,NA,NA,NA,2534,17,278,2239,"Lima, Lima.",8,1
+PER,JUAN556,http://perfil.mercadolibre.com.pe/JUAN556,14,1,162,NA,NA,NA,113,0,13,100,"Lima, Lima.",14,1
+PER,KECHVR.COM,http://perfil.mercadolibre.com.pe/KECHVR.COM,6,1,605,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,332,3,12,317,"Lima, Lima.",6,1
+PER,MOBILE CONNECT,http://perfil.mercadolibre.com.pe/MOBILE+CONNECT,3,1,1730,NA,NA,NA,1190,12,61,1117,"Lima, Lima.",3,1
+PER,LUCKIALANFERNANDEZSALCEDO,http://perfil.mercadolibre.com.pe/LUCKIALANFERNANDEZSALCEDO,6,1,530,NA,NA,NA,286,0,1,285,"Lima, Lima.",6,1
+PER,ALMACENERO 08,http://perfil.mercadolibre.com.pe/ALMACENERO+08,NA,NA,NA,NA,NA,NA,96,10,48,38,"Lima, Lima.",NA,NA
+PER,ROSILLOHEBERTO,http://perfil.mercadolibre.com.pe/ROSILLOHEBERTO,NA,NA,NA,NA,NA,NA,6,0,0,6,"Lima, Lima.",NA,NA
+PER,KINZESHOP,http://perfil.mercadolibre.com.pe/KINZESHOP,4,1,30,NA,NA,NA,14,0,0,14,"Ica, Ica.",4,1
+PER,OSDA6454778,http://perfil.mercadolibre.com.pe/OSDA6454778,5,1,95,NA,NA,NA,56,0,0,56,"Lima, Lima.",5,1
+PER,DISTRIBUIDORA BELEN,http://perfil.mercadolibre.com.pe/DISTRIBUIDORA+BELEN,NA,NA,NA,NA,NA,NA,16,1,4,11,"Lima, Lima.",NA,NA
+PER,NILLKIN PERU,http://perfil.mercadolibre.com.pe/NILLKIN+PERU,1,1,212,NA,NA,NA,108,1,6,101,"Lima, Lima.",1,1
+PER,ROMCSR,http://perfil.mercadolibre.com.pe/ROMCSR,4,1,440,NA,NA,NA,171,2,12,157,"Lima, Lima.",4,1
+PER,TECNO-ACCESORIOS-PERU,http://perfil.mercadolibre.com.pe/TECNO-ACCESORIOS-PERU,5,1,59,NA,NA,NA,46,0,3,43,"Lima, Lima.",5,1
+PER,JOSE GOGOME,http://perfil.mercadolibre.com.pe/JOSE+GOGOME,4,1,417,NA,NA,NA,217,0,10,207,"Lima, Lima.",4,1
+PER,CASE-COVERS,http://perfil.mercadolibre.com.pe/CASE-COVERS,4,1,712,NA,NA,NA,463,0,7,456,"Lima, Lima.",4,1
+PER,IMANIA.PERU,http://perfil.mercadolibre.com.pe/IMANIA.PERU,2,1,2174,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,1177,0,8,1169,"Lima, Lima.",2,1
+PER,TECHNOW 1,http://perfil.mercadolibre.com.pe/TECHNOW+1,1,1,4476,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,3014,8,108,2898,"Lima, Lima.",1,1
+PER,MRL IMPORT,http://perfil.mercadolibre.com.pe/MRL+IMPORT,2,1,83,NA,NA,NA,68,1,1,66,"Cajamarca, Cajamarca.",2,1
+PER,OASIS TECNOLOGICO.PE,http://perfil.mercadolibre.com.pe/OASIS+TECNOLOGICO.PE,4,1,14,NA,NA,NA,14,1,1,12,"Lima, Lima.",4,1
+PER,MASPLAY PERU,http://perfil.mercadolibre.com.pe/MASPLAY+PERU,7,1,1313,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,954,8,89,857,"Lima, Lima.",7,1
+PER,ZABIVAKA,http://perfil.mercadolibre.com.pe/ZABIVAKA,1,1,99,NA,NA,NA,62,0,2,60,"Lima, Lima.",1,1
+PER,HIPERCELLVENTASONLINE,http://perfil.mercadolibre.com.pe/HIPERCELLVENTASONLINE,4,1,806,NA,NA,NA,387,3,27,357,"Lima, Lima.",4,1
+PER,TECNOLOGIAS_AQP,http://perfil.mercadolibre.com.pe/TECNOLOGIAS_AQP,NA,NA,NA,NA,NA,NA,29,2,6,21,"Arequipa, Arequipa.",NA,NA
+PER,ELMER ALFARO,http://perfil.mercadolibre.com.pe/ELMER+ALFARO,4,1,69,NA,NA,NA,10,0,6,4,"Lima, Lima.",4,1
+PER,ACCESORIOS SB,http://perfil.mercadolibre.com.pe/ACCESORIOS+SB,9,1,1154,NA,NA,NA,896,0,33,863,"Lima, Lima.",9,1
+PER,EDUARDOVILCHEZCHAVEZ,http://perfil.mercadolibre.com.pe/EDUARDOVILCHEZCHAVEZ,1,1,31,NA,NA,NA,24,2,0,22,"Lima, Lima.",1,1
+PER,CYSCORP,http://perfil.mercadolibre.com.pe/CYSCORP,9,1,846,NA,NA,NA,773,1,37,735,"Lima, Lima.",9,1
+PER,ZONA SMART,http://perfil.mercadolibre.com.pe/ZONA+SMART,7,1,1558,NA,NA,NA,1234,17,94,1123,"Lima, Lima.",7,1
+PER,TECJL,http://perfil.mercadolibre.com.pe/TECJL,NA,NA,NA,NA,NA,NA,38,1,3,34,"Lima, Lima.",NA,NA
+PER,KF IMPORT,http://perfil.mercadolibre.com.pe/KF+IMPORT,2,1,135,NA,NA,NA,76,0,9,67,"Lima, Lima.",2,1
+PER,CARLITOSFERRUA,http://perfil.mercadolibre.com.pe/CARLITOSFERRUA,6,1,1171,NA,NA,NA,443,4,36,403,"Lima, Lima.",6,1
+PER,AKAESPERUSAC,http://perfil.mercadolibre.com.pe/AKAESPERUSAC,11,2,2178,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,804,33,94,677,"Lima, Lima.",11,2
+PER,MARVINORDAYACHAMORRO,http://perfil.mercadolibre.com.pe/MARVINORDAYACHAMORRO,6,1,128,NA,NA,NA,64,2,2,60,"Lima, Lima.",6,1
+PER,BEEN919830,http://perfil.mercadolibre.com.pe/BEEN919830,NA,NA,NA,NA,NA,NA,20,0,0,20,"Lima, Lima.",NA,NA
+PER,ALBERTOBQ,http://perfil.mercadolibre.com.pe/ALBERTOBQ,13,1,8,NA,NA,NA,44,0,8,36,"Mariscal Nieto, Moquegua.",13,1
+PER,JOSRONALTORRESBANDA,http://perfil.mercadolibre.com.pe/JOSRONALTORRESBANDA,1,1,54,NA,NA,NA,32,0,3,29,"Callao, Callao.",1,1
+PER,SMARTPHONESPERUMIRAFLORES,http://perfil.mercadolibre.com.pe/SMARTPHONESPERUMIRAFLORES,NA,NA,NA,NA,NA,NA,111,0,11,100,"Lima, Lima.",NA,NA
+PER,CELL.MAGIC,http://perfil.mercadolibre.com.pe/CELL.MAGIC,4,1,693,NA,NA,NA,344,7,40,297,"Lima, Lima.",4,1
+PER,QIA2,http://perfil.mercadolibre.com.pe/QIA2,2,1,32,NA,NA,NA,17,0,1,16,"Lima, Lima.",2,1
+PER,ROB4830,http://perfil.mercadolibre.com.pe/ROB4830,NA,NA,NA,NA,NA,NA,28,4,3,21,"Lima, Lima.",NA,NA
+URU,GOGREEN IMPORTACIONES,http://perfil.mercadolibre.com.uy/GOGREEN+IMPORTACIONES,8,1,6961,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,4023,3,158,3862,"Cordón, Montevideo.",8,1
+URU,TOPTECNOUY,http://perfil.mercadolibre.com.uy/TOPTECNOUY,14,1,118951,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,115503,654,5508,109341,"Ciudad Vieja, Montevideo.",14,1
+URU,MUNDOSHOP.UY,http://perfil.mercadolibre.com.uy/MUNDOSHOP.UY,11,2,1681,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,828,5,14,809,"La Comercial, Montevideo.",11,2
+URU,O TEC,http://perfil.mercadolibre.com.uy/O+TEC,5,1,13138,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,8880,2,100,8778,"Tres Cruces, Montevideo.",5,1
+URU,AR IMPORT.,http://perfil.mercadolibre.com.uy/AR+IMPORT.,2,1,2383,NA,NA,NA,1553,4,22,1527,"Ciudad Vieja, Montevideo.",2,1
+URU,TUBELUXUY,http://perfil.mercadolibre.com.uy/TUBELUXUY,14,1,42346,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,41384,320,2606,38458,"Aguada, Montevideo.",14,1
+URU,PRO ACCESORIOSUY,http://perfil.mercadolibre.com.uy/PRO+ACCESORIOSUY,3,1,11803,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,7264,4,59,7201,"Centro, Montevideo.",3,1
+URU,CELULAROUTLETMONTEVIDEO,http://perfil.mercadolibre.com.uy/CELULAROUTLETMONTEVIDEO,10,2,341,NA,NA,NA,181,1,5,175,"Cordón, Montevideo.",10,2
+URU,FEBOUY,http://perfil.mercadolibre.com.uy/FEBOUY,12,1,80837,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,54432,124,1329,52979,"Centro, Montevideo.",12,1
+URU,FREE_BUY_2633,http://perfil.mercadolibre.com.uy/FREE_BUY_2633,18,1,4350,NA,NA,NA,4376,0,115,4261,"Reducto, Montevideo.",18,1
+URU,MEGACASEUY,http://perfil.mercadolibre.com.uy/MEGACASEUY,2,1,4096,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,1799,7,41,1751,"Parque Batlle, Montevideo.",2,1
+URU,CLICSHOPURUGUAY,http://perfil.mercadolibre.com.uy/CLICSHOPURUGUAY,7,1,8876,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,5382,23,93,5266,"Tres Cruces, Montevideo.",7,1
+URU,PANTAYAUY,http://perfil.mercadolibre.com.uy/PANTAYAUY,7,1,6166,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,2817,11,85,2721,"Tres Cruces, Montevideo.",7,1
+URU,VIKEI SA,http://perfil.mercadolibre.com.uy/VIKEI+SA,4,1,416,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,218,0,1,217,"Aguada, Montevideo.",4,1
+URU,GOFIXUY,http://perfil.mercadolibre.com.uy/GOFIXUY,4,1,242,NA,NA,NA,194,1,1,192,"Centro, Montevideo.",4,1
+URU,69 CASES,http://perfil.mercadolibre.com.uy/69+CASES,11,1,9510,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,5958,87,235,5636,"Cordón, Montevideo.",11,1
+URU,TECNOCELL.UY,http://perfil.mercadolibre.com.uy/TECNOCELL.UY,3,1,17229,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,9768,113,400,9255,"Centro, Montevideo.",3,1
+URU,LIDERTEK SRL,http://perfil.mercadolibre.com.uy/LIDERTEK+SRL,7,1,17127,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,12132,28,381,11723,"Centro, Montevideo.",7,1
+URU,I..STORE,http://perfil.mercadolibre.com.uy/I..STORE,4,1,201,NA,NA,NA,189,7,9,173,"Mercedes, Soriano.",4,1
+URU,HERMESSTORE,http://perfil.mercadolibre.com.uy/HERMESSTORE,1,1,2121,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,1151,10,66,1075,"Ciudad Vieja, Montevideo.",1,1
+URU,ACHO84,http://perfil.mercadolibre.com.uy/ACHO84,12,1,116,NA,NA,NA,301,3,47,251,"Centro, Montevideo.",12,1
+URU,DIGINET URUGUAY,http://perfil.mercadolibre.com.uy/DIGINET+URUGUAY,3,1,9317,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,5691,6,110,5575,"Centro, Montevideo.",3,1
+URU,APPLE.BLUE,http://perfil.mercadolibre.com.uy/APPLE.BLUE,1,1,220,NA,NA,NA,157,3,1,153,"Pocitos, Montevideo.",1,1
+URU,VENTAUY,http://perfil.mercadolibre.com.uy/VENTAUY,14,1,7635,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,6627,52,438,6137,"Brazo Oriental, Montevideo.",14,1
+URU,DIMARTUY,http://perfil.mercadolibre.com.uy/DIMARTUY,3,1,1337,NA,NA,NA,901,4,24,873,"San Carlos, Maldonado.",3,1
+URU,SPWA738479,http://perfil.mercadolibre.com.uy/SPWA738479,5,1,11,NA,NA,NA,8,0,0,8,"Montes de Solymar, Canelones.",5,1
+URU,KING-SALE,http://perfil.mercadolibre.com.uy/KING-SALE,11,1,11493,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,6086,6,158,5922,"Centro, Montevideo.",11,1
+URU,ALEXISDAMIAN2008,http://perfil.mercadolibre.com.uy/ALEXISDAMIAN2008,10,1,1046,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,799,0,12,787,"Tres Cruces, Montevideo.",10,1
+URU,M.G.M.R,http://perfil.mercadolibre.com.uy/M.G.M.R,3,1,207,NA,NA,NA,117,0,5,112,"Pocitos, Montevideo.",3,1
+URU,BIGU572033,http://perfil.mercadolibre.com.uy/BIGU572033,NA,NA,NA,NA,NA,NA,60,5,0,55,"Parque del Plata, Canelones.",NA,NA
+URU,INFORAMA10,http://perfil.mercadolibre.com.uy/INFORAMA10,10,1,416,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,356,3,7,346,"Otras, Montevideo.",10,1
+URU,GABRIELAGUILAR122,http://perfil.mercadolibre.com.uy/GABRIELAGUILAR122,6,1,123,NA,NA,NA,147,0,1,146,"Buceo, Montevideo.",6,1
+URU,PRO-ACCESORIOS-Y-CELULARES,http://perfil.mercadolibre.com.uy/PRO-ACCESORIOS-Y-CELULARES,NA,NA,NA,NA,NA,NA,1554,42,114,1398,"La Comercial, Montevideo.",NA,NA
+URU,SCREEN-CASES,http://perfil.mercadolibre.com.uy/SCREEN-CASES,14,1,617,NA,NA,NA,513,2,6,505,"Parque Batlle, Montevideo.",14,1
+URU,GENIALSTORE,http://perfil.mercadolibre.com.uy/GENIALSTORE,NA,NA,NA,NA,NA,NA,2133,34,119,1980,"Pocitos, Montevideo.",NA,NA
+URU,BEPA7288969,http://perfil.mercadolibre.com.uy/BEPA7288969,4,1,27,NA,NA,NA,11,0,1,10,"Trinidad, Flores.",4,1
+URU,TECNOCELLUY,http://perfil.mercadolibre.com.uy/TECNOCELLUY,NA,NA,NA,NA,NA,NA,437,14,28,395,"Centro, Montevideo.",NA,NA
+URU,CHIPY.PARK,http://perfil.mercadolibre.com.uy/CHIPY.PARK,3,1,986,MercadoLíder Gold¡Está entre los mejores del sitio!,NA,NA,579,0,5,574,"Cordón, Montevideo.",3,1
+URU,IZMA1385013,http://perfil.mercadolibre.com.uy/IZMA1385013,NA,NA,NA,NA,NA,NA,101,1,1,99,"La Comercial, Montevideo.",NA,NA
+URU,PLAZATECHURUGUAY,http://perfil.mercadolibre.com.uy/PLAZATECHURUGUAY,1,1,671,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,394,2,9,383,"Aguada, Montevideo.",1,1
+URU,PREMIUM_CASES_UY,http://perfil.mercadolibre.com.uy/PREMIUM_CASES_UY,1,1,1039,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,803,0,9,794,"Pocitos, Montevideo.",1,1
+URU,Ebay Tienda oficial,http://perfil.mercadolibre.com.uy/HERMES_STORE?brandId=520,1,1,5224,MercadoLíder Platinum¡Es uno de los mejores del sitio!,NA,NA,2436,31,321,2084,"Ciudad Vieja, Montevideo.",1,1
+URU,TIENDA M-A,http://perfil.mercadolibre.com.uy/TIENDA+M-A,11,1,1452,NA,NA,NA,1389,11,83,1295,"Maroñas, Curva, Montevideo.",11,1
+URU,PEDROBOTTA8098,http://perfil.mercadolibre.com.uy/PEDROBOTTA8098,7,1,50,NA,NA,NA,59,1,12,46,"Otras, Montevideo.",7,1
+URU,MALDONADO1054,http://perfil.mercadolibre.com.uy/MALDONADO1054,13,1,918,MercadoLíder¡Está entre los mejores del sitio!,NA,NA,1560,6,234,1320,"Barrio Sur, Montevideo.",13,1

@@ -1,0 +1,22 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: https://perfil.mercadolivre.com.br/MINYMIX
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolivre.com.br/MGP+IMPORTS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolivre.com.br/ROAM381007
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 403.
+
+Failed, so skipping to next iteration.

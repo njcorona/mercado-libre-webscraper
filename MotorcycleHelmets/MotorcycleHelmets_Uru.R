@@ -140,7 +140,7 @@ scrapeNodes <- function(test, search_position, name) {
   in_stock <- get_html_text(read_html, ".dropdown-quantity-available")
   if (length(in_stock) != 0) {
     in_stock <- get_html_text(read_html, ".stock-string-last-item")
-    if (length(in_stock) == 0) {
+    if (length(in_stock) != 0) {
       if (gsub("[\t\n$]", "", in_stock) == "Único disponible!") {
         in_stock <- "1"
       }

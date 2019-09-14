@@ -1,0 +1,566 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: 
+The above link failed once with error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Running it again...The above link failed twice.  Second error: Error: '' does not exist in current working directory ('C:/Users/Corona-Velez/Documents/GitHub/mercado-libre/BTHeadphones').
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/HELPHONE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 504.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MAYRAALEJANDRAVELANDIALACHE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/JOHANS%C3%81NCHEZ+GAVILAN
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/VIVIANA+MORERAS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/VALENCIABRAYAN36
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ANMI-KUROI
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SMARTFONE+COLOMBIA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SIABATO25
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/AKARGO+COLOMBIA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/WIKIELECTRONIC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TECN0-SH0P
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/LA+TIENDADELCLIC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ANDRESFELIPELOPEZC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/CAROLINA.CASTRO68
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MYINNOVATION
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ARSE5324717
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MALU+DECORACION
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SALEDI119
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/VALI6248994
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/INGENIERIATECNOSTAR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/HYPERION+STORE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TECNOLOGY+S.A.
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/JRAM%C3%8DREZ+C%C3%89SPEDES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/GLOBAL+BOX
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/AMERKAR.ONLINE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MUSICLIGHTCENTER
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/AEA+PARTS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/VOMEXPRESS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/DAVID+ALVEAR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/LEWEISICO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/INVERCON2019
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/OMILLAR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/UNIONMYD
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TUCOMPRA.YA%21
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MUZHIFENGCO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/BUYRURU
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/AJ10BF99
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/WEB_STOCK_CALI
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/BICLAPP
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SUPERMARKET_TECNOLOGICO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ELECTROSIS.EU
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/INEKOR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/UNILACOMPRAS1
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/VALE1971863
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ALMANZAEDUARD
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ARNULFOOLIVEROS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/CAMILOTASCONCASAS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ANDRESFELIPELUNATRUJILLO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/HEROSIMPORTADORA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SMARTKET.CO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/UNILACOMPRAS4
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/HOLAMALLCO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/FIRCOL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SONYVENTASALMANZA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ELECTRONIC_SUNDRIES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ZEPPELIN+EXPRESS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/LOTUS.BOHO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/FLOREZJOSE08
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/GRILLO_ST
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/DIIOVAHSETECNOLOGY
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/K2JUAN
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MAJH7829479
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/EDUARMAURICIODOMINGUEZ
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...
+It worked.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MI+HOME.
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/COED6519472
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/KLIDAD+OFICIAL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/WOMPRA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ACSE5627728
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/ZERILANKA+SAS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/WDS+COLOMBIA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/SSDIELECT
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/MCNGLOCALDISTRIBUTION?brandId=603
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/STANLYQUINTEROSUAREZ
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/PINEAPPLE+INC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/DISENTEC
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/COMAIFAN
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/DISTRIBUIDORES+LF
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TECNICOM-MEDELLIN
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/WEXLAID
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.com.co/TIENDACHEAP
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 500.
+
+Running it again...
+It worked.

@@ -1,0 +1,638 @@
+List of URLs that encountered errors and their errors:
+-----------------
+URL: https://perfil.mercadolibre.cl/MOBILEHUT?brandId=166
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 504.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 504.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CELLBOX.CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 504.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 504.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BANANATIENDA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TIENDA+KYRIOS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SMARTBUYCHILE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/DIGITEK.CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TECNOPICADA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/PHONESTORE-RETAILCHILE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/COMERCIALIZADORA+REGALOCO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CARCASASPUNTOCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/COMERCIALONLINE+EIRL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TECNOSTRIKE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/MONKEYCOLOR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ARAGUISS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/MIAUSTORE.CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ALPHATECHILE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/PALMCITO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/WEBPHONESPA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BERRIAKLTDA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/STMA9082314
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/FORCECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/VENTAS.ELECTRONICAS.ONLINE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/IMPOWICK.SHOP
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SAFE_MICASE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/WE.-
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CELULARES-EN-VENTA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/NETEXPERTOS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CUATRO+GLACIARES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/AERRECOMEX.COM
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CELPRO_CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/PROPHONELTDA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/MICHELLODJUANPABLO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/MCDODOTECH.CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/DIGITALSTORE_
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CRISTIANCURIQUEO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BEXTECHNOLOGIES
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/FRIKICITY3.0
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TIENDATRANSPARENCIA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/VENTAS+ELECTRONICAS1
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/KABRA74
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SELFICL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/T-CONECT
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/IPHONEXTREME
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/VAPORISLANDCHILE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/PROGLOBALCHILE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CASTILLOCHAVEZLUIS
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CIMAALEGRIACL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/DIGITALWAREHOUSECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/COMPRATECHCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ZHAOCICL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/KALAVIKACL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/MAXSTORE-SCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TOMTOPWHOLESALECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CASATECNICACL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/AZSHOPPINGCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/EFANCYCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/FERO3400109
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/AUTOSTARCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/RCMOMENTCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/UCSAR2013
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ARIPAUT
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/LANDIDYCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CTSHOPPINGCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CASAFELIZCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SPEEDSTORECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/DOCOOLCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/AMERICANIMPORT.CL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BETTERONECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SPICEIMPORTSCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BUENSUERTECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SPORTSGOODSCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/3CELECTRONICSSTORECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/GESATLTDA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TIENDA+ESHOPEX
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/AKAESCHILE.
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/VIVEEXTRA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SAPEAR
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ZONA+PHONE
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BOXCARGO
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/EBAY_SELECTION
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/THEREALGADGET
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/SUNMUSICCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/BESTDISCOUNTSTORECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/CLHELLOWORLD
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/NIKMCNAMARA
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TOMASNUSSER
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/EBAY+SELECTION
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/YKABUIMPORT
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/APPLEGLASSCL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/TONGUELOVECL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
+-----------------
+URL: https://perfil.mercadolibre.cl/ARTECHEETIENDACL
+The above link failed once with error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Running it again...The above link failed twice.  Second error: Error in open.connection(x, "rb"): HTTP error 503.
+
+Failed, so skipping to next iteration.
