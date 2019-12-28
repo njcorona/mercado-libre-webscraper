@@ -1,8 +1,12 @@
-# MercadoLibre web scraper 
+# MercadoLibre webscraper 
 
-This repository contains a Mercado Libre web scraper written in R.  It scrapes Argentina, Brazil, Chile, Colombia, Mexico, Peru, and Uruguay for data on the product listings and seller listings of iPhone8 cases, iPhone8+ cases, motorcycle helmets, Bluetooth speakers, and Bluetooth headphones; and it cleans that data to be research-ready.
+This repository contains a Mercado Libre webscraper written in R.  It scrapes Argentina, Brazil, Chile, Colombia, Mexico, Peru, and Uruguay for data on the product listings and seller listings of iPhone8 cases, iPhone8+ cases, motorcycle helmets, Bluetooth speakers, and Bluetooth headphones; and it cleans that data to be research-ready.
 
-For those interested in countries and products other than those listed above, the R code in this project should serve as a useful guide for building your own web scraper for Mercado Libre in R.
+For those interested in countries and products other than those listed above, the R code in this project should serve as a useful guide for building your own webscraper for Mercado Libre in R.
+
+### Why a webscraper?
+
+There is a MercadeLibre API!  If you're looking for seller information or simple product information, that's a faster way to get what you're looking for.  I built a full webscraper because the API didn't provide access to all of the information I was looking for.  You may also find it easier to use this code, written in English, than to parse the MercadoLibre API documentation written in Spanish.
 
 ## Getting started
 
